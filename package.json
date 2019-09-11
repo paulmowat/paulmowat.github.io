@@ -1,0 +1,35 @@
+{
+  "name": "paulmowat-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build && next export -o docs && cp CNAME docs/CNAME && cp .nojekyll docs/.nojekyll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-brands-svg-icons": "^5.10.1",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.0",
+    "bootstrap": "^4.3.1",
+    "css-loader": "^1.0.1",
+    "next": "^9.0.3",
+    "node-sass": "^4.9.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scrollable-anchor": "^0.6.1",
+    "react-textfit": "^1.1.0",
+    "reactstrap": "^8.0.1",
+    "svg-inline-react": "^3.1.0",
+    "url-loader": "^2.1.0"
+  },
+  "devDependencies": {}
+}

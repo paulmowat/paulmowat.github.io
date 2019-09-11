@@ -1,0 +1,58 @@
+/**
+ * Set up a decent box model on the root element
+ */
+ html {
+  box-sizing: border-box;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*, *::before, *::after {
+  box-sizing: inherit;
+} 
+
+body {
+  color: $body-font-color;
+  font: normal 90% / 0.9 $body-font-family;
+  margin: 0;
+}
+
+[class*="block-grid-"] {
+  &.text-center {
+    //font-size: 0;
+    > li {
+      float: none;
+      display: inline-block;
+      //background: teal;
+      //color: white;
+    }
+  }
+}
+
+blockquote {
+  border: none;
+}
+
+.center{
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  color: $white !important;
+  background-color: $orange !important;
+  border: none !important;
+
+  &:hover {
+    background: lighten($orange, 10%) !important;
+  }
+}
+
+.row {
+  margin-right: auto;
+}

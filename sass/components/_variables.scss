@@ -1,0 +1,27 @@
+// Colours
+$black: #0a0a0a;
+$white: #fefefe;
+$header-color: $white;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$orange:#F06000;
+$header-color: $white;
+$primary-color: $orange; 
+$success-color: #28d367;
+$alert-color: $orange;
+
+$header-font-family: 'opensans-bold', sans-serif;
+$body-font-family: 'opensans-regular', sans-serif;
+$body-font-color: $medium-gray;
+
+// Breakpoints
+$breakpoints: (
+  small: 0,
+  medium: 640px,
+  large: 1024px,
+  xlarge: 1200px,
+  xxlarge: 1440px,
+);
+$print-breakpoint: large;
+$breakpoint-classes: (small medium large);
+

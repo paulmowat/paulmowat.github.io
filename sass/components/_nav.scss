@@ -1,0 +1,57 @@
+nav { 
+  .navbar-brand {
+    display: none
+  }
+
+  .navbar-nav {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    text-transform: uppercase; 
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+
+    .nav-item { 
+      display: inline-block;
+      float:none;
+    }
+
+    .nav-link {
+      color: $white !important;
+      text-decoration: none;
+      padding: .7rem 1rem;
+      line-height: 1;     
+    
+      &:hover {
+        color: $orange !important;
+      }
+      
+      &:active {
+        color: $orange !important;
+      }
+    }
+  }
+}
+
+.bg-dark {
+  background-color: initial !important;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+.opaque {
+  background-color: $black !important;
+}
+
+.active {
+  color: $orange !important;
+}
