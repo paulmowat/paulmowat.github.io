@@ -1,18 +1,17 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Collapse, Nav, Navbar, NavLink, NavItem, NavbarBrand, NavbarToggler } from 'reactstrap'
 
 class NavbarTop extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
 
-    this.toggle = this.toggle.bind(this)
+    this.handleToggle = this.handleToggle.bind(this)
     this.state = {
       isOpen: false
     }
   }
 
-  toggle() {
+  handleToggle () {
     this.setState({
       isOpen: !this.state.isOpen
     })
@@ -21,25 +20,25 @@ class NavbarTop extends React.Component {
   render () {
     return (
       <div>
-        <Navbar color="dark" dark expand="md">
-          <NavbarBrand className="mx-auto" href="/">Paul Mowat</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
+        <Navbar color='dark' dark expand='md'>
+          <NavbarBrand className='mx-auto' href='/'>Paul Mowat</NavbarBrand>
+          <NavbarToggler onClick={this.handleToggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav id="nav" className="ml-auto" navbar>
+            <Nav id='nav' className='ml-auto' navbar>
               <NavItem>
-                <NavLink href="#home">Home</NavLink>
+                <NavLink href='#home'>Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#about">About</NavLink>
+                <NavLink href='#about'>About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#cv">CV</NavLink>
+                <NavLink href='#cv'>CV</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#recommendations">Recommendations</NavLink>
+                <NavLink href='#recommendations'>Recommendations</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#contact">Contact</NavLink>
+                <NavLink href='#contact'>Contact</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -47,10 +46,6 @@ class NavbarTop extends React.Component {
       </div>
     )
   }
-}
-
-NavbarTop.propTypes = {
-  url: PropTypes.object
 }
 
 export { NavbarTop }

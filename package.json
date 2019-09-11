@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "build": "next build && next export -o docs && cp CNAME docs/CNAME && cp .nojekyll docs/.nojekyll"
+    "build": "git rm -r docs && next build && next export -o docs && cp CNAME docs/CNAME && cp .nojekyll docs/.nojekyll && git add docs",
+    "lint": "./node_modules/.bin/eslint . --ext .js"
   },
   "keywords": [],
   "author": "",
@@ -27,9 +28,17 @@
     "react-dom": "^16.9.0",
     "react-scrollable-anchor": "^0.6.1",
     "react-textfit": "^1.1.0",
-    "reactstrap": "^8.0.1",
-    "svg-inline-react": "^3.1.0",
-    "url-loader": "^2.1.0"
+    "reactstrap": "^8.0.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.3.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-standard": "^4.0.1"
+  }
 }

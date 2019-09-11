@@ -7,8 +7,9 @@ export function MainInner (props) {
     <ScrollableAnchor id={props.id}>
       <section id={props.id} className={`main-inner${props.fluid ? '-fluid' : ''}`}>
         <div className={`container${props.fluid ? '-fluid' : ''} ${props.full ? 'full' : 'center'}`}>
-          {props.title &&
-            <h2><span>{props.title}</span></h2>
+          {
+            props.title &&
+              <h2><span>{props.title}</span></h2>
           }
           {props.children}
         </div>

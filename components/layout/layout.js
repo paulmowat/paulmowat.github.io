@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-// import { AppIcons } from '../app-icons'
 import { HeadLayout } from '../header'
 import { NavbarTop } from '../navbar'
 
@@ -13,7 +12,7 @@ import '../../sass/paulmowat.scss'
 
 export function Layout (props) {
   return (
-    <React.Fragment>
+    <>
       <HeadLayout title={props.title} />
       {/* <AppIcons /> */}
       <div className='page sidebar-visible'>
@@ -23,13 +22,13 @@ export function Layout (props) {
         <div className='content-container'>
           <MainContainer>
             <section>
-              { props.children }
+              {props.children}
             </section>
           </MainContainer>
         </div>
         <Footer />
       </div>
-    </React.Fragment>
+    </>
   )
 }
 

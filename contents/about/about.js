@@ -4,13 +4,13 @@ import { MainInner } from '../../components/layout'
 class About extends React.Component {
   render () {
     return (
-      <MainInner id="about" title="About" fluid>
-        <div className="row">
-          <div className="col-md-3">
-            <img className="profile-pic" src="/static/images/profilepic.jpg" alt="Paul Mowat Picture" />
+      <MainInner id='about' title='About' fluid>
+        <div className='row'>
+          <div className='col-md-3'>
+            <img className='profile-pic' src='/static/images/profilepic.jpg' alt='Paul Mowat Picture' />
           </div>
-          <div className="col-md-8">
-            <p>Based in Boddam/Aberdeen, Scotland, I currently work for <a href="http://www.oneadvanced.com">Advanced Computer Software</a> as a Principal Software Developer.</p>
+          <div className='col-md-8'>
+            <p>Based in Boddam/Aberdeen, Scotland, I currently work for <a href='http://www.oneadvanced.com'>Advanced Computer Software</a> as a Principal Software Developer.</p>
             <p>I'm a hardworking, organized and motivated software developer with 10+ years experience designing and supporting large scale applications on a variety of platforms and technologies including Progress OpenEdge, C#, SQL Server and Java.</p>
             <p>My experience also extends to web development using HTML, CSS, Javascript, PHP and hybrid mobile applications.</p>
             <p>I have strong problem solving skills and am an advocate of best practices and coding standards.</p>

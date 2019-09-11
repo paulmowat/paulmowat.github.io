@@ -3,8 +3,8 @@ import { MainInner } from '../../components/layout'
 import {
   Carousel,
   CarouselItem,
-  CarouselIndicators,
-} from 'reactstrap';
+  CarouselIndicators
+} from 'reactstrap'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
@@ -53,12 +53,12 @@ const items = [
     src: () => {
       return (
         <blockquote>
-        <p>Paul is a very knowledgeable and experienced developer. When I worked with him I always found him to grasp
+          <p>Paul is a very knowledgeable and experienced developer. When I worked with him I always found him to grasp
           new ideas quickly and the standard of his work was always very high. He was also very easy to work with
           and popular in the office.
-        </p>
-        <cite>Michael Charles <span>&bull;</span> Director and Co-founder @ Escone Solutions Ltd</cite>
-      </blockquote>
+          </p>
+          <cite>Michael Charles <span>&bull;</span> Director and Co-founder @ Escone Solutions Ltd</cite>
+        </blockquote>
       )
     }
   }, {
@@ -96,73 +96,73 @@ const items = [
 ]
 
 class Recommendations extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { activeIndex: 0 };
-    this.next = this.next.bind(this);
-    this.previous = this.previous.bind(this);
-    this.goToIndex = this.goToIndex.bind(this);
-    this.onExiting = this.onExiting.bind(this);
-    this.onExited = this.onExited.bind(this);
+  constructor (props) {
+    super(props)
+    this.state = { activeIndex: 0 }
+    this.next = this.next.bind(this)
+    this.previous = this.previous.bind(this)
+    this.handleGoToIndex = this.handleGoToIndex.bind(this)
+    this.handleOnExiting = this.handleOnExiting.bind(this)
+    this.handleOnExited = this.handleOnExited.bind(this)
   }
 
-  onExiting() {
-    this.animating = true;
+  handleOnExiting () {
+    this.animating = true
   }
 
-  onExited() {
-    this.animating = false;
+  handleOnExited () {
+    this.animating = false
   }
 
-  next() {
-    if (this.animating) return;
-    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1;
-    this.setState({ activeIndex: nextIndex });
+  next () {
+    if (this.animating) return
+    const nextIndex = this.state.activeIndex === items.length - 1 ? 0 : this.state.activeIndex + 1
+    this.setState({ activeIndex: nextIndex })
   }
 
-  previous() {
-    if (this.animating) return;
-    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1;
-    this.setState({ activeIndex: nextIndex });
+  previous () {
+    if (this.animating) return
+    const nextIndex = this.state.activeIndex === 0 ? items.length - 1 : this.state.activeIndex - 1
+    this.setState({ activeIndex: nextIndex })
   }
 
-  goToIndex(newIndex) {
-    if (this.animating) return;
-    this.setState({ activeIndex: newIndex });
+  handleGoToIndex (newIndex) {
+    if (this.animating) return
+    this.setState({ activeIndex: newIndex })
   }
 
   render () {
-    const { activeIndex } = this.state;
+    const { activeIndex } = this.state
 
     const slides = items.map((item) => {
       return (
         <CarouselItem
-          onExiting={this.onExiting}
-          onExited={this.onExited}
+          onExiting={this.handleOnExiting}
+          onExited={this.handleOnExited}
           key={item.id}
         >
           {item.src()}
         </CarouselItem>
-      );
-    });
+      )
+    })
 
     return (
-      <MainInner id="recommendations" title="Recommendations" fluid>
-        <div className="row">
-          <div className="col-md-2">
-            <FontAwesomeIcon icon={faQuoteLeft} className="recommendation-icon" />
+      <MainInner id='recommendations' title='Recommendations' fluid>
+        <div className='row'>
+          <div className='col-md-2'>
+            <FontAwesomeIcon icon={faQuoteLeft} className='recommendation-icon' />
           </div>
-          <div className="col-md-10">
-          <Carousel
-            activeIndex={activeIndex}
-            next={this.next}
-            previous={this.previous}
-          >
-            {slides}
-            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-            {/* <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+          <div className='col-md-10'>
+            <Carousel
+              activeIndex={activeIndex}
+              next={this.next}
+              previous={this.previous}
+            >
+              {slides}
+              <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.handleGoToIndex} />
+              {/* <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
             <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} /> */}
-          </Carousel>
+            </Carousel>
           </div>
         </div>
       </MainInner>
