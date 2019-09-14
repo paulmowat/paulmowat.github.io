@@ -204,6 +204,7 @@ class Recommendations extends React.Component {
               activeIndex={activeIndex}
               next={this.next}
               previous={this.previous}
+              interval={5000}
             >
               {slides}
               <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.handleGoToIndex} />
