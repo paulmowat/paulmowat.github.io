@@ -1,5 +1,4 @@
 window.onload = function (event) {
-  // eslint-disable-next-line no-undef
   particlesJS('particles-js', {
     particles: {
       number: {

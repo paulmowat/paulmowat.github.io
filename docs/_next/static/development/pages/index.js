@@ -25,7 +25,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\components\\footer\\footer.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\components\\footer\\footer.js";
 
 
 
@@ -264,7 +264,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\components\\header\\header.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\components\\header\\header.js";
 
 
 
@@ -439,7 +439,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_min_css__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _sass_paulmowat_scss__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../sass/paulmowat.scss */ "./sass/paulmowat.scss");
 /* harmony import */ var _sass_paulmowat_scss__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_sass_paulmowat_scss__WEBPACK_IMPORTED_MODULE_7__);
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\components\\layout\\layout.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\components\\layout\\layout.js";
 
 
 
@@ -535,7 +535,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\components\\layout\\main-container.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\components\\layout\\main-container.js";
 
 
 
@@ -591,7 +591,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-scrollable-anchor */ "./node_modules/react-scrollable-anchor/lib/index.js");
 /* harmony import */ var react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_scrollable_anchor__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\components\\layout\\main-inner.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\components\\layout\\main-inner.js";
 
 
 
@@ -686,7 +686,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\components\\navbar\\navbar-top.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\components\\navbar\\navbar-top.js";
 
 
 
@@ -864,7 +864,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\contents\\about\\about.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\contents\\about\\about.js";
 
 
 
@@ -1030,7 +1030,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\contents\\contact\\contact.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\contents\\contact\\contact.js";
 
 
 
@@ -1437,7 +1437,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\contents\\cv\\cv.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\contents\\cv\\cv.js";
 
 
 
@@ -2203,7 +2203,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\contents\\home\\home.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\contents\\home\\home.js";
 
 
 
@@ -2526,7 +2526,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\contents\\recommendations\\recommendations.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\contents\\recommendations\\recommendations.js";
 
 
 
@@ -2890,7 +2890,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\contents\\skills\\skills.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\contents\\skills\\skills.js";
 
 
 
@@ -25359,10 +25359,10 @@ exports.formatWithValidation = formatWithValidation;
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=c%3A%5Cxampp%5Chtdocs%5Cpaulmowat.github.io%5Cpages%5Cindex.js!./":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=c%3A%5Cxampp%5Chtdocs%5Cpaulmowat.github.io%5Cpages%5Cindex.js ***!
-  \***************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CDevelopmentJS%5Cpaulmowat.github.io%5Cpages%5Cindex.js!./":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CDevelopmentJS%5Cpaulmowat.github.io%5Cpages%5Cindex.js ***!
+  \**************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -44119,7 +44119,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contents_recommendations__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../contents/recommendations */ "./contents/recommendations/index.js");
 /* harmony import */ var _contents_skills__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../contents/skills */ "./contents/skills/index.js");
 /* harmony import */ var _contents_contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../contents/contact */ "./contents/contact/index.js");
-var _jsxFileName = "c:\\xampp\\htdocs\\paulmowat.github.io\\pages\\index.js";
+var _jsxFileName = "C:\\DevelopmentJS\\paulmowat.github.io\\pages\\index.js";
 
 
 
@@ -44194,13 +44194,13 @@ Start.propTypes = {
 /***/ }),
 
 /***/ 0:
-/*!*******************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=c%3A%5Cxampp%5Chtdocs%5Cpaulmowat.github.io%5Cpages%5Cindex.js ***!
-  \*******************************************************************************************************************************/
+/*!******************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CDevelopmentJS%5Cpaulmowat.github.io%5Cpages%5Cindex.js ***!
+  \******************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=c%3A%5Cxampp%5Chtdocs%5Cpaulmowat.github.io%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=c%3A%5Cxampp%5Chtdocs%5Cpaulmowat.github.io%5Cpages%5Cindex.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absolutePagePath=C%3A%5CDevelopmentJS%5Cpaulmowat.github.io%5Cpages%5Cindex.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2F&absolutePagePath=C%3A%5CDevelopmentJS%5Cpaulmowat.github.io%5Cpages%5Cindex.js!./");
 
 
 /***/ }),

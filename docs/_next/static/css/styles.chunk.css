@@ -722,122 +722,49 @@ footer .social {
       #go-top a .icon:hover {
         color: #F06000; }
 
-@media screen and (breakpoint(small down)) {
-  .header-nav {
-    background: transparent !important;
-    width: auto;
-    position: fixed;
-    top: 0;
-    right: 0; }
-    .header-nav .title-bar {
-      width: 40px;
-      height: 40px;
-      border: none;
-      float: right;
-      font: 0/0 a;
-      text-shadow: none;
-      color: transparent;
-      position: relative;
-      top: 0px;
-      right: 30px;
-      background-color: #F06000; }
-    .header-nav .title-bar .menu-icon {
-      margin: 4px 0 0 0; }
-    .header-nav .title-bar .menu-icon {
-      color: #fefefe;
-      position: relative;
-      cursor: pointer;
-      width: 20px;
-      height: 16px; }
-    .header-nav .title-bar .menu-icon::after {
-      content: '';
-      position: absolute;
-      display: block;
-      width: 100%;
-      height: 2px;
-      background: #fefefe;
-      top: 0;
-      left: 0;
-      -webkit-box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe;
-      box-shadow: 0 7px 0 #fefefe, 0 14px 0 #fefefe; }
-  @-webkit-keyframes title-bar-slidedown {
-    0% {
-      transform: translateY(-50);
-      opacity: 0; }
-    100% {
-      transform: translateY(0);
-      opacity: 1.0; } }
-  @-moz-keyframes title-bar-slidedown {
-    0% {
-      transform: translateY(-50);
-      opacity: 0; }
-    100% {
-      transform: translateY(0);
-      opacity: 1.0; } }
-  @-o-keyframes title-bar-slidedown {
-    0% {
-      transform: translateY(-50);
-      opacity: 0; }
-    100% {
-      transform: translateY(0);
-      opacity: 1.0; } }
-  @keyframes title-bar-slidedown {
-    0% {
-      transform: translateY(-50);
-      opacity: 0; }
-    100% {
-      transform: translateY(0);
-      opacity: 1.0; } }
-    .header-nav .top-bar {
-      margin: 50px 30px 0;
-      background-color: #0a0a0a;
-      -webkit-animation: title-bar-slidedown .5s ease-in-out;
-      -moz-animation: title-bar-slidedown .5s ease-in-out;
-      -o-animation: title-bar-slidedown .5s ease-in-out;
-      animation: title-bar-slidedown .5s ease-in-out; }
-      .header-nav .top-bar .menu:last-child {
-        border-bottom: 1px solid #2D2E34;
-        border-bottom-style: dotted; }
-      .header-nav .top-bar .menu:first-child {
-        border-bottom: none; }
-      .header-nav .top-bar .menu li:not(:last-child) {
-        border-bottom: 1px solid #2D2E34;
-        border-bottom-style: dotted; }
+@media all and (max-width: 767px) {
+  .navbar {
+    z-index: 100;
+    position: fixed; }
+  nav .navbar-toggler {
+    background: #242424;
+    border-color: #cacaca;
+    z-index: 200; }
+  nav .navbar-nav {
+    background: #242424;
+    display: inline-flex; }
+  .bg-dark {
+    background: #0a0a0a url(/static/images/header-background.gif) repeat top center !important; }
   /* Header Styles
   -------------------------------------------------------------------- */
-  header .banner {
+  #home .banner {
     vertical-align: middle; }
-  header .banner-text h1 {
-    font-size: 68px;
-    line-height: 1.1em;
-    font-family: "opensans-bold", sans-serif; }
-  header .banner-text h3 {
-    font-size: 16px;
-    line-height: 1.9em;
-    font-family: "opensans-bold", sans-serif;
-    width: 85%; }
-  header .banner-text hr {
-    width: 80%;
-    margin: 18px auto; }
-  header .social {
-    margin: 18px 0 24px 0;
-    font-size: 24px;
-    line-height: 36px; }
-    header .social li {
-      margin: 0 10px; }
+    #home .banner .banner-text h3 {
+      font-size: 16px;
+      line-height: 1.9em;
+      font-family: "opensans-bold", sans-serif;
+      width: 85%; }
+    #home .banner .banner-text hr {
+      width: 80%;
+      margin: 18px auto; }
+    #home .banner .social {
+      margin: 18px 0 24px 0;
+      font-size: 24px;
+      line-height: 36px; }
+      #home .banner .social li {
+        margin: 0 10px; }
+  #home .scrolldown a {
+    bottom: 50px; }
   /* Footer Styles
   -------------------------------------------------------------------- */
-  footer .social-links {
-    margin: auto;
+  footer .social {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; }
-    footer .social-links li {
+    footer .social li {
       position: relative;
       display: block;
-      overflow: hidden;
-      padding: 5px;
-      margin: 0 20px; } }
+      overflow: hidden; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/
