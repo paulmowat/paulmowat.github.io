@@ -1553,208 +1553,217 @@ function (_React$Component) {
           lineNumber: 19
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        className: "title",
+      }), "Key Technologies: Node.js, React, Docker, AWS, Postgres, Progress OpenEdge"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         },
         __self: this
-      }, "Principal Software Developer"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
-      }, "\u2022"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("em", {
-        className: "date",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
-      }, "November 2012 - Feburary 2018"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 20
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        className: "title",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
-      }, "Senior Developer"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
-      }, "\u2022"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("em", {
-        className: "date",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 21
-        },
-        __self: this
-      }, "November 2010 - November 2012")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 23
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Leading projects with a team of developers in different locations to ensure all functionality is delivered as specified, on time and to a high quality."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 24
         },
         __self: this
-      }, "Assisting with specifications and coding of new modules on an award-winning payroll system used to pay thousands of people around the UK. This needs to be strictly compliant with HMRC rules and regulations."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Mentoring and supporting teams with different skill sets and experience who are located in different locations."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 25
         },
         __self: this
-      }, "Leading Projects with a team of 12 developers to ensure all functionality is delivered as specified, on time and to a high quality. Including managing work outsourced to India."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Software and database design and implementation on several different technologies i.e. Node.js, React, PostgresSQL, Progress 4GL and MS SQL."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 26
         },
         __self: this
-      }, "Mentoring graduates and other team members who are located both in-house and overseas."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Assisting other teams with migration to cloud based systems i.e. on-premise to cloud based on AWS."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27
         },
         __self: this
-      }, "Database design and implementation on several different database technologies i.e. Progress 4GL and MS SQL."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Research & Development on new functionality/features/technologies including Voice (Alexa/Google Assistant), Chatbots, AI/ML and AR/Augmented Reality"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 28
         },
         __self: this
-      }, "Lead in key technical related issues. This includes managing development, build and release environments for the entire team. This was achieved using technologies such as subversion/githib, ant, jenkins, octopus deploy. Including release deployment was done using Installshield."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Part of the company software architecture team. Involved in deciding how the company moves forward from a technology and architecture point of view. This will impact all teams, totalling 500+ developers and 100+ applications."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 29
         },
         __self: this
-      }, "Helping improve and implement better overall processes. i.e. Development workflows and Agile development methodologies (Scrum)."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 30
-        },
-        __self: this
-      }, "Analysing maintenance issues and providing a quick and efficient turnaround based on customer expectation. Including customer escalations as required and performance tuning."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Part of the company devops community of practice. Involved in helping increase devops awareness, best practice and engagement throughout the company.")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "info",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 31
         },
         __self: this
-      }, "Research & Development on new functionality/features/technologies including hybrid mobile development."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        className: "title",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 32
         },
         __self: this
-      }, "Part of the company software architecture team. Involved in deciding how the company moves forward from a technology and architecture point of view."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Principal Software Developer"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
-        },
-        __self: this
-      }, "General Application and Hardware support.")))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "row",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "col-md-12",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 38
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h3", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "http://www.achilles.com/",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 39
-        },
-        __self: this
-      }, "Achilles Information Ltd (FPAL)")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
-        className: "info",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
-        },
-        __self: this
-      }, "Software Engineer ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 32
         },
         __self: this
       }, "\u2022"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("em", {
         className: "date",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 32
         },
         __self: this
-      }, "May 2009 - November 2010")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+      }, "November 2012 - Feburary 2018"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 32
+        },
+        __self: this
+      }), "Key Technologies: Progress OpenEdge, SQL Server, C#, Java, Node.js, Angular, Docker"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, "Assisting with specifications and coding of new modules on an award-winning payroll system used to pay thousands of people around the UK. This needs to be strictly compliant with HMRC rules and regulations."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, "Leading Projects with a team of 12 developers to ensure all functionality is delivered as specified, on time and to a high quality. Including managing work outsourced to India."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }, "Mentoring graduates and other team members who are located both in-house and overseas."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Database design and implementation on several different database technologies i.e. Progress 4GL, MS SQL and PostgresSQL."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, "Lead in key technical related issues. This includes managing development, build and release environments for the entire team. This was achieved using technologies such as Subversion/Github, Ant, Jenkins, Octopus Deploy, Docker and Amazon AWS. Including external release deployment using Installshield."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, "Helping improve and implement better overall processes i.e. Development workflows and Agile development methodologies (Scrum)."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
           lineNumber: 42
         },
         __self: this
-      }, "Creating specifications and coding new modules to change websites used by thousands of Oil & Gas customers around the world."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Analysing maintenance issues and providing a quick and efficient turnaround based on customer expectation. Including customer escalations as required and performance tuning."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      }, "Research & Development on new functionality/features/technologies including hybrid mobile development."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }, "Part of the company software architecture team consisting of 15 individuals. Involved in deciding how the company moves forward from a technology, devops and architecture point of view. This will impact all teams, totalling 500+ developers and 100+ applications."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 45
         },
         __self: this
-      }, "Tracking down and fixing faults in application and database logic. "), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "General Application and Hardware support for Development/QA team.")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "info",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 47
         },
         __self: this
-      }, "Lead developer in a number of applications, which requires a great deal of workload management to ensure that everything is done within the required deadlines."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        className: "title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 48
         },
         __self: this
-      }, "Writing strict standards compliant code in a number of different languages to match company development and quality assurance policies."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Senior Developer"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, "\u2022"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("em", {
+        className: "date",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, "November 2010 - November 2012"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }), "Key Technologies: Progress OpenEdge, SQL Server, C#, Java"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 52
         },
         __self: this
-      }, "Part of the company standards team which is used to implement better development standards and software quality processes."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Assisting with specifications and coding new modules on a payroll system used to pay hundreds of thousands of people around the UK. This needs to be strictly compliant with HMRC rules and regulations."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }, "Database design and implementation on a number of different database technologies including Progress and MSSQL."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 54
+        },
+        __self: this
+      }, "Dealing with development, build and release environments using subversion. This also includes building releases with Installshield."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 55
         },
         __self: this
-      }, "General Application and Hardware support.")))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+      }, "Analysing maintenance issues and providing a quick and efficient turnaround.")))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
@@ -1775,20 +1784,20 @@ function (_React$Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "http://www.trapezegroup.co.uk/",
+        href: "http://www.achilles.com/",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 61
         },
         __self: this
-      }, "Trapeze Group (Formally Grampian Software)")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+      }, "Achilles Information Ltd (FPAL)")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         className: "info",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 62
         },
         __self: this
-      }, "Programmer ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+      }, "Software Engineer ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 62
@@ -1801,7 +1810,13 @@ function (_React$Component) {
           lineNumber: 62
         },
         __self: this
-      }, "June 2006 - May 2009")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+      }, "May 2009 - November 2010"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 62
+        },
+        __self: this
+      }), "Key Technologies: C#, ASP.NET, SQL Server"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 63
@@ -1813,302 +1828,278 @@ function (_React$Component) {
           lineNumber: 64
         },
         __self: this
-      }, "Maintain and modify programs; make approved changes, develop detailed programming logic, and perform coding changes as per specifications"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Creating specifications and coding new modules to change websites used by thousands of Oil & Gas customers around the world."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 67
         },
         __self: this
-      }, "Create specifications based on customer\u2019s required business logic"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Tracking down and fixing faults in application and database logic. "), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 68
         },
         __self: this
-      }, "Creating and updating documentation to reflect application changes"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 69
-        },
-        __self: this
-      }, "Investigate, Establish and Resolve faults in application logic"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 70
-        },
-        __self: this
-      }, "Managing workload and meeting strict deadlines"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Lead developer in a number of applications, which requires a great deal of workload management to ensure that everything is done within the required deadlines."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 71
         },
         __self: this
+      }, "Writing strict standards compliant code in a number of different languages to match company development and quality assurance policies."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 74
+        },
+        __self: this
+      }, "Part of the company standards team which is used to implement better development standards and software quality processes."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
+        },
+        __self: this
+      }, "General Application and Hardware support.")))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "http://www.trapezegroup.co.uk/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83
+        },
+        __self: this
+      }, "Trapeze Group (Formally Grampian Software)")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "info",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      }, "Programmer ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      }, "\u2022"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("em", {
+        className: "date",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      }, "June 2006 - May 2009"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("br", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84
+        },
+        __self: this
+      }), "Key Technologies: Progress OpenEdge"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 86
+        },
+        __self: this
+      }, "Maintain and modify programs; make approved changes, develop detailed programming logic, and perform coding changes as per specifications"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 89
+        },
+        __self: this
+      }, "Create specifications based on customer\u2019s required business logic"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 90
+        },
+        __self: this
+      }, "Creating and updating documentation to reflect application changes"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 91
+        },
+        __self: this
+      }, "Investigate, Establish and Resolve faults in application logic"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 92
+        },
+        __self: this
+      }, "Managing workload and meeting strict deadlines"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93
+        },
+        __self: this
       }, "Database administration and management"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 72
+          lineNumber: 94
         },
         __self: this
       }, "General application/desktop support for internal staff")))))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 100
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "col-md-3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 101
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 102
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 102
         },
         __self: this
       }, "Education"))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "col-md-9",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 104
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 105
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "col-md-12",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 106
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 107
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
         href: "http://www.rgu.ac.uk",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 107
         },
         __self: this
       }, "Robert Gordon University")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         className: "info",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 108
         },
         __self: this
       }, "BSc Computing for Internet & Multimedia (Hons) ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 108
         },
         __self: this
       }, "\u2022"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("em", {
         className: "date",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 108
         },
         __self: this
       }, "September 2004 - May 2006")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 109
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 110
         },
         __self: this
       }, "Systems Development"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 111
         },
         __self: this
       }, "Software Project Engineering"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 112
         },
         __self: this
       }, "Internet Based Programming & Intranet Systems Development"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 113
         },
         __self: this
       }, "Object Oriented Programming"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 114
         },
         __self: this
       }, "Database Systems"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 115
         },
         __self: this
       }, "Human Computer Interaction"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 116
         },
         __self: this
       }, "Professional Issues"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
-        },
-        __self: this
-      }, "Concurrent Programming"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 96
-        },
-        __self: this
-      }, "Data Mining"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 97
-        },
-        __self: this
-      }, "Concurrent Programming"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 98
-        },
-        __self: this
-      }, "Project Management"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 99
-        },
-        __self: this
-      }, "Interactive Multimedia")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 101
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "static/files/paul-mowat-amos-report.pdf",
-        className: "btn sm-btn-block btn-info mb-2 mb-md-0",
-        role: "button",
-        download: true,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 102
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__["FontAwesomeIcon"], {
-        icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_8__["faDownload"],
-        className: "icon",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 103
-        },
-        __self: this
-      }), "Honours Project - Report"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "static/files/paul-mowat-amos-appendices.pdf",
-        className: "btn sm-btn-block btn-info mb-2 mb-md-0",
-        role: "button",
-        download: true,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 106
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__["FontAwesomeIcon"], {
-        icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_8__["faDownload"],
-        className: "icon",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 107
-        },
-        __self: this
-      }), "Honours Project - Appendices")))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "row",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 113
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
-        className: "col-md-12",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 114
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h3", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 115
-        },
-        __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
-        href: "http://www.nescol.ac.uk/banffandbuchancollege",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 115
-        },
-        __self: this
-      }, "Banff and Buchan College")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
-        className: "info",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 116
-        },
-        __self: this
-      }, "HND Software Development ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 116
-        },
-        __self: this
-      }, "\u2022"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("em", {
-        className: "date",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 116
-        },
-        __self: this
-      }, "August 2002 to May 2004")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 117
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Concurrent Programming"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 118
         },
         __self: this
-      }, "Communication"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Data Mining"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 119
@@ -2120,52 +2111,171 @@ function (_React$Component) {
           lineNumber: 120
         },
         __self: this
-      }, "Introduction to Networking"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Project Management"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 121
         },
         __self: this
-      }, "Software Design and Development"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 122
-        },
-        __self: this
-      }, "Concurrent Programming"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, "Interactive Multimedia")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 123
         },
         __self: this
-      }, "Web Programming"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "static/files/paul-mowat-amos-report.pdf",
+        className: "btn sm-btn-block btn-info mb-2 mb-md-0",
+        role: "button",
+        download: true,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 124
         },
         __self: this
-      }, "Computer System Fundamentals"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__["FontAwesomeIcon"], {
+        icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_8__["faDownload"],
+        className: "icon",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 125
         },
         __self: this
+      }), "Honours Project - Report"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "static/files/paul-mowat-amos-appendices.pdf",
+        className: "btn sm-btn-block btn-info mb-2 mb-md-0",
+        role: "button",
+        download: true,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 128
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_7__["FontAwesomeIcon"], {
+        icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_8__["faDownload"],
+        className: "icon",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 129
+        },
+        __self: this
+      }), "Honours Project - Appendices")))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "row",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 135
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+        className: "col-md-12",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 136
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h3", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 137
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("a", {
+        href: "http://www.nescol.ac.uk/banffandbuchancollege",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 137
+        },
+        __self: this
+      }, "Banff and Buchan College")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+        className: "info",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 138
+        },
+        __self: this
+      }, "HND Software Development ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("span", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 138
+        },
+        __self: this
+      }, "\u2022"), " ", react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("em", {
+        className: "date",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 138
+        },
+        __self: this
+      }, "August 2002 to May 2004")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 139
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 140
+        },
+        __self: this
+      }, "Communication"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 141
+        },
+        __self: this
+      }, "Concurrent Programming"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 142
+        },
+        __self: this
+      }, "Introduction to Networking"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 143
+        },
+        __self: this
+      }, "Software Design and Development"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 144
+        },
+        __self: this
+      }, "Concurrent Programming"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 145
+        },
+        __self: this
+      }, "Web Programming"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 146
+        },
+        __self: this
+      }, "Computer System Fundamentals"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 147
+        },
+        __self: this
       }, "Troubleshooting Computer Problems"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 126
+          lineNumber: 148
         },
         __self: this
       }, "Professionalism and Ethics in Computing"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 127
+          lineNumber: 149
         },
         __self: this
       }, "Data Structures"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 128
+          lineNumber: 150
         },
         __self: this
       }, "Introduction to Databases & SQL")))))));
@@ -2567,19 +2677,19 @@ var items = [{
         lineNumber: 18
       },
       __self: this
-    }, "Talented Individual\u2019 is the phrase that comes to mind when I think about Paul. I had the pleasure of working with Paul for near on three years at Advanced, collaborating on many high profile projects. I was particularly impressed by Paul's ability to understand new technology and able to research and find the solution to the problems we faced. Oh, and he made sure I got emailed about Friday lunchtime staff choices be it Chinese, Thai, chippy etc even though there was some 450+ miles between our office's. Talk about motivating a team! Paul would be an asset to any team."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
+    }, "I worked with Paul for a number of years at Advanced where Paul worked as Principle Developer and Architect on our Payroll and Cash Flow Forecasting products. Paul is a natural communicator and problem solver, with a friendly, can do attitude. He has a great ability to learn new technologies whilst applying rigour through good development and architectural principles. A natural technical communicator that translates to an easy and friendly communication and leadership style. No challenge was too big and always executed with a smile, good humour and technical adeptness. An asset to any Engineering team!"), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 24
       },
       __self: this
-    }, "John Goodland ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+    }, "Ben Bishop ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 24
       },
       __self: this
-    }, "\u2022"), " Principal Presales Consultant @ Axway"));
+    }, "\u2022"), " Chief Operating Officer @ XCD Limited"));
   }
 }, {
   id: 2,
@@ -2587,28 +2697,28 @@ var items = [{
     return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("blockquote", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 32
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 32
+        lineNumber: 33
       },
       __self: this
-    }, "Paul is a top class developer who can be relied on to deliver excellent work. He will introduce new development techniques/processes to the team in order to improve the output of the whole department. Is always looking to find new ways to improve his own knowledge."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
+    }, "I worked closely with Paul at Advanced Computer Software for over 7 years - I headed up the payroll product function and he was a key member of the payroll development team. Paul has very strong technical skills with a genuine aptitude to think out of the box. He grasps complex issues quickly offering suggested solutions in a timely manner. He is engaging, a fantastic mentor and always willing to give time to support his peers. Paul has since taken up the role of Technical Architect at Advanced, a role entirely suited to him providing access to new technologies and processes, and allowing influence over product direction."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 39
       },
       __self: this
-    }, "Barry Moar ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+    }, "Graeme Walker ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 39
       },
       __self: this
-    }, "\u2022"), " Senior QA Analyst @ Advanced Computer Software"));
+    }, "\u2022"), " Payroll Product Manager @ XCD Limited"));
   }
 }, {
   id: 3,
@@ -2616,28 +2726,28 @@ var items = [{
     return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("blockquote", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 48
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 49
       },
       __self: this
-    }, "Paul is a highly organized, goal oriented, independent and hardworking perfectionist always ready to put all his energy and stamina to get the job done. He has many years of experience in software development and he is always passionate about his field."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
+    }, "Not only is Paul a very amiable fellow , he is quite simply one of the most talented developers I've had the pleasure of working with in my IT career. We worked together as developers in Aberdeen at Advanced. The majority of jobs at that time dealt mainly working with Progress/OpenEdge technologies on many in-house systems. Paul has that \"can-do\" attitude you'd wish in a developer, and an ability to rapidly learn IT technologies that are thrown at him. He excels in learning new systems. Coupled together with his understanding for business requirements and a belief in getting things done properly, I can't recommend Paul highly enough."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 55
       },
       __self: this
-    }, "Rajesh Kumar Plamthottathil ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+    }, "David Walker ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47
+        lineNumber: 55
       },
       __self: this
-    }, "\u2022"), " Senior Developer @  Advanced Computer Software"));
+    }, "\u2022"), " Senior Developer @ Pace IT Systems Ltd"));
   }
 }, {
   id: 4,
@@ -2645,28 +2755,28 @@ var items = [{
     return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("blockquote", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 55
+        lineNumber: 64
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 65
       },
       __self: this
-    }, "Paul is a very knowledgeable and experienced developer. When I worked with him I always found him to grasp new ideas quickly and the standard of his work was always very high. He was also very easy to work with and popular in the office."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
+    }, "Talented Individual\u2019 is the phrase that comes to mind when I think about Paul. I had the pleasure of working with Paul for near on three years at Advanced, collaborating on many high profile projects. I was particularly impressed by Paul's ability to understand new technology and able to research and find the solution to the problems we faced. Oh, and he made sure I got emailed about Friday lunchtime staff choices be it Chinese, Thai, chippy etc even though there was some 450+ miles between our office's. Talk about motivating a team! Paul would be an asset to any team."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 70
       },
       __self: this
-    }, "Michael Charles ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+    }, "John Goodland ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 60
+        lineNumber: 70
       },
       __self: this
-    }, "\u2022"), " Director and Co-founder @ Escone Solutions Ltd"));
+    }, "\u2022"), " Principal Presales Consultant @ Axway"));
   }
 }, {
   id: 5,
@@ -2674,28 +2784,28 @@ var items = [{
     return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("blockquote", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 78
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 69
+        lineNumber: 79
       },
       __self: this
-    }, "Paul is committed to his work and sets very high personal standards. He has a great sense of personal responsibility and always takes ownership of problems within his area. Rather than letting a situation escalate, he acts immediately to get a handle on the problem and resolve it. He does a great job of spotting the underlying elements of problems. He would be an asset to any company."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
+    }, "Paul is a top class developer who can be relied on to deliver excellent work. He will introduce new development techniques/processes to the team in order to improve the output of the whole department. Is always looking to find new ways to improve his own knowledge."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
+        lineNumber: 81
       },
       __self: this
-    }, "Saroj Kumar Maharana ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+    }, "Barry Moar ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 74
+        lineNumber: 81
       },
       __self: this
-    }, "\u2022"), " Senior Development Programmer @ Advanced India"));
+    }, "\u2022"), " Senior QA Analyst @ Advanced Computer Software"));
   }
 }, {
   id: 6,
@@ -2703,25 +2813,112 @@ var items = [{
     return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("blockquote", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82
+        lineNumber: 89
       },
       __self: this
     }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83
+        lineNumber: 90
+      },
+      __self: this
+    }, "Paul is a highly organized, goal oriented, independent and hardworking perfectionist always ready to put all his energy and stamina to get the job done. He has many years of experience in software development and he is always passionate about his field."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
+      },
+      __self: this
+    }, "Rajesh Kumar Plamthottathil ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 94
+      },
+      __self: this
+    }, "\u2022"), " Senior Developer @  Advanced Computer Software"));
+  }
+}, {
+  id: 7,
+  src: function src() {
+    return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("blockquote", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 102
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 103
+      },
+      __self: this
+    }, "Paul is a very knowledgeable and experienced developer. When I worked with him I always found him to grasp new ideas quickly and the standard of his work was always very high. He was also very easy to work with and popular in the office."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107
+      },
+      __self: this
+    }, "Michael Charles ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107
+      },
+      __self: this
+    }, "\u2022"), " Director and Co-founder @ Escone Solutions Ltd"));
+  }
+}, {
+  id: 8,
+  src: function src() {
+    return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("blockquote", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 115
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 116
+      },
+      __self: this
+    }, "Paul is committed to his work and sets very high personal standards. He has a great sense of personal responsibility and always takes ownership of problems within his area. Rather than letting a situation escalate, he acts immediately to get a handle on the problem and resolve it. He does a great job of spotting the underlying elements of problems. He would be an asset to any company."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121
+      },
+      __self: this
+    }, "Saroj Kumar Maharana ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121
+      },
+      __self: this
+    }, "\u2022"), " Senior Development Programmer @ Advanced India"));
+  }
+}, {
+  id: 9,
+  src: function src() {
+    return react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("blockquote", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 129
+      },
+      __self: this
+    }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("p", {
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 130
       },
       __self: this
     }, "During Paul's time as the Software Engineer at Achilles Information in Aberdeen, he showed his excellent abilities in learning new technologies, applying his skills in thinking and problem solving to provide a top level of service to the company. This included delivering to multiple projects on different platforms and technologies at the same time to tight time-scales. I have thoroughly enjoyed working with Paul and would welcome the opportunity to work with him again in the future, I have no hesitation in recommending Paul as a first class Software Engineer who I'm sure will quickly move onwards and upwards in his chosen profession."), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("cite", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91
+        lineNumber: 138
       },
       __self: this
     }, "Steve Gunn ", react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91
+        lineNumber: 138
       },
       __self: this
     }, "\u2022"), " IT Projects Manager @ Atlas Knowledge"));
@@ -2799,7 +2996,7 @@ function (_React$Component) {
           key: item.id,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 139
+            lineNumber: 186
           },
           __self: this
         }, item.src());
@@ -2810,21 +3007,21 @@ function (_React$Component) {
         fluid: true,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150
+          lineNumber: 197
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "row",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151
+          lineNumber: 198
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "col-md-2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 152
+          lineNumber: 199
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_9__["FontAwesomeIcon"], {
@@ -2832,14 +3029,14 @@ function (_React$Component) {
         className: "recommendation-icon",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 153
+          lineNumber: 200
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement("div", {
         className: "col-md-10",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 155
+          lineNumber: 202
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_8__["Carousel"], {
@@ -2848,7 +3045,7 @@ function (_React$Component) {
         previous: this.previous,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 156
+          lineNumber: 203
         },
         __self: this
       }, slides, react__WEBPACK_IMPORTED_MODULE_6___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_8__["CarouselIndicators"], {
@@ -2857,7 +3054,7 @@ function (_React$Component) {
         onClickHandler: this.handleGoToIndex,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 162
+          lineNumber: 209
         },
         __self: this
       })))));
