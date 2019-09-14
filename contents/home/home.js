@@ -17,7 +17,7 @@ class Home extends React.Component {
               <Textfit mode='single' min={36} max={100} className='header'>
                 Paul Mowat.
               </Textfit>
-              <h3>I'm a <span>developer</span> based in <span>Boddam/Aberdeen</span> Scotland <br /> with experience in <span>Application</span>, <span>Web</span> and <span>Mobile</span> development.</h3>
+              <h3>I'm a <span>software architect</span> based in <span>Boddam/Aberdeen</span> Scotland <br /> with experience in <span>Application</span>, <span>Web</span> and <span>Mobile</span> development.</h3>
               <hr />
               <ul className='social'>
 

@@ -15,6 +15,53 @@ const items = [
     src: () => {
       return (
         <blockquote>
+          <p>I worked with Paul for a number of years at Advanced where Paul worked as Principle Developer and Architect on our Payroll and Cash Flow Forecasting products.
+            Paul is a natural communicator and problem solver, with a friendly, can do attitude. He has a great ability to learn new technologies whilst applying rigour through good development
+            and architectural principles. A natural technical communicator that translates to an easy and friendly communication and leadership style.
+            No challenge was too big and always executed with a smile, good humour and technical adeptness.
+            An asset to any Engineering team!
+          </p>
+          <cite>Ben Bishop <span>&bull;</span> Chief Operating Officer @ XCD Limited</cite>
+        </blockquote>
+      )
+    }
+  }, {
+    id: 2,
+    src: () => {
+      return (
+        <blockquote>
+          <p>I worked closely with Paul at Advanced Computer Software for over 7 years - I headed up the payroll product function and he was a key member of the payroll development team.
+            Paul has very strong technical skills with a genuine aptitude to think out of the box. He grasps complex issues quickly offering suggested solutions in a timely manner.
+            He is engaging, a fantastic mentor and always willing to give time to support his peers.
+            Paul has since taken up the role of Technical Architect at Advanced, a role entirely suited to him providing access to new technologies and processes,
+            and allowing influence over product direction.
+          </p>
+          <cite>Graeme Walker <span>&bull;</span> Payroll Product Manager @ XCD Limited</cite>
+        </blockquote>
+      )
+    }
+  },
+  {
+    id: 3,
+    src: () => {
+      return (
+        <blockquote>
+          <p>Not only is Paul a very amiable fellow , he is quite simply one of the most talented developers I've had the pleasure of working with in my IT career.
+            We worked together as developers in Aberdeen at Advanced. The majority of jobs at that time dealt mainly working with Progress/OpenEdge technologies on
+            many in-house systems. Paul has that "can-do" attitude you'd wish in a developer, and an ability to rapidly learn IT technologies that are thrown at him.
+            He excels in learning new systems. Coupled together with his understanding for business requirements and a belief in getting things done properly,
+            I can't recommend Paul highly enough.
+          </p>
+          <cite>David Walker <span>&bull;</span> Senior Developer @ Pace IT Systems Ltd</cite>
+        </blockquote>
+      )
+    }
+  },
+  {
+    id: 4,
+    src: () => {
+      return (
+        <blockquote>
           <p>Talented Individual’ is the phrase that comes to mind when I think about Paul.
           I had the pleasure of working with Paul for near on three years at Advanced, collaborating on many high profile projects. I was particularly impressed by Paul's ability to understand new technology and able to research and find the solution to the problems we faced.
           Oh, and he made sure I got emailed about Friday lunchtime staff choices be it Chinese, Thai, chippy etc even though there was some 450+ miles between our office's. Talk about motivating a team!
@@ -25,7 +72,7 @@ const items = [
       )
     }
   }, {
-    id: 2,
+    id: 5,
     src: () => {
       return (
         <blockquote>
@@ -36,7 +83,7 @@ const items = [
       )
     }
   }, {
-    id: 3,
+    id: 6,
     src: () => {
       return (
         <blockquote>
@@ -49,7 +96,7 @@ const items = [
       )
     }
   }, {
-    id: 4,
+    id: 7,
     src: () => {
       return (
         <blockquote>
@@ -62,7 +109,7 @@ const items = [
       )
     }
   }, {
-    id: 5,
+    id: 8,
     src: () => {
       return (
         <blockquote>
@@ -76,7 +123,7 @@ const items = [
       )
     }
   }, {
-    id: 6,
+    id: 9,
     src: () => {
       return (
         <blockquote>
@@ -160,8 +207,6 @@ class Recommendations extends React.Component {
             >
               {slides}
               <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.handleGoToIndex} />
-              {/* <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-            <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} /> */}
             </Carousel>
           </div>
         </div>

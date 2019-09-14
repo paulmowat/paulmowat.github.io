@@ -16,7 +16,7 @@ function Start (props) {
         <Home />
         <About />
         <Cv />
-        <Skills />
+        {/* <Skills /> */}
         <Recommendations />
         <Contact />
       </MainContainer>
