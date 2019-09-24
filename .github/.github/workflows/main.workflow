@@ -1,8 +1,8 @@
 workflow "CI" {
-  on = "push"
   resolves = [
-    "gimenete/eslint-action@1.0"
+    "gimenete/eslint-action@1.0",
   ]
+  on = "pull_request"
 }
 
 action "gimenete/eslint-action@1.0" {
