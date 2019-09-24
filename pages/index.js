@@ -5,6 +5,7 @@ import { Layout, MainContainer } from '../components/layout'
 import { Home } from '../contents/home'
 import { About } from '../contents/about'
 import { Cv } from '../contents/cv'
+import { Skills } from '../contents/skills'
 import { Recommendations } from '../contents/recommendations'
 import { Contact } from '../contents/contact'
 
