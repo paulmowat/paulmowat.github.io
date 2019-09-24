@@ -6,7 +6,6 @@ import { Home } from '../contents/home'
 import { About } from '../contents/about'
 import { Cv } from '../contents/cv'
 import { Recommendations } from '../contents/recommendations'
-import { Skills } from '../contents/skills'
 import { Contact } from '../contents/contact'
 
 function Start (props) {
@@ -16,7 +15,6 @@ function Start (props) {
         <Home />
         <About />
         <Cv />
-        {/* <Skills /> */}
         <Recommendations />
         <Contact />
       </MainContainer>
