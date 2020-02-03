@@ -39,12 +39,6 @@ class Contact extends React.Component {
     }, this.submitForm)
   }
 
-  handleErrorSubmit = (e, formData, errorInputs) => {
-    e.preventDefault()
-    e.stopPropagation()
-    console.error(errorInputs)
-  }
-
   submitForm () {
     const data = {
       contactName: this.state.formData.contactName,
@@ -92,7 +86,7 @@ class Contact extends React.Component {
           </div>
         </div>
         <div className='row'>
-          <form id='contactForm' name='contactForm' onSubmit={this.handleSubmit} onErrorSubmit={this.handleErrorSubmit}>
+          <form id='contactForm' name='contactForm' onSubmit={this.handleSubmit}>
             <div className='form-group'>
               <label htmlFor='contactName'>Name <span className='required'>*</span></label>
               <input type='text' size='35' id='contactName' name='contactName' required value={this.state.formData.contactName} onChange={this.handleChange} />

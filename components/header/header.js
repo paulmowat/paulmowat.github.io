@@ -4,7 +4,6 @@ import Head from 'next/head'
 
 export class HeadLayout extends React.Component {
   render () {
-    console.log(this.props)
     return (
       <Head>
         <title>Paul Mowat - {this.props.title}</title>
