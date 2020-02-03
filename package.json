@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "deploy": "git rm -rf docs && next build && next export -o docs && cp CNAME docs/CNAME && cp .nojekyll docs/.nojekyll && git add docs && git commit -m \"Auto Deploy\" && git push origin master",
-    "lint": "./node_modules/.bin/eslint . --ext .js"
+    "lint": "./node_modules/.bin/eslint . --ext .js",
+    "build": "next build",
+    "export": "next export",
+    "deploy": "npm run build && npm run export"
   },
   "keywords": [],
   "author": "",
