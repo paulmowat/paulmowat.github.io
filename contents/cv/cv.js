@@ -30,7 +30,7 @@ class Cv extends React.Component {
                 </ul>
                 <p className='info'>
                   <span className='title'>Principal Software Developer</span> <span>&bull;</span> <em className='date'>November 2012 - Feburary 2018</em><br />
-                    Key Technologies: Progress OpenEdge, SQL Server, C#, Java, Node.js, Angular, Docker
+                  Key Technologies: Progress OpenEdge, SQL Server, C#, Java, Node.js, Angular, Docker
                 </p>
                 <ul>
                   <li>Assisting with specifications and coding of new modules on an award-winning payroll system used to pay thousands of people around the UK. This needs to be strictly compliant with HMRC rules and regulations.</li>

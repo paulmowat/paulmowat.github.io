@@ -63,9 +63,9 @@ const items = [
       return (
         <blockquote>
           <p>Talented Individual’ is the phrase that comes to mind when I think about Paul.
-          I had the pleasure of working with Paul for near on three years at Advanced, collaborating on many high profile projects. I was particularly impressed by Paul's ability to understand new technology and able to research and find the solution to the problems we faced.
-          Oh, and he made sure I got emailed about Friday lunchtime staff choices be it Chinese, Thai, chippy etc even though there was some 450+ miles between our office's. Talk about motivating a team!
-          Paul would be an asset to any team.
+            I had the pleasure of working with Paul for near on three years at Advanced, collaborating on many high profile projects. I was particularly impressed by Paul's ability to understand new technology and able to research and find the solution to the problems we faced.
+            Oh, and he made sure I got emailed about Friday lunchtime staff choices be it Chinese, Thai, chippy etc even though there was some 450+ miles between our office's. Talk about motivating a team!
+            Paul would be an asset to any team.
           </p>
           <cite>John Goodland <span>&bull;</span> Principal Presales Consultant @ Axway</cite>
         </blockquote>
@@ -101,8 +101,8 @@ const items = [
       return (
         <blockquote>
           <p>Paul is a very knowledgeable and experienced developer. When I worked with him I always found him to grasp
-          new ideas quickly and the standard of his work was always very high. He was also very easy to work with
-          and popular in the office.
+            new ideas quickly and the standard of his work was always very high. He was also very easy to work with
+            and popular in the office.
           </p>
           <cite>Michael Charles <span>&bull;</span> Director and Co-founder @ Escone Solutions Ltd</cite>
         </blockquote>

@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "lint": "./node_modules/.bin/eslint . --ext .js",
+    "lint": "./node_modules/.bin/eslint . --ext .js --fix",
     "build": "next build",
     "export": "next export",
     "deploy": "npm run build && npm run export"
@@ -24,8 +24,8 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "css-loader": "^1.0.1",
-    "next": "^9.2.1",
-    "node-sass": "^4.13.1",
+    "next": "^9.5.3",
+    "node-sass": "^4.14.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scrollable-anchor": "^0.6.1",
