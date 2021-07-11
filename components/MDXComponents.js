@@ -3,7 +3,7 @@ import CustomLink from './Link'
 
 const MDXComponents = {
   Image,
-  a: CustomLink,
+  a: CustomLink
 }
 
 export default MDXComponents

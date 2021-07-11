@@ -10,37 +10,35 @@ import path from 'path'
 
 const root = process.cwd()
 
-export async function getStaticPaths() {
-  const tags = await getAllTags(['blog', 'snippets'])
+export async function getStaticPaths () {
+  const tags = await getAllTags(['blog'])
 
   return {
     paths: Object.keys(tags).map((tag) => ({
       params: {
-        tag,
-      },
+        tag
+      }
     })),
-    fallback: false,
+    fallback: false
   }
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps ({ params }) {
   const blogPosts = await getAllFilesFrontMatter('blog')
-  const snippetsPosts = await getAllFilesFrontMatter('snippets')
-  const allPosts = [...blogPosts, ...snippetsPosts]
-  const filteredPosts = allPosts.filter(
+  const filteredPosts = blogPosts.filter(
     (post) => post.draft !== true && post.tags.map((t) => kebabCase(t)).includes(params.tag)
   )
 
   // rss
-  const rss = generateRss(filteredPosts, `tags/${params.tag}/index.xml`)
-  const rssPath = path.join(root, 'public', 'tags', params.tag)
+  const rss = generateRss(filteredPosts, `blog/tags/${params.tag}/rss.xml`)
+  const rssPath = path.join(root, 'public', 'blog', 'tags', params.tag)
   fs.mkdirSync(rssPath, { recursive: true })
-  fs.writeFileSync(path.join(rssPath, 'index.xml'), rss)
+  fs.writeFileSync(path.join(rssPath, 'rss.xml'), rss)
 
   return { props: { posts: filteredPosts, tag: params.tag } }
 }
 
-export default function Tag({ posts, tag }) {
+export default function Tag ({ posts, tag }) {
   // Capitalize first letter and convert space to dash
   const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1)
   return (
@@ -48,7 +46,7 @@ export default function Tag({ posts, tag }) {
       <PageSeo
         title={`${tag} - ${siteMetadata.title}`}
         description={`${tag} tags - ${siteMetadata.title}`}
-        url={`${siteMetadata.siteUrl}/tags/${tag}`}
+        url={`${siteMetadata.siteUrl}/blog/tags/${tag}`}
       />
       <TagsListLayout posts={posts} title={title} />
     </>

@@ -15,21 +15,21 @@ export const SEO = {
         url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
         alt: siteMetadata.title,
         width: 1200,
-        height: 600,
-      },
-    ],
+        height: 600
+      }
+    ]
   },
   twitter: {
     handle: siteMetadata.twitter,
     site: siteMetadata.twitter,
-    cardType: 'summary_large_image',
+    cardType: 'summary_large_image'
   },
   additionalMetaTags: [
     {
       name: 'author',
-      content: siteMetadata.author,
-    },
-  ],
+      content: siteMetadata.author
+    }
+  ]
 }
 
 export const PageSeo = ({ title, description, url }) => {
@@ -41,7 +41,7 @@ export const PageSeo = ({ title, description, url }) => {
       openGraph={{
         url,
         title,
-        description,
+        description
       }}
     />
   )
@@ -50,17 +50,17 @@ export const PageSeo = ({ title, description, url }) => {
 export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] }) => {
   const publishedAt = new Date(date).toISOString()
   const modifiedAt = new Date(lastmod || date).toISOString()
-  let imagesArr =
+  const imagesArr =
     images.length === 0
       ? [siteMetadata.socialBanner]
       : typeof images === 'string'
-      ? [images]
-      : images
+        ? [images]
+        : images
 
   const featuredImages = imagesArr.map((img) => {
     return {
       url: `${siteMetadata.siteUrl}${img}`,
-      alt: title,
+      alt: title
     }
   })
 
@@ -76,18 +76,18 @@ export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] 
             publishedTime: publishedAt,
             modifiedTime: modifiedAt,
             authors: [`${siteMetadata.siteUrl}/about`],
-            tags,
+            tags
           },
           url,
           title,
           description: summary,
-          images: featuredImages,
+          images: featuredImages
         }}
         additionalMetaTags={[
           {
             name: 'twitter:image',
-            content: featuredImages[0].url,
-          },
+            content: featuredImages[0].url
+          }
         ]}
       />
       <ArticleJsonLd

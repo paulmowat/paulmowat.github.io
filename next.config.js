@@ -1,12 +1,22 @@
+const withPlugins = require('next-compose-plugins')
+
+const withPWA = require('next-pwa')
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
+  enabled: process.env.ANALYZE === 'true'
 })
 
-module.exports = withBundleAnalyzer({
+module.exports = withPlugins([
+  withBundleAnalyzer,
+  withPWA
+], {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
   future: {
-    webpack5: true,
+    webpack5: true
+  },
+  pwa: {
+    dest: 'public'
   },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
@@ -16,26 +26,26 @@ module.exports = withBundleAnalyzer({
           loader: 'file-loader',
           options: {
             publicPath: '/_next',
-            name: 'static/media/[name].[hash].[ext]',
-          },
-        },
-      ],
+            name: 'static/media/[name].[hash].[ext]'
+          }
+        }
+      ]
     })
 
     config.module.rules.push({
       test: /\.svg$/,
-      use: ['@svgr/webpack'],
+      use: ['@svgr/webpack']
     })
 
-    if (!dev && !isServer) {
-      // Replace React with Preact only in client production build
-      Object.assign(config.resolve.alias, {
-        react: 'preact/compat',
-        'react-dom/test-utils': 'preact/test-utils',
-        'react-dom': 'preact/compat',
-      })
-    }
+    // if (!dev && !isServer) {
+    //   // Replace React with Preact only in client production build
+    //   Object.assign(config.resolve.alias, {
+    //     react: 'preact/compat',
+    //     'react-dom/test-utils': 'preact/test-utils',
+    //     'react-dom': 'preact/compat'
+    //   })
+    // }
 
     return config
-  },
+  }
 })

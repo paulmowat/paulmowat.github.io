@@ -1,17 +1,15 @@
 const fs = require('fs')
 const globby = require('globby')
-const prettier = require('prettier')
 const siteMetadata = require('../config/siteMetadata')
 
 ;(async () => {
-  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
   const pages = await globby([
     'pages/*.js',
     'data/**/*.mdx',
     'data/**/*.md',
-    'public/tags/**/*.xml',
+    'public/blog/tags/**/*.xml',
     '!pages/_*.js',
-    '!pages/api',
+    '!pages/api'
   ])
 
   const sitemap = `
@@ -22,7 +20,6 @@ const siteMetadata = require('../config/siteMetadata')
                 const path = page
                   .replace('pages/', '/')
                   .replace('data/blog', '/blog')
-                  .replace('data/snippets', '/snippets')
                   .replace('public/', '/')
                   .replace('.js', '')
                   .replace('.mdx', '')
@@ -39,11 +36,6 @@ const siteMetadata = require('../config/siteMetadata')
         </urlset>
     `
 
-  const formatted = prettier.format(sitemap, {
-    ...prettierConfig,
-    parser: 'html',
-  })
-
   // eslint-disable-next-line no-sync
-  fs.writeFileSync('public/sitemap.xml', formatted)
+  fs.writeFileSync('public/sitemap.xml', sitemap)
 })()

@@ -13,20 +13,20 @@ const discussUrl = (slug) =>
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function PostLayout({ children, frontMatter, next, prev }) {
+export default function PostLayout ({ children, frontMatter, next, prev }) {
   const { slug, fileName, date, title, tags } = frontMatter
 
   return (
     <SectionContainer>
       <BlogSeo url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
       <article>
-        <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
-          <header className="pt-6 xl:pb-6">
-            <div className="space-y-1 text-center">
-              <dl className="space-y-10">
+        <div className='xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700'>
+          <header className='pt-6 xl:pb-6'>
+            <div className='space-y-1 text-center'>
+              <dl className='space-y-10'>
                 <div>
-                  <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <dt className='sr-only'>Published on</dt>
+                  <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                     </time>
@@ -36,9 +36,9 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
-              <div className="py-2 xl:py-3">
-                <div className="text-xs tracking-wide text-gray-500 dark:text-gray-400">
-                  <div className=" text-center">
+              <div className='py-2 xl:py-3'>
+                <div className='text-xs tracking-wide text-gray-500 dark:text-gray-400'>
+                  <div className=' text-center'>
                     {tags.map((tag) => (
                       <Tag key={tag} text={tag} />
                     ))}
@@ -48,7 +48,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             </div>
           </header>
           <div
-            className="pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700"
+            className='pb-8 divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700'
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             {/* <dl className="pt-6 pb-10 xl:pt-11 xl:border-b xl:border-gray-200 xl:dark:border-gray-700">
@@ -78,36 +78,36 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                 </ul>
               </dd>
             </dl> */}
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0">
-              <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
+            <div className='divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0'>
+              <div className='pt-10 pb-8 prose dark:prose-dark max-w-none'>{children}</div>
+              <div className='pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300'>
+                <Link href={discussUrl(slug)} rel='nofollow'>
+                  Discuss on Twitter
                 </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                {' • '}
+                <Link href={editUrl(fileName)}>View on GitHub</Link>
               </div>
             </div>
             <footer>
-              <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
+              <div className='text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2'>
                 {(next || prev) && (
-                  <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
+                  <div className='flex justify-between py-4 xl:block xl:space-y-8 xl:py-8'>
                     {prev && (
                       <div>
-                        <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+                        <h2 className='text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400'>
                           Previous Article
                         </h2>
-                        <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
+                        <div className='text-blue-500 hover:text-blue-600 dark:hover:text-blue-400'>
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
                     )}
                     {next && (
                       <div>
-                        <h2 className="text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400">
+                        <h2 className='text-xs tracking-wide text-gray-500 uppercase dark:text-gray-400'>
                           Next Article
                         </h2>
-                        <div className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
+                        <div className='text-blue-500 hover:text-blue-600 dark:hover:text-blue-400'>
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>

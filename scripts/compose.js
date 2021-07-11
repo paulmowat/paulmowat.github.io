@@ -9,11 +9,11 @@ const fileName = title
   .replace(/[^a-zA-Z0-9 ]/g, '')
   .replace(/ /g, '-')
   .replace(/-+/g, '-')
-let d = new Date()
+const d = new Date()
 const date = [
   d.getFullYear(),
   ('0' + (d.getMonth() + 1)).slice(-2),
-  ('0' + d.getDate()).slice(-2),
+  ('0' + d.getDate()).slice(-2)
 ].join('-')
 
 const frontMatter = `---

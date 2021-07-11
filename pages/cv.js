@@ -2,7 +2,7 @@ import siteMetadata from '@/config/siteMetadata'
 import SvgIcon from '@/components/svgs'
 import { PageSeo } from '@/components/SEO'
 
-export default function About() {
+export default function About () {
   return (
     <>
       <PageSeo
@@ -10,28 +10,39 @@ export default function About() {
         description={`CV - ${siteMetadata.author}`}
         url={`${siteMetadata.siteUrl}/cv`}
       />
-      <div className="divide-y">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+      <div className='divide-y'>
+        <div className='pt-6 pb-8 space-y-2 md:space-y-5'>
+          <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14'>
             CV
           </h1>
         </div>
-        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-          <div className="prose dark:prose-dark max-w-none xl:col-span-3">
-            <div className="col-md-3">
+        <div className='items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0'>
+          <div className='prose dark:prose-dark max-w-none xl:col-span-3'>
+            <div className='col-md-3'>
               <h2>
                 <span>Work</span>
               </h2>
             </div>
-            <div className="col-md-9">
-              <div className="prose dark:prose-dark max-w-none xl:col-span-3">
-                <div className="col-md-12">
+            <div className='col-md-9'>
+              <div className='prose dark:prose-dark max-w-none xl:col-span-3'>
+                <div className='col-md-12'>
                   <h3>
-                    <a href="http://www.oneadvanced.com">Advanced</a>
+                    <a href='http://www.oneadvanced.com'>Advanced</a>
                   </h3>
-                  <p className="info">
-                    <span className="title">ERP Architect</span> <span>&bull;</span>{' '}
-                    <em className="date">March 2018 - Present</em>
+                  <p className='info'>
+                    <span className='title'>Principal DevOps Architect</span> <span>&bull;</span>{' '}
+                    <em className='date'>June 2021 - Present</em>
+                    <br />
+                    Key Technologies: Node.js, Javascript, AWS, Docker
+                  </p>
+                  <ul>
+                    <li>
+                      Core involvement in defining the company go forward Cloud migration strategy
+                    </li>
+                  </ul>
+                  <p className='info'>
+                    <span className='title'>ERP Architect</span> <span>&bull;</span>{' '}
+                    <em className='date'>March 2018 - May 2021</em>
                     <br />
                     Key Technologies: Node.js, React, Docker, AWS, Postgres, Progress OpenEdge
                   </p>
@@ -67,9 +78,9 @@ export default function About() {
                       devops awareness, best practice and engagement throughout the company.
                     </li>
                   </ul>
-                  <p className="info">
-                    <span className="title">Principal Software Developer</span> <span>&bull;</span>{' '}
-                    <em className="date">November 2012 - Feburary 2018</em>
+                  <p className='info'>
+                    <span className='title'>Principal Software Developer</span> <span>&bull;</span>{' '}
+                    <em className='date'>November 2012 - Feburary 2018</em>
                     <br />
                     Key Technologies: Progress OpenEdge, SQL Server, C#, Java, Node.js, Angular,
                     Docker
@@ -120,9 +131,9 @@ export default function About() {
                     </li>
                     <li>General Application and Hardware support for Development/QA team.</li>
                   </ul>
-                  <p className="info">
-                    <span className="title">Senior Developer</span> <span>&bull;</span>{' '}
-                    <em className="date">November 2010 - November 2012</em>
+                  <p className='info'>
+                    <span className='title'>Senior Developer</span> <span>&bull;</span>{' '}
+                    <em className='date'>November 2010 - November 2012</em>
                     <br />
                     Key Technologies: Progress OpenEdge, SQL Server, C#, Java
                   </p>
@@ -146,14 +157,14 @@ export default function About() {
                   </ul>
                 </div>
               </div>
-              <div className="prose dark:prose-dark max-w-none xl:col-span-3">
-                <div className="col-md-12">
+              <div className='prose dark:prose-dark max-w-none xl:col-span-3'>
+                <div className='col-md-12'>
                   <h3>
-                    <a href="http://www.achilles.com/">Achilles Information Ltd (FPAL)</a>
+                    <a href='http://www.achilles.com/'>Achilles Information Ltd (FPAL)</a>
                   </h3>
-                  <p className="info">
+                  <p className='info'>
                     Software Engineer <span>&bull;</span>{' '}
-                    <em className="date">May 2009 - November 2010</em>
+                    <em className='date'>May 2009 - November 2010</em>
                     <br />
                     Key Technologies: C#, ASP.NET, SQL Server
                   </p>
@@ -180,15 +191,15 @@ export default function About() {
                   </ul>
                 </div>
               </div>
-              <div className="prose dark:prose-dark max-w-none xl:col-span-3">
-                <div className="col-md-12">
+              <div className='prose dark:prose-dark max-w-none xl:col-span-3'>
+                <div className='col-md-12'>
                   <h3>
-                    <a href="http://www.trapezegroup.co.uk/">
+                    <a href='http://www.trapezegroup.co.uk/'>
                       Trapeze Group (Formally Grampian Software)
                     </a>
                   </h3>
-                  <p className="info">
-                    Programmer <span>&bull;</span> <em className="date">June 2006 - May 2009</em>
+                  <p className='info'>
+                    Programmer <span>&bull;</span> <em className='date'>June 2006 - May 2009</em>
                     <br />
                     Key Technologies: Progress OpenEdge
                   </p>
@@ -208,21 +219,21 @@ export default function About() {
               </div>
             </div>
           </div>
-          <div className="prose dark:prose-dark max-w-none xl:col-span-3">
-            <div className="col-md-3">
+          <div className='prose dark:prose-dark max-w-none xl:col-span-3'>
+            <div className='col-md-3'>
               <h2>
                 <span>Education</span>
               </h2>
             </div>
-            <div className="col-md-9">
-              <div className="prose dark:prose-dark max-w-none xl:col-span-3">
-                <div className="col-md-12">
+            <div className='col-md-9'>
+              <div className='prose dark:prose-dark max-w-none xl:col-span-3'>
+                <div className='col-md-12'>
                   <h3>
-                    <a href="http://www.rgu.ac.uk">Robert Gordon University</a>
+                    <a href='http://www.rgu.ac.uk'>Robert Gordon University</a>
                   </h3>
-                  <p className="info">
+                  <p className='info'>
                     BSc Computing for Internet &amp; Multimedia (Hons) <span>&bull;</span>{' '}
-                    <em className="date">September 2004 - May 2006</em>
+                    <em className='date'>September 2004 - May 2006</em>
                   </p>
                   <ul>
                     <li>Systems Development</li>
@@ -240,38 +251,38 @@ export default function About() {
                   </ul>
                   <p>
                     <a
-                      href="static/files/paul-mowat-amos-report.pdf"
-                      className="btn sm-btn-block btn-info mb-2 mb-md-0"
-                      role="button"
+                      href='static/files/paul-mowat-amos-report.pdf'
+                      className='btn sm-btn-block btn-info mb-2 mb-md-0'
+                      role='button'
                       download
                     >
                       {/* <FontAwesomeIcon icon={faDownload} className='icon' /> */}
-                      <SvgIcon kind="download" />
+                      <SvgIcon kind='download' />
                       Honours Project - Report
                     </a>
                     <a
-                      href="static/files/paul-mowat-amos-appendices.pdf"
-                      className="btn sm-btn-block btn-info mb-2 mb-md-0"
-                      role="button"
+                      href='static/files/paul-mowat-amos-appendices.pdf'
+                      className='btn sm-btn-block btn-info mb-2 mb-md-0'
+                      role='button'
                       download
                     >
                       {/* <FontAwesomeIcon icon={faDownload} className='icon' /> */}
-                      <SvgIcon kind="download" />
+                      <SvgIcon kind='download' />
                       Honours Project - Appendices
                     </a>
                   </p>
                 </div>
               </div>
-              <div className="prose dark:prose-dark max-w-none xl:col-span-3">
-                <div className="col-md-12">
+              <div className='prose dark:prose-dark max-w-none xl:col-span-3'>
+                <div className='col-md-12'>
                   <h3>
-                    <a href="http://www.nescol.ac.uk/banffandbuchancollege">
+                    <a href='http://www.nescol.ac.uk/banffandbuchancollege'>
                       Banff and Buchan College
                     </a>
                   </h3>
-                  <p className="info">
+                  <p className='info'>
                     HND Software Development <span>&bull;</span>{' '}
-                    <em className="date">August 2002 to May 2004</em>
+                    <em className='date'>August 2002 to May 2004</em>
                   </p>
                   <ul>
                     <li>Communication</li>
