@@ -1,8 +1,7 @@
 import siteMetadata from '@/config/siteMetadata'
-import SvgIcon from '@/components/svgs'
 import { PageSeo } from '@/components/SEO'
 
-export default function About () {
+export default function CV () {
   return (
     <>
       <PageSeo
@@ -38,6 +37,12 @@ export default function About () {
                   <ul>
                     <li>
                       Core involvement in defining the company go forward Cloud migration strategy
+                    </li>
+                    <li>
+                      Designing and building SaaS solutions using AWS
+                    </li>
+                    <li>
+                      Creating tooling and best practice to help accelerate development teams
                     </li>
                   </ul>
                   <p className='info'>
@@ -249,28 +254,6 @@ export default function About () {
                     <li>Project Management</li>
                     <li>Interactive Multimedia</li>
                   </ul>
-                  <p>
-                    <a
-                      href='static/files/paul-mowat-amos-report.pdf'
-                      className='btn sm-btn-block btn-info mb-2 mb-md-0'
-                      role='button'
-                      download
-                    >
-                      {/* <FontAwesomeIcon icon={faDownload} className='icon' /> */}
-                      <SvgIcon kind='download' />
-                      Honours Project - Report
-                    </a>
-                    <a
-                      href='static/files/paul-mowat-amos-appendices.pdf'
-                      className='btn sm-btn-block btn-info mb-2 mb-md-0'
-                      role='button'
-                      download
-                    >
-                      {/* <FontAwesomeIcon icon={faDownload} className='icon' /> */}
-                      <SvgIcon kind='download' />
-                      Honours Project - Appendices
-                    </a>
-                  </p>
                 </div>
               </div>
               <div className='prose dark:prose-dark max-w-none xl:col-span-3'>

@@ -23,7 +23,7 @@ export default function BlogListLayout ({ root, posts, title }) {
             <div className='pt-2 pr-2'>
               Browse <a href='/blog/tags' className='underline'>tags</a> or
             </div>
-            <div className='w-96 relative'>
+            <div className='w-3/5 relative'>
               <input
                 aria-label='Search all posts'
                 type='text'
