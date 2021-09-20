@@ -3,7 +3,12 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   mode: 'jit',
-  purge: ['./pages/**/*.js', './components/**/*.js', './layouts/**/*.js', './lib/**/*.js'],
+  purge: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './layouts/**/*.{js,ts,jsx,tsx}',
+    './lib/**/*.{js,ts,jsx,tsx}'
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -82,10 +87,19 @@ module.exports = {
             'ul li:before': {
               backgroundColor: theme('colors.gray.500')
             },
+            'ul > li > *:first-child': {
+              marginTop: '0.75rem'
+            },
             strong: { color: theme('colors.gray.600') },
             blockquote: {
               color: theme('colors.gray.900'),
               borderLeftColor: theme('colors.gray.200')
+            },
+            '.vertical-timeline-custom-line::before, .vertical-timeline-element-content, vertical-timeline-element-icon': {
+              backgroundColor: theme('colors.gray.100')
+            },
+            '.vertical-timeline-element-content-arrow': {
+              borderRightColor: theme('colors.gray.100')
             }
           }
         },
@@ -128,6 +142,9 @@ module.exports = {
             'ul li:before': {
               backgroundColor: theme('colors.gray.400')
             },
+            'ul > li > *:first-child': {
+              marginTop: '0.75rem'
+            },
             strong: { color: theme('colors.gray.100') },
             thead: {
               color: theme('colors.gray.100')
@@ -147,7 +164,11 @@ module.exports = {
     }
   },
   variants: {
+    extend: {
+      backgroundImage: ['dark']
+    },
     typography: ['dark']
   },
+  important: true,
   plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')]
 }

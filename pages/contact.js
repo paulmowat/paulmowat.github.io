@@ -1,7 +1,10 @@
 import React from 'react'
+import PageWrapper from '@/components/PageWrapper'
+import { PageSeo } from '@/components/SEO'
+
+import SvgIcon from '@/components/svgs'
 
 import siteMetadata from '@/config/siteMetadata'
-import { PageSeo } from '@/components/SEO'
 
 export default class Contact extends React.Component {
   constructor (props) {
@@ -75,29 +78,18 @@ export default class Contact extends React.Component {
   render () {
     return (
       <>
-        <PageSeo
-          title={`Contact - ${siteMetadata.author}`}
-          description={`Contact - ${siteMetadata.author}`}
-          url={`${siteMetadata.siteUrl}/contact`}
-        />
-        <div className='divide-y'>
-          <div className='pt-6 pb-8 space-y-2 md:space-y-5'>
-            <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14'>
+        <PageWrapper>
+          <PageSeo
+            title={`Contact - ${siteMetadata.author}`}
+            description={`Contact - ${siteMetadata.author}`}
+            url={`${siteMetadata.siteUrl}/contact`}
+          />
+          <section className='divide-y'>
+            <h1 className='pageTitle'>
               Contact
             </h1>
-          </div>
-          <div className='items-start space-y-2 pt-8 pb-8 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0'>
-            <div className=''>
-              <div className='w-1/4'>
-                {/* <FontAwesomeIcon icon={faEnvelope} className='contact-icon' /> */}
-                Envelope Icon
-              </div>
-              <div className='w-3/4'>
-                <p className='lead'>You can use the form to contact me with any queries you have.
-                </p>
-              </div>
-            </div>
-            <div className='xl:col-span-2'>
+            <div className='main'>
+              <p className='info'>You can use the form to contact me with any queries you have or reach out on social media.</p>
               <form id='contactForm' name='contactForm' onSubmit={this.handleSubmit}>
                 <div className='w-full'>
                   <label htmlFor='contactName'>Name <span className='required'>*</span></label>
@@ -117,26 +109,24 @@ export default class Contact extends React.Component {
                 </div>
                 <div className=''>
                   <div className=''>
-                    <button id='contactSubmit' className='block prose dark:prose-dark uppercase border text-lg p-4 rounded'>Submit</button>
+                    <button id='contactSubmit' className='inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue hover:bg-blue-700 dark:hover:bg-blue-500'>Submit</button>
                     {this.state.submitting &&
                       <span id='image-loader'>
-                        {/* <FontAwesomeIcon icon={faSpinner} spin className='spinner-icon' /> */}
-                        Spinner
+                        <SvgIcon id='spinner' kind='spinner' size='1' />
                       </span>}
                     {this.state.error &&
                       <div id='message-warning'>{this.state.error}</div>}
                     {this.state.submitted &&
                       <div id='message-success'>
-                        {/* <FontAwesomeIcon icon={faCheck} className='check-icon' /> Your message was sent, thank you! */}
-                        Your message was sent, thank you.
+                        <SvgIcon kind='check' size='1' /> Your message was sent, thank you.
                         <br />
                       </div>}
                   </div>
                 </div>
               </form>
             </div>
-          </div>
-        </div>
+          </section>
+        </PageWrapper>
       </>
     )
   }

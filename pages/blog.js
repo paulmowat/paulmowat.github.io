@@ -1,7 +1,9 @@
+import PageWrapper from '@/components/PageWrapper'
+import { PageSeo } from '@/components/SEO'
+
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/config/siteMetadata'
-import BlogListLayout from '@/layouts/BlogListLayout'
-import { PageSeo } from '@/components/SEO'
+import BlogList from '@/layouts/BlogList'
 
 export async function getStaticProps () {
   const posts = await getAllFilesFrontMatter('blog')
@@ -12,12 +14,14 @@ export async function getStaticProps () {
 export default function Blog ({ posts }) {
   return (
     <>
-      <PageSeo
-        title={`Blog - ${siteMetadata.author}`}
-        description={siteMetadata.description}
-        url={`${siteMetadata.siteUrl}/blog`}
-      />
-      <BlogListLayout root='blog' posts={posts} title='Blog' />
+      <PageWrapper>
+        <PageSeo
+          title={`Blog - ${siteMetadata.author}`}
+          description={siteMetadata.description}
+          url={`${siteMetadata.siteUrl}/blog`}
+        />
+        <BlogList root='blog' posts={posts} title='Blog' />
+      </PageWrapper>
     </>
   )
 }

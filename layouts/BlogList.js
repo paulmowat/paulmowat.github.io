@@ -5,9 +5,9 @@ import { useState } from 'react'
 
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function TagsListLayout ({ posts, title }) {
+export default function BlogList ({ root, posts, title }) {
   const [searchValue, setSearchValue] = useState('')
-  const filteredTags = posts.filter((frontMatter) => {
+  const filteredBlogPosts = posts.filter((frontMatter) => {
     const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
@@ -25,10 +25,10 @@ export default function TagsListLayout ({ posts, title }) {
             </div>
             <div className='w-3/5 relative'>
               <input
-                aria-label='Search tag posts'
+                aria-label='Search all posts'
                 type='text'
                 onChange={(e) => setSearchValue(e.target.value)}
-                placeholder='Search tag posts'
+                placeholder='Search all posts'
                 className='w-full px-4 text-gray-900 bg-white border border-gray-300 rounded-md dark:border-gray-900 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-100'
               />
               <svg
@@ -49,9 +49,9 @@ export default function TagsListLayout ({ posts, title }) {
           </div>
         </div>
         <ul>
-          {!filteredTags.length && 'No tags found.'}
-          {filteredTags.map((frontMatter) => {
-            const { type, slug, date, title, summary, tags } = frontMatter
+          {!filteredBlogPosts.length && 'No posts found.'}
+          {filteredBlogPosts.map((frontMatter) => {
+            const { slug, date, title, summary, tags } = frontMatter
             return (
               <li key={slug} className='py-4'>
                 <article className='space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline'>
@@ -67,7 +67,7 @@ export default function TagsListLayout ({ posts, title }) {
                     <div>
                       <h3 className='text-2xl font-bold leading-8 tracking-tight'>
                         <Link
-                          href={`/${type}/${slug}`}
+                          href={`/${root}/${slug}`}
                           className='text-gray-900 dark:text-gray-100'
                         >
                           {title}

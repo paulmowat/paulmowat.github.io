@@ -1,6 +1,7 @@
+import PageWrapper from '@/components/PageWrapper'
 import { PageSeo } from '@/components/SEO'
 import siteMetadata from '@/config/siteMetadata'
-import TagsListLayout from '@/layouts/TagsListLayout'
+import PostsTagsList from '@/layouts/PostsTagsList'
 import generateRss from '@/lib/generate-rss'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import { getAllTags } from '@/lib/tags'
@@ -43,12 +44,14 @@ export default function Tag ({ posts, tag }) {
   const title = tag[0].toUpperCase() + tag.split(' ').join('-').slice(1)
   return (
     <>
-      <PageSeo
-        title={`${tag} - ${siteMetadata.title}`}
-        description={`${tag} tags - ${siteMetadata.title}`}
-        url={`${siteMetadata.siteUrl}/blog/tags/${tag}`}
-      />
-      <TagsListLayout posts={posts} title={title} />
+      <PageWrapper>
+        <PageSeo
+          title={`${tag} - ${siteMetadata.title}`}
+          description={`${tag} tags - ${siteMetadata.title}`}
+          url={`${siteMetadata.siteUrl}/blog/tags/${tag}`}
+        />
+        <PostsTagsList posts={posts} title={title} />
+      </PageWrapper>
     </>
   )
 }

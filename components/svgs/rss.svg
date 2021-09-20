@@ -1,17 +1,15 @@
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="96.000000pt" height="96.000000pt" viewBox="0 0 96.000000 96.000000"
- preserveAspectRatio="xMidYMid meet">
-
-<g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M145 815 l-25 -24 0 -311 0 -311 25 -24 24 -25 311 0 311 0 24 25 25
-24 0 311 0 311 -25 24 -24 25 -311 0 -311 0 -24 -25z m615 -335 l0 -280 -280
-0 -280 0 0 280 0 280 280 0 280 0 0 -280z"/>
-<path d="M280 641 c0 -41 0 -41 38 -41 153 0 282 -129 282 -282 0 -38 0 -38
-41 -38 l42 0 -5 63 c-15 178 -157 320 -334 335 l-64 5 0 -42z"/>
-<path d="M280 483 l0 -40 46 -6 c64 -7 104 -47 111 -111 l6 -46 40 0 40 0 -6
-55 c-11 104 -78 171 -181 182 l-56 6 0 -40z"/>
-<path d="M290 345 c-15 -18 -10 -45 13 -59 34 -22 73 27 47 59 -16 19 -44 19
--60 0z"/>
-</g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1"
+	 id="Layer_1" text-rendering="geometricPrecision" image-rendering="optimizeQuality" shape-rendering="geometricPrecision"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 8192 8192"
+	 style="enable-background:new 0 0 8192 8192;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<path class="st0" d="M4096,0c2262.2,0,4096,1833.8,4096,4096S6358.2,8192,4096,8192S0,6358.2,0,4096S1833.8,0,4096,0z M2678,4997.7
+	c-283.9,0-514.6,231.5-514.6,513.6c0,283.5,230.7,512.6,514.6,512.6c284.8,0,515.3-229,515.3-512.6
+	C3193.3,5229.2,2962.8,4997.7,2678,4997.7z M2163.9,3476.5v740.9c482.5,0,935.9,188.7,1277.4,530.5
+	c341.2,340.8,529.6,796.4,529.6,1280.8H4715c0-1407.1-1144.9-2551.9-2551-2551.9V3476.5z M2164.9,2163.4v741.1
+	c1720.5,0,3120.6,1401.6,3120.6,3124l743.1,0.1C6028.6,3897.8,4295,2163.4,2164.9,2163.4L2164.9,2163.4z"/>
 </svg>

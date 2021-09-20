@@ -16,6 +16,7 @@ module.exports = withPlugins([
     webpack5: true
   },
   pwa: {
+    disable: process.env.NODE_ENV === 'development',
     dest: 'public'
   },
   webpack: (config, { dev, isServer }) => {

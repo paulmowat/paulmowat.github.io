@@ -19,3 +19,50 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  @apply antialiased text-black bg-white dark:bg-gray-900 dark:text-white
+}
+
+.pageTitle {
+  @apply text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 pt-6 pb-8 space-y-2 md:space-y-5
+}
+
+.main {
+  @apply items-start space-y-2 pt-8 xl:grid xl:gap-x-8 xl:space-y-0 max-w-none prose dark:prose-dark
+}
+
+.main p {
+  @apply mt-0
+}
+
+.main h2 {
+  @apply mt-0
+}
+
+.full-span {
+  @apply xl:col-span-3
+}
+
+.pill {
+  @apply inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-blue-600 rounded-sm
+}
+
+
+/* About Page */
+
+#about .avatar {
+  @apply flex flex-col items-center pt-8 space-x-2
+}
+
+#about .avatar img {
+  @apply w-48 h-48 rounded-full
+}
+
+#about .content {
+  @apply xl:col-span-2
+}
+
+.mtp-50 {
+  margin-top: 50%
+}

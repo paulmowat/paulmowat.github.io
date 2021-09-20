@@ -2,7 +2,7 @@ import fs from 'fs'
 import { MDXRemote } from 'next-mdx-remote'
 import MDXComponents from '@/components/MDXComponents'
 import PageTitle from '@/components/PageTitle'
-import PostLayout from '@/layouts/PostLayout'
+import Post from '@/layouts/Post'
 import generateRss from '@/lib/generate-rss'
 import { formatSlug, getAllFilesFrontMatter, getFileBySlug, getFiles } from '@/lib/mdx'
 
@@ -39,9 +39,9 @@ export default function Blog ({ post, prev, next }) {
     <>
       {frontMatter.draft !== true
         ? (
-          <PostLayout frontMatter={frontMatter} prev={prev} next={next}>
+          <Post frontMatter={frontMatter} prev={prev} next={next}>
             <MDXRemote {...mdxSource} components={MDXComponents} />
-          </PostLayout>
+          </Post>
           )
         : (
           <div className='mt-24 text-center'>

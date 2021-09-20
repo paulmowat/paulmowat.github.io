@@ -6,10 +6,10 @@ export default function Footer () {
     <footer className='border-t text-sm text-gray-500 dark:text-gray-400 mt-5'>
       <div className='flex flex-col items-center mt-6'>
         <div className='flex mb-3 space-x-4'>
-          <SvgIcon kind='github' href={siteMetadata.github} />
-          <SvgIcon kind='facebook' href={siteMetadata.facebook} />
-          <SvgIcon kind='linkedin' href={siteMetadata.linkedin} />
           <SvgIcon kind='twitter' href={siteMetadata.twitter} />
+          <SvgIcon kind='github' href={siteMetadata.github} />
+          <SvgIcon kind='youtube' href={siteMetadata.youtube} />
+          <SvgIcon kind='linkedin' href={siteMetadata.linkedin} />
           <SvgIcon kind='rss' href='/rss.xml' />
         </div>
         <div className='text-center'>
