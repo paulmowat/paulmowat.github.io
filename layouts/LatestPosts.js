@@ -1,17 +1,10 @@
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
 
 const MAX_DISPLAY = 5
 // const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
-export async function getStaticProps () {
-  const posts = await getAllFilesFrontMatter('blog')
-
-  return { props: { posts } }
-}
-
-export default function LatestPosts ({ root, posts, title }) {
+export default function LatestPosts ({ posts }) {
   return (
     <>
       <div>

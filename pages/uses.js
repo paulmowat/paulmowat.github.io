@@ -12,11 +12,11 @@ export default function Uses () {
           description={`Uses - ${siteMetadata.author}`}
           url={`${siteMetadata.siteUrl}/uses`}
         />
-        <section id='uses' className='divide-y'>
+        <main id='uses' className='divide-y'>
           <h1 className='pageTitle'>
             Uses
           </h1>
-          <div className='main'>
+          <section className='main'>
             <p className='info'>
               Below is what I use on a daily basis for work and development.
             </p>
@@ -90,8 +90,8 @@ export default function Uses () {
                 </ul>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </main>
       </PageWrapper>
     </>
   )

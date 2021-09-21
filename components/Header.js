@@ -7,8 +7,8 @@ import ThemeSwitch from './ThemeSwitch'
 export default function Header () {
   return (
     <header className='sticky top-0 z-50 bg-white dark:bg-gray-900 py-6'>
-      <div className='flex justify-between'>
-        <div>
+      <nav className='flex justify-between items-center'>
+        <div className='flex justify-center items-center'>
           <Link href='/'>
             <div className=''>
               <div className='sm:block text-3xl font-semibold'>
@@ -17,7 +17,7 @@ export default function Header () {
             </div>
           </Link>
         </div>
-        <div className='items-center text-base leading-5 inline-flex'>
+        <div className='flex items-center text-base leading-5'>
           <div className='hidden sm:inline-block'>
             {headerNavLinks.map((link) => (
               <Link
@@ -32,7 +32,7 @@ export default function Header () {
           <ThemeSwitch />
           <MobileNav />
         </div>
-      </div>
+      </nav>
     </header>
   )
 }

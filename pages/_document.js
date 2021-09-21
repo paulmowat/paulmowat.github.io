@@ -81,7 +81,7 @@ class MyDocument extends Document {
             crossOrigin='anonymous'
           />
         </Head>
-        <body>
+        <body className='bg-light dark:bg-dark'>
           <Main />
           <NextScript />
         </body>

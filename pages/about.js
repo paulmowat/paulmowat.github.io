@@ -12,11 +12,11 @@ export default function About () {
           description={`About - ${siteMetadata.author}`}
           url={`${siteMetadata.siteUrl}/about`}
         />
-        <section id='about' className='divide-y'>
+        <main id='about' className='divide-y'>
           <h1 className='pageTitle'>
             About
           </h1>
-          <div className='main xl:grid-cols-3'>
+          <section className='main xl:grid-cols-3'>
             <div className='avatar'>
               <img src={siteMetadata.image} alt='avatar' />
             </div>
@@ -49,8 +49,8 @@ export default function About () {
                 and two sons.
               </p>
             </div>
-          </div>
-        </section>
+          </section>
+        </main>
       </PageWrapper>
     </>
   )

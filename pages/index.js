@@ -5,6 +5,16 @@ import siteMetadata from '@/config/siteMetadata'
 
 import SvgIcon from '@/components/svgs'
 
+import LatestPosts from '@/layouts/LatestPosts'
+
+import { getAllFilesFrontMatter } from '@/lib/mdx'
+
+export async function getStaticProps () {
+  const posts = await getAllFilesFrontMatter('blog')
+
+  return { props: { posts } }
+}
+
 export default function Home ({ posts }) {
   return (
     <>
@@ -14,28 +24,38 @@ export default function Home ({ posts }) {
           description={siteMetadata.description}
           url={siteMetadata.siteUrl}
         />
-        <section id='home' className='divide-y'>
-          <div className='banner  h-screen'>
-            <div className='w-full'>
+        <main id='home'>
+          <section className='h-screen flex flex-col justify-center items-start min-h-screen p-0 max-w-screen-md -mt-20'>
+            <div className=''>
               <h1 className='pageTitle'>
-                Hey, I'm Paul
+                Hey, I'm Paul Mowat
               </h1>
-              <p className='pt-5 text-3xl leading-relaxed text-gray-500 dark:text-gray-400 sm:text-4xl sm:leading-relaxed  md:text-4xl md:leading-relaxed '>
-                I'm a software architect based in North East Scotland who currently works for{' '}
-                <a href='https://www.oneadvanced.com' className='underline'>Advanced</a> as a Principal DevOps Architect.
-              </p>
-              {/* <div className='pt-3 pb-5 space-y-2 md:space-y-5 flex-auto sm:pt-12'>
-                <img src={siteMetadata.image} alt='avatar' className='w-48 h-48 rounded-full' />
-              </div> */}
-              <div>
-                <SvgIcon kind='arrow-down' href='#main' />
-              </div>
             </div>
-          </div>
-          <div id='main' className='main'>
-            <p>main</p>
-          </div>
-        </section>
+            <div className=''>
+              <h2 className='pt-5 text-3xl leading-relaxed text-gray-500 dark:text-gray-400 sm:text-4xl sm:leading-relaxed  md:text-4xl md:leading-relaxed '>
+                I  build enterprise SaaS solutions for a living.
+              </h2>
+            </div>
+            <div className=''>
+              <p className='pt-5 text-1xl leading-relaxed text-gray-500 dark:text-gray-400 sm:text-2xl sm:leading-relaxed  md:text-2xl md:leading-relaxed '>
+                I'm based near Aberdeen in Scotland and currently work for <a href='https://www.oneadvanced.com' className='underline'>Advanced</a> as a Principal DevOps Architect.
+              </p>
+            </div>
+            <div className='mt-10 flex mb-3 space-x-4'>
+              <SvgIcon kind='twitter' href={siteMetadata.twitter} title='Twitter' target='_blank' />
+              <SvgIcon kind='github' href={siteMetadata.github} title='Github' target='_blank' />
+              <SvgIcon kind='youtube' href={siteMetadata.youtube} title='Youtube' target='_blank' />
+              <SvgIcon kind='linkedin' href={siteMetadata.linkedin} title='LinkedIn' target='_blank' />
+              <SvgIcon kind='rss' href='/rss.xml' title='RSS' />
+            </div>
+            <div className='mt-10 flex justify-center items-stretch'>
+              <a href='/#main' className='btn' title='View blog'>View latest blog posts</a>
+            </div>
+          </section>
+          <section id='main' className='main'>
+            <LatestPosts posts={posts} />
+          </section>
+        </main>
       </HomeWrapper>
     </>
   )

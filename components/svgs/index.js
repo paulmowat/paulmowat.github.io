@@ -32,7 +32,7 @@ const components = {
   'arrow-down': ArrowDown
 }
 
-const SvgIcon = ({ id, kind, href, height = 8, width = 8, containerClassName }) => {
+const SvgIcon = ({ id, kind, title, target, href, height = 8, width = 8, containerClassName }) => {
   const SvgIcon = components[kind]
 
   if (!href) {
@@ -48,10 +48,10 @@ const SvgIcon = ({ id, kind, href, height = 8, width = 8, containerClassName }) 
     <div className={containerClassName}>
       <a
         className='text-sm text-gray-500 transition hover:text-gray-600'
-        target='_blank'
+        target={target || '_self'}
         rel='noopener noreferrer'
         href={href}
-        title={kind}
+        title={title || kind}
       >
         <span className='sr-only'>{kind}</span>
         <SvgIcon

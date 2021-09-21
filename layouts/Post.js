@@ -1,6 +1,6 @@
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
-import SectionContainer from '@/components/SectionContainer'
+import PageWrapper from '@/components/PageWrapper'
 import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/config/siteMetadata'
@@ -17,7 +17,7 @@ export default function Post ({ children, frontMatter, next, prev }) {
   const { slug, fileName, date, title, tags } = frontMatter
 
   return (
-    <SectionContainer>
+    <PageWrapper>
       <BlogSeo url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
       <article>
         <div className='xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700'>
@@ -119,6 +119,6 @@ export default function Post ({ children, frontMatter, next, prev }) {
           </div>
         </div>
       </article>
-    </SectionContainer>
+    </PageWrapper>
   )
 }

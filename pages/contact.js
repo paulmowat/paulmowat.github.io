@@ -84,11 +84,11 @@ export default class Contact extends React.Component {
             description={`Contact - ${siteMetadata.author}`}
             url={`${siteMetadata.siteUrl}/contact`}
           />
-          <section className='divide-y'>
+          <main className='divide-y'>
             <h1 className='pageTitle'>
               Contact
             </h1>
-            <div className='main'>
+            <section className='main'>
               <p className='info'>You can use the form to contact me with any queries you have or reach out on social media.</p>
               <form id='contactForm' name='contactForm' onSubmit={this.handleSubmit}>
                 <div className='w-full'>
@@ -109,7 +109,7 @@ export default class Contact extends React.Component {
                 </div>
                 <div className=''>
                   <div className=''>
-                    <button id='contactSubmit' className='inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow focus:outline-none focus:shadow-outline-blue hover:bg-blue-700 dark:hover:bg-blue-500'>Submit</button>
+                    <button id='contactSubmit' className='btn'>Submit</button>
                     {this.state.submitting &&
                       <span id='image-loader'>
                         <SvgIcon id='spinner' kind='spinner' size='1' />
@@ -124,8 +124,8 @@ export default class Contact extends React.Component {
                   </div>
                 </div>
               </form>
-            </div>
-          </section>
+            </section>
+          </main>
         </PageWrapper>
       </>
     )

@@ -65,17 +65,17 @@ export default function CV () {
             description={`CV - ${siteMetadata.author}`}
             url={`${siteMetadata.siteUrl}/cv`}
           />
-          <section id='cv' className='divide-y'>
+          <main id='cv' className='divide-y'>
             <h1 className='pageTitle'>
               CV
             </h1>
-            <div className='main'>
+            <section className='main'>
               <VerticalTimeline className='vertical-timeline-custom-line'>
                 {work}
                 {education}
               </VerticalTimeline>
-            </div>
-          </section>
+            </section>
+          </main>
         </PageWrapper>
       </>
     )
