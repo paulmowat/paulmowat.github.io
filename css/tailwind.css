@@ -21,15 +21,15 @@ html {
 }
 
 body {
-  @apply antialiased text-black bg-white dark:bg-gray-900 dark:text-white
+  @apply antialiased bg-gray-900 text-white
 }
 
 .pageTitle {
-  @apply text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 pt-6 pb-8 space-y-2 md:space-y-5
+  @apply text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 pt-6 pb-8 space-y-2 md:space-y-5
 }
 
 .main {
-  @apply items-start space-y-2 pt-8 xl:grid xl:gap-x-8 xl:space-y-0 max-w-none prose dark:prose-dark
+  @apply items-start space-y-2 pt-8 xl:grid xl:gap-x-8 xl:space-y-0 max-w-none prose
 }
 
 .main p {
@@ -76,5 +76,17 @@ body {
 }
 
 .btn:hover {
-  @apply bg-blue-700 dark:bg-blue-500
+  @apply bg-blue-500
+}
+
+.bg {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nav {
+  background-color: transparent !important;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

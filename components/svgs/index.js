@@ -39,7 +39,7 @@ const SvgIcon = ({ id, kind, title, target, href, height = 8, width = 8, contain
     return (
       <div className={containerClassName}>
         <span className='sr-only'>{kind}</span>
-        <SvgIcon id={id} className={`fill-current text-gray-700 dark:text-gray-200 h-${height} w-${width}`} />
+        <SvgIcon id={id} className={`fill-current text-gray-200 h-${height} w-${width}`} />
       </div>
     )
   }
@@ -55,7 +55,7 @@ const SvgIcon = ({ id, kind, title, target, href, height = 8, width = 8, contain
       >
         <span className='sr-only'>{kind}</span>
         <SvgIcon
-          className={`fill-current text-gray-700 dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 h-${height} w-${width} text-center`}
+          className={`fill-current text-gray-200 hover:text-blue-400 h-${height} w-${width} text-center`}
         />
       </a>
     </div>

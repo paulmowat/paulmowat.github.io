@@ -24,11 +24,11 @@ export default function Tags ({ tags }) {
         />
         <div className='divide-y'>
           <div className='pt-6 pb-8 space-y-2 md:space-y-5'>
-            <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14'>
+            <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14'>
               Blog Tags
             </h1>
           </div>
-          <div className='flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:justify-center md:items-center md:divide-y-0 md:flex-row md:space-x-6'>
+          <div className='flex flex-col items-start justify-start divide-y divide-gray-700 md:justify-center md:items-center md:divide-y-0 md:flex-row md:space-x-6'>
             <div className='flex flex-wrap max-w-lg'>
               {Object.keys(tags).length === 0 && 'No tags found.'}
               {sortedTags.map((t) => {
@@ -37,7 +37,7 @@ export default function Tags ({ tags }) {
                     <Tag text={t} />
                     <Link
                       href={`/blog/tags/${kebabCase(t)}`}
-                      className='-ml-2 text-sm font-semibold text-gray-600 uppercase dark:text-gray-300'
+                      className='-ml-2 text-sm font-semibold uppercase text-gray-300'
                     >
                       {` (${tags[t]})`}
                     </Link>

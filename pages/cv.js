@@ -31,18 +31,18 @@ const buildTimeLineElements = (data) => {
     return (
       <VerticalTimelineElement
         date={item.years}
-        iconClassName='bg-white dark:bg-gray-900'
+        iconClassName='bg-gray-700'
         icon={<SvgIcon kind={item.icon} containerClassName='mtp-50' />}
         key={i}
       >
-        <h3 className='mt-0 dark:text-gray-500'>
+        <h3 className='mt-0 text-gray-500'>
           {item.title}
         </h3>
-        <h4 className='dark:text-gray-500'>
+        <h4 className='text-gray-500'>
           {item.company}
         </h4>
 
-        <ul className='dark:text-gray-500'>
+        <ul className='text-gray-500'>
           {det}
         </ul>
 

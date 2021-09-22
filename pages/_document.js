@@ -82,7 +82,7 @@ class MyDocument extends Document {
             async
           />
         </Head>
-        <body className='bg-light dark:bg-dark'>
+        <body className='bg'>
           <Main />
           <NextScript />
         </body>

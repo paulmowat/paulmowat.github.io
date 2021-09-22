@@ -3,8 +3,8 @@ import SvgIcon from '@/components/svgs'
 
 export default function Footer () {
   return (
-    <footer className='border-t text-sm text-gray-500 dark:text-gray-400 mt-5'>
-      <div className='flex flex-col items-center mt-6'>
+    <footer className='text-sm text-gray-400 py-6 px-4'>
+      <div className='border-t flex flex-col items-center pt-6'>
         <div className='flex mb-3 space-x-4'>
           <SvgIcon kind='twitter' href={siteMetadata.twitter} title='Twitter' target='_blank' />
           <SvgIcon kind='github' href={siteMetadata.github} title='Github' target='_blank' />

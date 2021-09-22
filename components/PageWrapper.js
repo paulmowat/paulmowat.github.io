@@ -3,9 +3,11 @@ import Footer from './Footer'
 
 const PageWrapper = ({ children }) => {
   return (
-    <div id='page-wrapper' className='max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0'>
+    <div>
       <Header />
-      <main className='mb-auto relative z-10'>{children}</main>
+      <div id='page-wrapper' className='max-w-3xl px-4 mx-auto sm:px-6 xl:max-w-5xl xl:px-0'>
+        <main className='mb-auto relative z-10'>{children}</main>
+      </div>
       <Footer />
     </div>
   )

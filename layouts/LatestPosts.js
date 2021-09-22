@@ -10,7 +10,7 @@ export default function LatestPosts ({ posts }) {
   return (
     <>
       <div>
-        <div className='pt-5 text-lg font-extrabold leading-5 tracking-tight text-gray-900 dark:text-gray-100 sm:text-lg sm:leading-5 md:text-lg md:leading-5'>
+        <div className='pt-5 text-lg font-extrabold leading-5 tracking-tight text-gray-100 sm:text-lg sm:leading-5 md:text-lg md:leading-5'>
           Latest Posts
         </div>
         <div className='items-start space-y-2 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 md:space-y-0'>
@@ -27,7 +27,7 @@ export default function LatestPosts ({ posts }) {
                           <h2 className='text-2xl font-bold leading-8 tracking-tight'>
                             <Link
                               href={`/blog/${slug}`}
-                              className='text-gray-900 dark:text-gray-100'
+                              className='text-gray-100'
                             >
                               {title}
                             </Link>
@@ -40,7 +40,7 @@ export default function LatestPosts ({ posts }) {
                           <div>
                             <dl>
                               <dt className='sr-only'>Published on</dt>
-                              <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
+                              <dd className='text-base font-medium leading-6 text-gray-400'>
                                 <time dateTime={date}>
                                   {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                                 </time>
@@ -48,14 +48,14 @@ export default function LatestPosts ({ posts }) {
                             </dl>
                           </div>
                         </div>
-                        <div className='prose text-gray-500 dark:text-gray-400'>
+                        <div className='prose text-gray-400'>
                           {summary}
                         </div>
                       </div>
                       <div className='text-base font-medium leading-6'>
                         <Link
                           href={`/blog/${slug}`}
-                          className='text-blue-500 hover:text-blue-600 dark:hover:text-blue-400'
+                          className='text-blue-500 hover:text-blue-400'
                           aria-label={`Read "${title}"`}
                         >
                           Read more &rarr;
