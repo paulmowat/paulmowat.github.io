@@ -79,6 +79,7 @@ class MyDocument extends Document {
             href='https://cdn.jsdelivr.net/npm/katex@0.13.0/dist/katex.min.css'
             integrity='sha384-t5CR+zwDAROtph0PXGte6ia8heboACF9R5l/DiY+WZ3P2lxNgvJkQk5n7GPvLMYw'
             crossOrigin='anonymous'
+            async
           />
         </Head>
         <body className='bg-light dark:bg-dark'>

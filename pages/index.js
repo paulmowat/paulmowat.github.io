@@ -46,7 +46,6 @@ export default function Home ({ posts }) {
               <SvgIcon kind='github' href={siteMetadata.github} title='Github' target='_blank' />
               <SvgIcon kind='youtube' href={siteMetadata.youtube} title='Youtube' target='_blank' />
               <SvgIcon kind='linkedin' href={siteMetadata.linkedin} title='LinkedIn' target='_blank' />
-              <SvgIcon kind='rss' href='/rss.xml' title='RSS' />
             </div>
             <div className='mt-10 flex justify-center items-stretch'>
               <a href='/#main' className='btn' title='View blog'>View latest blog posts</a>

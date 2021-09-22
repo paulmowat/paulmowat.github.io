@@ -1,8 +1,10 @@
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 
+import siteMetadata from '@/config/siteMetadata'
+
 const MAX_DISPLAY = 5
-// const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
+const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function LatestPosts ({ posts }) {
   return (
@@ -14,7 +16,7 @@ export default function LatestPosts ({ posts }) {
         <div className='items-start space-y-2 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-x-8 md:space-y-0'>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, title, summary, tags } = frontMatter
+            const { slug, title, summary, tags, date } = frontMatter
             return (
               <div key={slug} className='flex flex-col items-center pt-8 space-x-2'>
                 <article>
@@ -38,11 +40,11 @@ export default function LatestPosts ({ posts }) {
                           <div>
                             <dl>
                               <dt className='sr-only'>Published on</dt>
-                              {/* <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
+                              <dd className='text-base font-medium leading-6 text-gray-500 dark:text-gray-400'>
                                 <time dateTime={date}>
-                                {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                                  {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
                                 </time>
-                            </dd> */}
+                              </dd>
                             </dl>
                           </div>
                         </div>
