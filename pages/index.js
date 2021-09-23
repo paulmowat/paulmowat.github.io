@@ -5,7 +5,7 @@ import siteMetadata from '@/config/siteMetadata'
 
 import SvgIcon from '@/components/svgs'
 
-import LatestPosts from '@/layouts/LatestPosts'
+// import LatestPosts from '@/layouts/LatestPosts'
 
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 
@@ -32,12 +32,12 @@ export default function Home ({ posts }) {
               </h1>
             </div>
             <div className=''>
-              <h2 className='pt-5 text-3xl leading-relaxed text-gray-400 sm:text-4xl sm:leading-relaxed  md:text-4xl md:leading-relaxed '>
+              <h2 className='pt-5 text-3xl leading-relaxed text-gray-200 sm:text-4xl sm:leading-relaxed  md:text-4xl md:leading-relaxed '>
                 I  build enterprise SaaS solutions for a living.
               </h2>
             </div>
             <div className=''>
-              <p className='pt-5 text-1xl leading-relaxed text-gray-400 sm:text-2xl sm:leading-relaxed  md:text-2xl md:leading-relaxed '>
+              <p className='pt-5 text-1xl leading-relaxed text-gray-300 sm:text-2xl sm:leading-relaxed  md:text-2xl md:leading-relaxed '>
                 I'm based near Aberdeen in Scotland and currently work for <a href='https://www.oneadvanced.com' className='underline'>Advanced</a> as a Principal DevOps Architect.
               </p>
             </div>
@@ -48,13 +48,13 @@ export default function Home ({ posts }) {
               <SvgIcon kind='linkedin' href={siteMetadata.linkedin} title='LinkedIn' target='_blank' />
             </div>
             <div className='mt-10 flex justify-center items-stretch'>
-              <a href='/#about' className='btn mr-3' title='View blog'>More About Me</a>
-              <a href='/#main' className='btn' title='View blog'>View latest blog posts</a>
+              <a href='/blog' className='btn mr-3' title='View blog'>View blog</a>
+              <a href='/contact' className='btn' title='View blog'>Get in touch</a>
             </div>
           </section>
-          <section id='main' className='main'>
+          {/* <section id='main' className='main'>
             <LatestPosts posts={posts} />
-          </section>
+          </section> */}
         </main>
       </HomeWrapper>
     </>

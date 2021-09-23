@@ -3,7 +3,7 @@ import SvgIcon from '@/components/svgs'
 
 export default function Footer () {
   return (
-    <footer className='text-sm text-gray-400 py-6 px-4'>
+    <footer className='text-sm py-6'>
       <div className='border-t flex flex-col items-center pt-6'>
         <div className='flex mb-3 space-x-4'>
           <SvgIcon kind='twitter' href={siteMetadata.twitter} title='Twitter' target='_blank' />
@@ -15,7 +15,7 @@ export default function Footer () {
         <div className='text-center'>
           <p>All views are my own and do not represent my employer in any way.</p>
         </div>
-        <div className='flex mb-2 space-x-2'>
+        <div className='flex mt-2 mb-2 space-x-2'>
           <div>{`© Copyright ${new Date().getFullYear()}`}</div>
           <div>{' • '}</div>
           <div>{siteMetadata.author}</div>

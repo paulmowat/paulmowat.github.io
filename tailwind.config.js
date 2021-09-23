@@ -1,4 +1,3 @@
-// const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
 module.exports = {
@@ -37,9 +36,10 @@ module.exports = {
       typography: (theme) => ({
         DEFAULT: {
           css: {
-            color: theme('colors.gray.300'),
+            color: theme('colors.gray.100'),
             a: {
               color: theme('colors.blue.500'),
+              textDecoration: 'no-underline',
               '&:hover': {
                 color: theme('colors.blue.400'),
                 textDecoration: 'underline'
@@ -54,17 +54,44 @@ module.exports = {
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
-              color: theme('colors.gray.100')
+              color: theme('colors.gray.100'),
+              textDecoration: 'no-underline',
+              a: {
+                color: theme('colors.blue.400'),
+                textDecoration: 'no-underline',
+                '&:hover': {
+                  textDecoration: 'underline'
+                }
+              }
             },
             h3: {
               fontWeight: '600',
-              color: theme('colors.gray.100')
+              letterSpacing: theme('letterSpacing.tight'),
+              color: theme('colors.gray.100'),
+              textDecoration: 'no-underline',
+              a: {
+                color: theme('colors.blue.400'),
+                textDecoration: 'no-underline',
+                '&:hover': {
+                  textDecoration: 'underline'
+                }
+              }
             },
             'h4,h5,h6': {
-              color: theme('colors.gray.100')
+              color: theme('colors.gray.100'),
+              textDecoration: 'no-underline',
+              a: {
+                color: theme('colors.gray.100'),
+                textDecoration: 'no-underline',
+                '&:hover': {
+                  color: theme('colors.blue.400'),
+                  textDecoration: 'underline'
+                }
+              }
             },
             code: {
-              backgroundColor: theme('colors.gray.800')
+              color: theme('colors.gray.900'),
+              backgroundColor: theme('colors.gray.100')
             },
             hr: { borderColor: theme('colors.gray.700') },
             'ol li:before': {
@@ -76,6 +103,13 @@ module.exports = {
             },
             'ul > li > *:first-child': {
               marginTop: '0.75rem'
+            },
+            ul: {
+              '> li': {
+                '&::before': { // more complex example - add before to an li element.
+                  content: ''
+                }
+              }
             },
             strong: { color: theme('colors.gray.100') },
             thead: {
@@ -93,6 +127,10 @@ module.exports = {
           }
         }
       })
+    }
+  },
+  variants: {
+    extend: {
     }
   },
   important: true,

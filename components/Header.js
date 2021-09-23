@@ -5,10 +5,10 @@ import MobileNav from './MobileNav'
 
 export default function Header () {
   return (
-    <header className='sticky top-0 z-50 py-6 px-4 nav'>
+    <header className='sticky top-0 z-50 py-6 px-4 sm:px-6 nav'>
       <nav className='flex justify-between items-center'>
         <div className='flex justify-center items-center'>
-          <Link href='/'>
+          <Link href='/' className='hover:text-blue-400'>
             <div className=''>
               <div className='sm:block text-3xl font-semibold'>
                 {siteMetadata.headerTitle}
@@ -22,7 +22,7 @@ export default function Header () {
               <Link
                 key={link.title}
                 href={link.href}
-                className='p-1 font-medium sm:p-4 text-gray-100 text-2xl'
+                className='p-1 font-medium sm:mx-4 text-2xl hover:text-blue-400'
               >
                 {link.title}
               </Link>

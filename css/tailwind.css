@@ -25,7 +25,7 @@ body {
 }
 
 .pageTitle {
-  @apply text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 pt-6 pb-8 space-y-2 md:space-y-5
+  @apply text-3xl font-extrabold leading-9 tracking-tight  sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 pt-6 pb-8 space-y-2 md:space-y-5
 }
 
 .main {
@@ -33,6 +33,10 @@ body {
 }
 
 .main p {
+  @apply mt-0
+}
+
+.main h2 {
   @apply mt-0
 }
 
@@ -85,8 +89,50 @@ body {
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.nav {
+@variants sm {
+  .nav {
+    background-color: transparent !important;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}
+
+.mobile-nav {
   background-color: transparent !important;
   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#blog-list .main {
+  padding-top: 0;
+}
+
+#blog-list .main h3 {
+  margin-top: 0;
+}
+
+#blog-list ul > li, #blog-list ul > li > *:first-child , #blog-list ul > li > *:last-child  {
+  margin: 0;
+  padding: 0;
+}
+
+#blog-list ul > li::before {
+  content: none;
+}
+
+#tags-list .main {
+  padding-top: 0;
+}
+
+#tags-list .main h3 {
+  margin-top: 0;
+}
+
+#tags-list ul > li, #tags-list ul > li > *:first-child , #tags-list ul > li > *:last-child  {
+  margin: 0;
+  padding: 0;
+}
+
+#tags-list ul > li::before {
+  content: none;
 }

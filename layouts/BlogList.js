@@ -14,14 +14,14 @@ export default function BlogList ({ root, posts, title }) {
 
   return (
     <>
-      <div className='divide-y'>
+      <div id='blog-list' className='divide-y'>
         <div className='pt-6 pb-8 space-y-2 md:space-y-5'>
-          <h1 className='text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14'>
+          <h1 className='pageTitle'>
             {title}
           </h1>
-          <div className='flex pt-5'>
+          <section className='flex pt-5'>
             <div className='pt-2 pr-2'>
-              Browse <a href='/blog/tags' className='underline'>tags</a> or
+              Browse <a href='/blog/tags' className='text-blue-500 hover:text-blue-400 hover:underline'>tags</a> or
             </div>
             <div className='w-3/5 relative'>
               <input
@@ -29,10 +29,10 @@ export default function BlogList ({ root, posts, title }) {
                 type='text'
                 onChange={(e) => setSearchValue(e.target.value)}
                 placeholder='Search all posts'
-                className='w-full px-4  bg-white border rounded-md border-gray-900 focus:ring-blue-500 focus:border-blue-500 bg-gray-800 text-gray-100'
+                className='w-full px-4 bg-white text-gray-700 border rounded-md border-gray-900 focus:ring-blue-500 focus:border-blue-500'
               />
               <svg
-                className='absolute w-5 h-5 right-3 top-3 text-gray-300'
+                className='absolute w-5 h-5 right-3 top-3'
                 xmlns='http://www.w3.org/2000/svg'
                 fill='none'
                 viewBox='0 0 24 24'
@@ -46,48 +46,49 @@ export default function BlogList ({ root, posts, title }) {
                 />
               </svg>
             </div>
-          </div>
+          </section>
         </div>
-        <ul>
-          {!filteredBlogPosts.length && 'No posts found.'}
-          {filteredBlogPosts.map((frontMatter) => {
-            const { slug, date, title, summary, tags } = frontMatter
-            return (
-              <li key={slug} className='py-4'>
-                <article className='space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline'>
-                  <dl>
-                    <dt className='sr-only'>Published on</dt>
-                    <dd className='text-base font-medium leading-6 text-gray-400'>
-                      <time dateTime={date}>
-                        {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
-                      </time>
-                    </dd>
-                  </dl>
-                  <div className='space-y-3 xl:col-span-3'>
-                    <div>
-                      <h3 className='text-2xl font-bold leading-8 tracking-tight'>
-                        <Link
-                          href={`/${root}/${slug}`}
-                          className='text-gray-100'
-                        >
-                          {title}
-                        </Link>
-                      </h3>
-                      <div className='flex flex-wrap'>
-                        {tags.map((tag) => (
-                          <Tag key={tag} text={tag} />
-                        ))}
+        <section className='main'>
+          <ul>
+            {!filteredBlogPosts.length && 'No posts found.'}
+            {filteredBlogPosts.map((frontMatter) => {
+              const { slug, date, title, summary, tags } = frontMatter
+              return (
+                <li key={slug} className='py-4'>
+                  <article className='space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline'>
+                    <dl>
+                      <dt className='sr-only'>Published on</dt>
+                      <dd className='text-base font-medium leading-6'>
+                        <time dateTime={date}>
+                          {new Date(date).toLocaleDateString(siteMetadata.locale, postDateTemplate)}
+                        </time>
+                      </dd>
+                    </dl>
+                    <div className='space-y-3 xl:col-span-3'>
+                      <div>
+                        <h3 className='text-2xl font-bold leading-8 tracking-tight'>
+                          <Link
+                            href={`/${root}/${slug}`}
+                          >
+                            {title}
+                          </Link>
+                        </h3>
+                        <div className='flex flex-wrap'>
+                          {tags.map((tag) => (
+                            <Tag key={tag} text={tag} />
+                          ))}
+                        </div>
+                      </div>
+                      <div className='prose max-w-none '>
+                        {summary}
                       </div>
                     </div>
-                    <div className='prose max-w-none text-gray-400'>
-                      {summary}
-                    </div>
-                  </div>
-                </article>
-              </li>
-            )
-          })}
-        </ul>
+                  </article>
+                </li>
+              )
+            })}
+          </ul>
+        </section>
       </div>
     </>
   )
