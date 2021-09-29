@@ -1,6 +1,6 @@
 {
-  "name": "tailwind-nextjs-starter-blog",
-  "version": "0.3.3",
+  "name": "paulmowat.co.uk",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "cross-env TAILWIND_MODE=watch next-remote-watch ./data",
@@ -12,10 +12,6 @@
     "lint": "standard --fix"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@fortawesome/react-fontawesome": "^0.1.15",
     "@mapbox/rehype-prism": "^0.6.0",
     "@mdx-js/loader": "^1.6.22",
     "@mdx-js/react": "^1.6.22",

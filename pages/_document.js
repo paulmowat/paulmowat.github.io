@@ -46,6 +46,24 @@ class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap'
             rel='stylesheet'
           />
+          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          <script
+            async
+            src='https://www.googletagmanager.com/gtag/js?id=UA-45992131-1'
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+            `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-45992131-1', {
+              page_path: window.location.pathname,
+            });
+            `
+            }}
+          />
         </Head>
         <body className='bg'>
           <Main />

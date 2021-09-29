@@ -5,6 +5,7 @@ import siteMetadata from '@/config/siteMetadata'
 
 import SvgIcon from '@/components/svgs'
 
+import Link from '@/components/Link'
 // import LatestPosts from '@/layouts/LatestPosts'
 
 import { getAllFilesFrontMatter } from '@/lib/mdx'
@@ -38,7 +39,7 @@ export default function Home ({ posts }) {
             </div>
             <div className=''>
               <p className='pt-5 text-1xl leading-relaxed text-gray-300 sm:text-2xl sm:leading-relaxed  md:text-2xl md:leading-relaxed '>
-                I'm based near Aberdeen in Scotland and currently work for <a href='https://www.oneadvanced.com' className='underline'>Advanced</a> as a Principal DevOps Architect.
+                I'm based near Aberdeen in Scotland and currently work for <Link href='https://www.oneadvanced.com'>Advanced</Link> as a Principal DevOps Architect.
               </p>
             </div>
             <div className='mt-10 flex mb-3 space-x-4'>
@@ -48,8 +49,8 @@ export default function Home ({ posts }) {
               <SvgIcon kind='linkedin' href={siteMetadata.linkedin} title='LinkedIn' target='_blank' />
             </div>
             <div className='mt-10 flex justify-center items-stretch'>
-              <a href='/blog' className='btn mr-3' title='View blog'>View blog</a>
-              <a href='/contact' className='btn' title='View blog'>Get in touch</a>
+              <Link href='/blog' className='btn mr-3'>View blog</Link>
+              <Link href='/contact' className='btn'>Get in touch</Link>
             </div>
           </section>
           {/* <section id='main' className='main'>

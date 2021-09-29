@@ -93,33 +93,34 @@ export default class Contact extends React.Component {
               <form id='contactForm' name='contactForm' onSubmit={this.handleSubmit}>
                 <div className='w-full'>
                   <label htmlFor='contactName'>Name <span className='required'>*</span></label>
-                  <input type='text' className='rounded-md w-full text-gray-700' size='35' id='contactName' name='contactName' required value={this.state.formData.contactName} onChange={this.handleChange} />
+                  <input type='text' className='w-full text-gray-700 rounded-md' size='35' id='contactName' name='contactName' required value={this.state.formData.contactName} onChange={this.handleChange} />
                 </div>
                 <div className=''>
                   <label htmlFor='contactEmail'>Email <span className='required'>*</span></label>
-                  <input type='text' className='rounded-md w-full text-gray-700' size='35' id='contactEmail' name='contactEmail' required value={this.state.formData.contactEmail} onChange={this.handleChange} />
+                  <input type='text' className='w-full text-gray-700 rounded-md' size='35' id='contactEmail' name='contactEmail' required value={this.state.formData.contactEmail} onChange={this.handleChange} />
                 </div>
                 <div className=''>
                   <label htmlFor='contactSubject'>Subject</label>
-                  <input type='text' className='rounded-md w-full text-gray-700' size='35' id='contactSubject' name='contactSubject' required value={this.state.formData.contactSubject} onChange={this.handleChange} />
+                  <input type='text' className='w-full text-gray-700 rounded-md' size='35' id='contactSubject' name='contactSubject' required value={this.state.formData.contactSubject} onChange={this.handleChange} />
                 </div>
                 <div className=''>
                   <label htmlFor='contactMessage'>Message <span className='required'>*</span></label>
-                  <textarea className='rounded-md w-full text-gray-700' cols='50' rows='15' id='contactMessage' name='contactMessage' required value={this.state.formData.contactMessage} onChange={this.handleChange} />
+                  <textarea className='w-full text-gray-700 rounded-md' cols='50' rows='7' id='contactMessage' name='contactMessage' required value={this.state.formData.contactMessage} onChange={this.handleChange} />
                 </div>
                 <div className=''>
-                  <div className=''>
+                  <div className='w-full'>
                     <button id='contactSubmit' className='btn'>Submit</button>
                     {this.state.submitting &&
-                      <span id='image-loader'>
-                        <SvgIcon id='spinner' kind='spinner' size='1' />
-                      </span>}
+                      <div id='message-progress' className='flex mt-2 space-x-2'>
+                        <SvgIcon id='spinner' kind='spinner' />
+                      </div>}
                     {this.state.error &&
-                      <div id='message-warning'>{this.state.error}</div>}
+                      <div id='message-error' className='flex mt-2 space-x-2'>
+                        <SvgIcon id='error' kind='error' /><span>{this.state.error}</span>
+                      </div>}
                     {this.state.submitted &&
-                      <div id='message-success'>
-                        <SvgIcon kind='check' size='1' /> Your message was sent, thank you.
-                        <br />
+                      <div id='message-success' className='flex mt-2 space-x-2'>
+                        <SvgIcon id='check' kind='check' /><span>Your message was sent, thank you.</span>
                       </div>}
                   </div>
                 </div>

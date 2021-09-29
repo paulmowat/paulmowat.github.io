@@ -2,6 +2,7 @@ import PageWrapper from '@/components/PageWrapper'
 import { PageSeo } from '@/components/SEO'
 
 import siteMetadata from '@/config/siteMetadata'
+import Link from '@/components/Link'
 
 export default function About () {
   return (
@@ -22,7 +23,7 @@ export default function About () {
             </div>
             <div className='content'>
               <p>
-                Based in Boddam (near Aberdeen), Scotland, I currently work for <a href='http://www.oneadvanced.com'>Advanced</a> as a Principal DevOps Architect.
+                Based in near Aberdeen, Scotland, I currently work for <Link href='https://www.oneadvanced.com'>Advanced</Link> as a Principal DevOps Architect.
               </p>
               <p>
                 I'm a hardworking, organized and motivated software architect with 15+ years

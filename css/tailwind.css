@@ -72,7 +72,7 @@ body {
 }
 
 .btn {
-  @apply inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow  
+  @apply cursor-pointer inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow  
 }
 
 .btn:focus {

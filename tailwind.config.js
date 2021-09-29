@@ -96,7 +96,7 @@ module.exports = {
             hr: { borderColor: theme('colors.gray.700') },
             'ol li:before': {
               fontWeight: '600',
-              color: theme('colors.gray.400')
+              color: theme('colors.gray.100')
             },
             'ul li:before': {
               backgroundColor: theme('colors.gray.400')

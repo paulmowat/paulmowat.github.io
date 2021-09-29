@@ -2,6 +2,8 @@ import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/config/siteMetadata'
 import { useState } from 'react'
+import * as ga from '@/lib/ga'
+import debounce from '@/lib/utils/debounce'
 
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -12,22 +14,33 @@ export default function PostsTagsList ({ posts, title }) {
     return searchContent.toLowerCase().includes(searchValue.toLowerCase())
   })
 
+  const search = (value) => {
+    ga.event({
+      action: 'search',
+      params: {
+        event_category: 'tags',
+        search_term: value
+      }
+    })
+    setSearchValue(value)
+  }
+
   return (
     <>
       <div id='tags-list' className='divide-y'>
-        <div className='pt-6 pb-8 space-y-2 md:space-y-5'>
+        <div className='pb-8'>
           <h1 className='pageTitle'>
             {title}
           </h1>
           <div className='flex pt-5'>
             <div className='pt-2 pr-2'>
-              Browse <a href='/blog/tags' className='text-blue-500 hover:text-blue-400 hover:underline'>tags</a> or
+              Browse <Link href='/blog/tags' className='text-blue-500 hover:text-blue-400 hover:underline'>tags</Link> or
             </div>
             <div className='w-3/5 relative'>
               <input
                 aria-label='Search tag posts'
                 type='text'
-                onChange={(e) => setSearchValue(e.target.value)}
+                onChange={debounce((e) => search(e.target.value), 500)}
                 placeholder='Search tag posts'
                 className='w-full px-4 bg-white text-gray-700 border rounded-md border-gray-900 focus:ring-blue-500 focus:border-blue-500 '
               />

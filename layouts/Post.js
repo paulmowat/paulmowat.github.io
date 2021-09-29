@@ -1,26 +1,22 @@
-import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import PageWrapper from '@/components/PageWrapper'
 import { BlogSeo } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/config/siteMetadata'
 
-const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `${siteMetadata.siteUrl}/blog/${slug}`
-  )}`
+import ShareButton from '@/components/ShareButton'
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function Post ({ children, frontMatter, next, prev }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { slug, date, title, tags } = frontMatter
 
+  const pageUrl = `${siteMetadata.siteUrl}/blog/${slug}`
   return (
     <PageWrapper>
-      <BlogSeo url={`${siteMetadata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
+      <BlogSeo url={pageUrl} {...frontMatter} />
       <article>
-        <div className='xl:divide-y xl:divide-gray-700'>
+        <div className='xl:divide-y'>
           <header className='pt-6 xl:pb-6'>
             <div className='space-y-1 text-center'>
               <dl className='space-y-10'>
@@ -38,31 +34,42 @@ export default function Post ({ children, frontMatter, next, prev }) {
               </div>
               <div className='py-2 xl:py-3'>
                 <div className='text-xs tracking-wide '>
-                  <div className=' text-center'>
+                  <div className='text-center '>
                     {tags.map((tag) => (
                       <Tag key={tag} text={tag} />
                     ))}
                   </div>
                 </div>
               </div>
+              <div className='py-2'>
+                <div className='text-xs tracking-wide '>
+                  <div className='text-center'>
+                    <p>{frontMatter.readingTime.text.replace('min', 'minute')}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </header>
           <div
-            className='pb-8 divide-y xl:divide-y-0 divide-gray-700'
+            className='divide-y xl:divide-y-0'
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
-            <div className='divide-y divide-gray-700 xl:pb-0'>
+            <div className='divide-y xl:pb-0'>
               <div className='pt-10 pb-8 prose max-w-none'>{children}</div>
-              <div className='pt-6 pb-6 text-sm '>
-                <Link href={discussUrl(slug)} rel='nofollow'>
-                  Discuss on Twitter
-                </Link>
-                {' • '}
-                <Link href={editUrl(fileName)}>View on GitHub</Link>
+              <div className='pb-4 prose max-w-none'>
+                <div className='flex flex-col items-center justify-center pt-6 space-x-4 space-y-4 xl:flex-row xl:items-baseline'>
+                  <p className='m-0'>Useful article? Please share it with your friends.</p>
+                  <ShareButton kind='twitter' label='Share on Twitter' title={title} href={pageUrl} />
+                  <ShareButton kind='facebook' label='Share on Facebook' title={title} href={pageUrl} />
+                  <ShareButton kind='linkedin' label='Share on LinkedIn' title={title} href={pageUrl} />
+                </div>
+                {/* <div className='flex justify-center'>
+                  <p>Get the latest articles. Sign up to the <a href='/newsletter'>newsletter</a>.</p>
+                </div> */}
               </div>
             </div>
-            <footer>
-              <div className='text-sm font-medium leading-5 xl:divide-y divide-gray-700 xl:col-start-1 xl:row-start-2'>
+            {/* <footer>
+              <div className='text-sm font-medium leading-5 divide-gray-700 xl:divide-y xl:col-start-1 xl:row-start-2'>
                 {(next || prev) && (
                   <div className='flex justify-between py-4 xl:block xl:space-y-8 xl:py-8'>
                     {prev && (
@@ -88,7 +95,7 @@ export default function Post ({ children, frontMatter, next, prev }) {
                   </div>
                 )}
               </div>
-            </footer>
+            </footer> */}
           </div>
         </div>
       </article>

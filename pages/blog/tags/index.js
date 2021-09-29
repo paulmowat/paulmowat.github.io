@@ -29,7 +29,7 @@ export default function Tags ({ tags }) {
             </h1>
           </div>
           <div className='flex flex-col items-start justify-start divide-y divide-gray-700 md:justify-center md:items-center md:divide-y-0 md:flex-row md:space-x-6'>
-            <div className='flex flex-wrap max-w-lg'>
+            <div className='flex flex-wrap max-w-lg pt-6'>
               {Object.keys(tags).length === 0 && 'No tags found.'}
               {sortedTags.map((t) => {
                 return (

@@ -6,9 +6,9 @@
       "years": "June 2011 - Present",
       "icon": "work",
       "details": [
-        "Core involvement in defining the company go forward Cloud migration strategy",
-        "Designing and building SaaS solutions using AWS",
-        "Creating tooling and best practice to help accelerate development teams"
+        "Core involvement in defining the company go forward Cloud migration strategy.",
+        "Designing and building SaaS solutions using AWS.",
+        "Creating tooling and best practice to help accelerate development teams."
       ],
       "technologies": [
         "AWS",
@@ -26,7 +26,7 @@
           "Mentoring and supporting teams with different skill sets and experience who are located in different locations.",
           "Software and database design and implementation on several different technologies i.e. Node.js, React, PostgresSQL, Progress 4GL and MS SQL.",
           "Assisting other teams with migration to cloud based systems i.e. on-premise to cloud based on AWS.",
-          "Research & Development on new functionality/features/technologies including Voice (Alexa/Google Assistant), Chatbots, AI/ML and AR/Augmented Reality",
+          "Research & Development on new functionality/features/technologies including Voice (Alexa/Google Assistant), Chatbots, AI/ML and AR/Augmented Reality.",
           "Part of the company software architecture team. Involved in deciding how the company moves forward from a technology and architecture point of view. This will impact all teams, totalling 500+ developers and 100+ applications.",
           "Part of the company devops community of practice. Involved in helping increase devops awareness, best practice and engagement throughout the company."
       ],
@@ -53,7 +53,7 @@
         "Helping improve and implement better overall processes i.e. Development workflows and Agile development methodologies (Scrum). ",
         "Analysing maintenance issues and providing a quick and efficient turnaround based on customer expectation. Including customer escalations as required and performance tuning.",
         "Research & Development on new functionality/features/technologies including hybrid mobile development.",
-        "Part of the company software architecture team consisting of 15 individuals. Involved in deciding how the company moves forward from a technology, devops and architecture point of view. This will impact all teams, totalling 500+ developers and 100+ applications. ",
+        "Part of the company software architecture team consisting of 15 individuals. Involved in deciding how the company moves forward from a technology, devops and architecture point of view. This will impact all teams, totalling 500+ developers and 100+ applications.",
         "General Application and Hardware support for Development/QA team."
       ],
       "technologies": [
@@ -109,13 +109,13 @@
       "years": "June 2006 - May 2009",
       "icon": "work",
       "details": [
-        "Maintain and modify programs; make approved changes, develop detailed programming logic, and perform coding changes as per specifications",
-        "Create specifications based on customer’s required business logic",
-        "Creating and updating documentation to reflect application changes",
-        "Investigate, Establish and Resolve faults in application logic",
-        "Managing workload and meeting strict deadlines",
-        "Database administration and management",
-        "General application/desktop support for internal staff"
+        "Maintain and modify programs; make approved changes, develop detailed programming logic, and perform coding changes as per specifications.",
+        "Create specifications based on customer’s required business logic.",
+        "Creating and updating documentation to reflect application changes.",
+        "Investigate, Establish and Resolve faults in application logic.",
+        "Managing workload and meeting strict deadlines.",
+        "Database administration and management.",
+        "General application/desktop support for internal staff."
       ],
       "technologies": [
         "Progress OpenEdge"
@@ -131,7 +131,7 @@
       "details": [
         "Systems Development",
         "Software Project Engineering",
-        "Internet Based Programming &amp; Intranet Systems Development",
+        "Internet Based Programming & Intranet Systems Development",
         "Object Oriented Programming",
         "Database Systems",
         "Human Computer Interaction",

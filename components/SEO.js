@@ -47,7 +47,7 @@ export const PageSeo = ({ title, description, url }) => {
   )
 }
 
-export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] }) => {
+export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [], canonicalUrl }) => {
   const publishedAt = new Date(date).toISOString()
   const modifiedAt = new Date(lastmod || date).toISOString()
   const imagesArr =
@@ -69,7 +69,7 @@ export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [] 
       <NextSeo
         title={`${title} – ${siteMetadata.title}`}
         description={summary}
-        canonical={url}
+        canonical={canonicalUrl || url}
         openGraph={{
           type: 'article',
           article: {
