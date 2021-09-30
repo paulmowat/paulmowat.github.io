@@ -1,6 +1,8 @@
 import siteMetadata from '@/config/siteMetadata'
 import SvgIcon from '@/components/svgs'
 
+import NowPlaying from '@/components/NowPlaying'
+
 export default function Footer () {
   return (
     <footer className='text-sm py-6'>
@@ -19,6 +21,9 @@ export default function Footer () {
           <div>{`© Copyright ${new Date().getFullYear()}`}</div>
           <div>{' • '}</div>
           <div>{siteMetadata.author}</div>
+        </div>
+        <div className='flex mt-2 mb-2 space-x-2'>
+          <NowPlaying />
         </div>
       </div>
     </footer>
