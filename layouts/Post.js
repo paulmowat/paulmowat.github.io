@@ -5,6 +5,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/config/siteMetadata'
 
 import ShareButton from '@/components/ShareButton'
+import ViewCounter from 'components/ViewCounter'
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -44,7 +45,7 @@ export default function Post ({ children, frontMatter, next, prev }) {
               <div className='py-2'>
                 <div className='text-xs tracking-wide '>
                   <div className='text-center'>
-                    <p>{frontMatter.readingTime.text.replace('min', 'minute')}</p>
+                    <p>{frontMatter.readingTime.text.replace('min', 'minute')}{' • '}<ViewCounter slug={frontMatter.slug} /></p>
                   </div>
                 </div>
               </div>
