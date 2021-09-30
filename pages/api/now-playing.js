@@ -1,9 +1,10 @@
-import { getNowPlaying } from 'lib/spotify'
+import { getNowPlaying } from '@/lib/spotify'
 
 export default async function handler (req, res) {
   const response = await getNowPlaying()
 
   if (response.status === 204 || response.status > 400) {
+    console.log(response.status)
     return res.status(200).json({ isPlaying: false })
   }
 
@@ -12,6 +13,8 @@ export default async function handler (req, res) {
   if (song.item === null) {
     return res.status(200).json({ isPlaying: false })
   }
+
+  console.log(song)
 
   const isPlaying = song.is_playing
   const title = song.item.name
