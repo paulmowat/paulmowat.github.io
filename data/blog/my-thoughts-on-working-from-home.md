@@ -34,6 +34,8 @@ At the beginning of the pandemic, the entire company moved to use Microsoft Team
 
 We've evolved along the way and now have an accepted meeting etiquette. Video calls are also used much more than before to try and add that personal element. 
 
+**Takeaways** - This has been a difficult one. We all need to stay in touch and it's went from few meetings to lots of meetings due to the pandemic. It's now starting to calm down which is great. A good suggestion is to look at how you can do async communication more. Always think, do you need that extra meeting? Could I just have a group chat instead?
+
 ## Focus
 
 Being able to focus on work while at home is something that concerns a lot of people. For me, though this was never a concern. I love what I do and enjoy coding and building new applications. 
@@ -44,13 +46,17 @@ During my first two years working from home, I was the lead developer for two br
 
 Once the pandemic started, things began to change as everyone was trying, to understand how to work effectively. There was a large increase in meetings being scheduled. All the meetings were starting to impact our developers getting into the [Zone](https://lifehacker.com/what-is-the-zone-anyway-5920484) and being as productive as possible.  We've since introduced blocked focus time which has made a significant difference.
 
+**Takeaway** - It is ok to indicate to others that you need time to do your work. Block that time in your calendar as Focus Time. Outlook has a great feature to help automate this now. Constant distractions have a large impact on productivity but also on morale/stress levels.
+
 ## Work/Life Balance
 
 If you work where you live, how do you separate them? It's a difficult question. 
 
 The first few years working at home and learning new technologies, I struggled with the balance. There were deadlines to meet and a lot of learning to do, which meant quite a few midnight sessions when I got stuck to learn how to unblock myself. Not ideal, but needs must.
 
-Over the last two years, I've been much better. I tend to work from 8 am to 5 pm and stop. My son, coming in every day at 5 pm and shouting "It's dinner time, Daddy", has a lot to do with it.
+Over the last two years, I've been much better. I tend to work from 8 am to 5 pm and stop. My son, coming in every day at 5 pm and shouting "It's dinner time, Daddy", signals the end of the day for me.
+
+**Takeaway** - If you focus on one, more than the other you are going to have a problem in the long run. Stay in control of your work by planning your day. Create a to-do list, book out your lunchtime in your calendar. Don't answer calls or emails after work hours. You need that separation to maintain your health.
 
 ## Family
 
@@ -61,3 +67,5 @@ I started to work from home when my firstborn was six months old. I'm lucky in t
 I also get to have breakfast, lunch and dinner with them every day. I don't have to waste hours in a commute back and forth to the office.
 
 Working at home also gives you that bit of flexibility that's handy when you have kids. 
+
+**Takeaway** - Spend as much time with your family as possible. They appreciate it. It's the little things like being able to go for lunch together at the local cafe or go for a walk together at lunchtime. Make the best of it!
