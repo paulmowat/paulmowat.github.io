@@ -7,6 +7,7 @@ const siteMetadata = require('../config/siteMetadata')
     'pages/*.js',
     'data/**/*.mdx',
     'data/**/*.md',
+    'public/rss.xml',
     'public/blog/tags/**/*.xml',
     '!pages/_*.js',
     '!pages/api'
