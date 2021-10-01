@@ -40,7 +40,7 @@ Being able to focus on work while at home is something that concerns a lot of pe
 
 As someone who happily spends hours coding, I found my productivity levels increased drastically due to fewer interruptions and background office noise. I could turn on Spotify and get on with it.
 
-During my first two years working from home, I was the lead developer for two branch new applications. These were built using entirely new technology stacks to me. I loved the challenge of it!
+During my first two years working from home, I was the lead developer for two brand new applications. These were built using entirely new technology stacks to me. I loved the challenge of it!
 
 Once the pandemic started, things began to change as everyone was trying, to understand how to work effectively. There was a large increase in meetings being scheduled. All the meetings were starting to impact our developers getting into the [Zone](https://lifehacker.com/what-is-the-zone-anyway-5920484) and being as productive as possible.  We've since introduced blocked focus time which has made a significant difference.
 
