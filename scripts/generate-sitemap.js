@@ -10,7 +10,8 @@ const siteMetadata = require('../config/siteMetadata')
     'public/rss.xml',
     'public/blog/tags/**/*.xml',
     '!pages/_*.js',
-    '!pages/api'
+    '!pages/api',
+    '!pages/404.js'
   ])
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

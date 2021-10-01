@@ -8,7 +8,7 @@ export default function NowPlaying () {
   const { data } = useSWR('/api/now-playing', fetcher)
 
   return (
-    <div className='flex flex-row-reverse sm:flex-row mb-8 space-x-0 sm:space-x-2 w-full'>
+    <div className='flex flex-row space-x-2 w-full'>
       <SvgIcon kind='spotify' height='5' width='5' />
       <div className='inline-flex flex-col sm:flex-row w-full max-w-full truncate'>
         {data?.songUrl

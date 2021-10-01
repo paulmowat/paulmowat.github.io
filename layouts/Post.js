@@ -17,8 +17,8 @@ export default function Post ({ children, frontMatter, next, prev }) {
     <PageWrapper>
       <BlogSeo url={pageUrl} {...frontMatter} />
       <article>
-        <div className='xl:divide-y'>
-          <header className='pt-6 xl:pb-6'>
+        <div className='divide-y'>
+          <header className='pt-6 pb-6'>
             <div className='space-y-1 text-center'>
               <dl className='space-y-10'>
                 <div>
@@ -56,7 +56,7 @@ export default function Post ({ children, frontMatter, next, prev }) {
             style={{ gridTemplateRows: 'auto 1fr' }}
           >
             <div className='divide-y xl:pb-0'>
-              <div className='pt-10 pb-8 prose max-w-none'>{children}</div>
+              <div className='pt-6 pb-8 prose max-w-none'>{children}</div>
               <div className='pb-4 prose max-w-none'>
                 <div className='flex flex-col items-center justify-center pt-6 space-x-4 space-y-4 xl:flex-row xl:items-baseline'>
                   <p className='m-0'>Useful article? Please share it with your friends.</p>

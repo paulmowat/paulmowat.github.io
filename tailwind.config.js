@@ -99,7 +99,7 @@ module.exports = {
               color: theme('colors.gray.100')
             },
             'ul li:before': {
-              backgroundColor: theme('colors.gray.400')
+              backgroundColor: theme('colors.gray.100')
             },
             'ul > li > *:first-child': {
               marginTop: '0.75rem'

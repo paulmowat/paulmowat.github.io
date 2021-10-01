@@ -36,11 +36,15 @@ body {
   @apply mt-0
 }
 
-.main h2 {
+.main h2, .prose h2 {
   @apply mt-0
 }
 
-.main h2 {
+.main h3, .prose h3 {
+  @apply mt-0
+}
+
+.main h4, .prose h4 {
   @apply mt-0
 }
 
@@ -135,4 +139,8 @@ body {
 
 #tags-list ul > li::before {
   content: none;
+}
+
+#cv ul li:before {
+  @apply bg-gray-700
 }

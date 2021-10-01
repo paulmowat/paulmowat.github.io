@@ -58,7 +58,6 @@ export default class Contact extends React.Component {
     })
       .then(response => response.json())
       .then((response) => {
-        console.log('Sent:', response)
         this.setState({
           submitting: false,
           submitted: true,
@@ -66,7 +65,6 @@ export default class Contact extends React.Component {
         })
       })
       .catch((error) => {
-        console.log('Failed:', error)
         this.setState({
           submitting: false,
           submitted: false,

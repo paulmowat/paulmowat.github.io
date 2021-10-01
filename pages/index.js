@@ -33,12 +33,12 @@ export default function Home ({ posts }) {
               </h1>
             </div>
             <div className=''>
-              <h2 className='pt-5 text-3xl leading-relaxed text-gray-200 sm:text-4xl sm:leading-relaxed  md:text-4xl md:leading-relaxed '>
+              <h2 className='pt-5 text-3xl leading-relaxed sm:text-4xl sm:leading-relaxed  md:text-4xl md:leading-relaxed '>
                 I  build enterprise SaaS solutions for a living.
               </h2>
             </div>
             <div className=''>
-              <p className='pt-5 text-1xl leading-relaxed text-gray-300 sm:text-2xl sm:leading-relaxed  md:text-2xl md:leading-relaxed '>
+              <p className='pt-5 text-1xl leading-relaxed sm:text-2xl sm:leading-relaxed  md:text-2xl md:leading-relaxed '>
                 I'm based near Aberdeen in Scotland and currently work for <Link href='https://www.oneadvanced.com' className='hover:text-blue-400'>Advanced</Link> as a Principal DevOps Architect.
               </p>
             </div>
