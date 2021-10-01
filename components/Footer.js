@@ -1,7 +1,7 @@
 import siteMetadata from '@/config/siteMetadata'
 import SvgIcon from '@/components/svgs'
 
-import NowPlaying from '@/components/NowPlaying'
+// import NowPlaying from '@/components/NowPlaying'
 
 export default function Footer () {
   return (
@@ -22,9 +22,9 @@ export default function Footer () {
           <div>{' • '}</div>
           <div>{siteMetadata.author}</div>
         </div>
-        <div className='flex mt-2 mb-2 space-x-2'>
+        {/* <div className='flex mt-2 mb-2 space-x-2'>
           <NowPlaying />
-        </div>
+        </div> */}
       </div>
     </footer>
   )
