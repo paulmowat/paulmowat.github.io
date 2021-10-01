@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+@tailwind variants;
+
+.remark-code-title {
+  @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-gray-700 rounded-t;
+}
+
+.remark-code-title + pre {
+  @apply mt-0 rounded-t-none;
+}
+
+.task-list-item:before {
+  @apply hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply antialiased bg-gray-900 text-white
+}
+
+.pageTitle {
+  @apply text-3xl font-extrabold leading-9 tracking-tight  sm:text-4xl sm:leading-10 md:text-6xl md:leading-14 pt-6 pb-8 space-y-2 md:space-y-5
+}
+
+.main {
+  @apply items-start space-y-2 pt-8 xl:grid xl:gap-x-8 xl:space-y-0 max-w-none prose
+}
+
+.main p {
+  @apply mt-0
+}
+
+.main h2 {
+  @apply mt-0
+}
+
+.main h2 {
+  @apply mt-0
+}
+
+.full-span {
+  @apply xl:col-span-3
+}
+
+.pill {
+  @apply inline-flex items-center justify-center px-2 py-1 mr-2 text-xs font-bold leading-none text-white bg-blue-600 rounded-sm
+}
+
+
+/* About Page */
+
+#about .avatar {
+  @apply flex flex-col items-center pt-8 space-x-2
+}
+
+#about .avatar img {
+  @apply w-48 h-48 rounded-full
+}
+
+#about .content {
+  @apply xl:col-span-2
+}
+
+.mtp-50 {
+  margin-top: 50%
+}
+
+.btn {
+  @apply cursor-pointer inline px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-blue-600 border border-transparent rounded-lg shadow  
+}
+
+.btn:focus {
+  @apply outline-none ring-blue-500
+}
+
+.btn:hover {
+  @apply bg-blue-500
+}
+
+.bg {
+  background: #0f0c29;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@variants sm {
+  .nav {
+    background-color: transparent !important;
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+}
+
+.mobile-nav {
+  background-color: transparent !important;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#blog-list .main {
+  padding-top: 0;
+}
+
+#blog-list .main h3 {
+  margin-top: 0;
+}
+
+#blog-list ul > li, #blog-list ul > li > *:first-child , #blog-list ul > li > *:last-child  {
+  margin: 0;
+  padding: 0;
+}
+
+#blog-list ul > li::before {
+  content: none;
+}
+
+#tags-list .main {
+  padding-top: 0;
+}
+
+#tags-list .main h3 {
+  margin-top: 0;
+}
+
+#tags-list ul > li, #tags-list ul > li > *:first-child , #tags-list ul > li > *:last-child  {
+  margin: 0;
+  padding: 0;
+}
+
+#tags-list ul > li::before {
+  content: none;
+}

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://www.paulmowat.co.uk/sitemap.xml

@@ -1,29 +1,63 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { withRouter } from 'next/router'
-import { Layout, MainContainer } from '../components/layout'
-import { Home } from '../contents/home'
-import { About } from '../contents/about'
-import { Cv } from '../contents/cv'
-import { Recommendations } from '../contents/recommendations'
-import { Contact } from '../contents/contact'
+import HomeWrapper from '@/components/HomeWrapper'
+import { PageSeo } from '@/components/SEO'
 
-function Start (props) {
+import siteMetadata from '@/config/siteMetadata'
+
+import SvgIcon from '@/components/svgs'
+
+import Link from '@/components/Link'
+// import LatestPosts from '@/layouts/LatestPosts'
+
+import { getAllFilesFrontMatter } from '@/lib/mdx'
+
+export async function getStaticProps () {
+  const posts = await getAllFilesFrontMatter('blog')
+
+  return { props: { posts } }
+}
+
+export default function Home ({ posts }) {
   return (
-    <Layout title='Home' url={props.router}>
-      <MainContainer fluid>
-        <Home />
-        <About />
-        <Cv />
-        <Recommendations />
-        <Contact />
-      </MainContainer>
-    </Layout>
+    <>
+      <HomeWrapper>
+        <PageSeo
+          title={siteMetadata.title}
+          description={siteMetadata.description}
+          url={siteMetadata.siteUrl}
+        />
+        <main id='home'>
+          <section className='h-screen flex flex-col justify-center items-start min-h-screen p-0 max-w-screen-md -mt-20'>
+            <div className=''>
+              <h1 className='pageTitle'>
+                Hey, I'm Paul Mowat
+              </h1>
+            </div>
+            <div className=''>
+              <h2 className='pt-5 text-3xl leading-relaxed text-gray-200 sm:text-4xl sm:leading-relaxed  md:text-4xl md:leading-relaxed '>
+                I  build enterprise SaaS solutions for a living.
+              </h2>
+            </div>
+            <div className=''>
+              <p className='pt-5 text-1xl leading-relaxed text-gray-300 sm:text-2xl sm:leading-relaxed  md:text-2xl md:leading-relaxed '>
+                I'm based near Aberdeen in Scotland and currently work for <Link href='https://www.oneadvanced.com'>Advanced</Link> as a Principal DevOps Architect.
+              </p>
+            </div>
+            <div className='mt-10 flex mb-3 space-x-4'>
+              <SvgIcon kind='twitter' href={siteMetadata.twitter} title='Twitter' target='_blank' />
+              <SvgIcon kind='github' href={siteMetadata.github} title='Github' target='_blank' />
+              <SvgIcon kind='youtube' href={siteMetadata.youtube} title='Youtube' target='_blank' />
+              <SvgIcon kind='linkedin' href={siteMetadata.linkedin} title='LinkedIn' target='_blank' />
+            </div>
+            <div className='mt-10 flex justify-center items-stretch'>
+              <Link href='/blog' className='btn mr-3'>View blog</Link>
+              <Link href='/contact' className='btn'>Get in touch</Link>
+            </div>
+          </section>
+          {/* <section id='main' className='main'>
+            <LatestPosts posts={posts} />
+          </section> */}
+        </main>
+      </HomeWrapper>
+    </>
   )
 }
-
-Start.propTypes = {
-  router: PropTypes.object
-}
-
-export default withRouter(Start)
