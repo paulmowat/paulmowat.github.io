@@ -8,7 +8,7 @@ class MyDocument extends Document {
           <meta name='apple-mobile-web-app-capable' content='yes' />
           <meta name='apple-mobile-web-app-status-bar-style' content='default' />
           <meta name='apple-mobile-web-app-title' content='Paul mowat' />
-          <meta name='description' content='Paul Mowat is an developer based in Boddam/Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect.' />
+          <meta name='description' content='Paul Mowat is an developer based near Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect.' />
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
           <meta name='msapplication-config' content='/static/favicons/browserconfig.xml' />
@@ -29,12 +29,12 @@ class MyDocument extends Document {
           <meta name='twitter:card' content='summary' />
           <meta name='twitter:url' content='https://www.paulmowat.co.uk' />
           <meta name='twitter:title' content='Paul Mowat' />
-          <meta name='twitter:description' content='Paul Mowat is an developer based in Boddam/Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect.' />
+          <meta name='twitter:description' content='Paul Mowat is an developer based near Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect.' />
           <meta name='twitter:image' content='https://www.paulmowat.co.uk/static/icons/android-chrome-192x192.png' />
           <meta name='twitter:creator' content='@paul_mowat' />
           <meta property='og:type' content='website' />
           <meta property='og:title' content='Paul Mowat' />
-          <meta property='og:description' content='Paul Mowat is an developer based in Boddam/Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect.' />
+          <meta property='og:description' content='Paul Mowat is an developer based near Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect.' />
           <meta property='og:site_name' content='Paul Mowat' />
           <meta property='og:url' content='https://www.paulmowat.co.uk' />
           <meta property='og:image' content='https://www.paulmowat.co.uk/static/icons/apple-touch-icon.png' />
