@@ -39,7 +39,7 @@ export default function Home ({ posts }) {
             </div>
             <div className=''>
               <p className='pt-5 text-1xl leading-relaxed text-gray-300 sm:text-2xl sm:leading-relaxed  md:text-2xl md:leading-relaxed '>
-                I'm based near Aberdeen in Scotland and currently work for <Link href='https://www.oneadvanced.com'>Advanced</Link> as a Principal DevOps Architect.
+                I'm based near Aberdeen in Scotland and currently work for <Link href='https://www.oneadvanced.com' className='hover:text-blue-400'>Advanced</Link> as a Principal DevOps Architect.
               </p>
             </div>
             <div className='mt-10 flex mb-3 space-x-4'>

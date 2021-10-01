@@ -6,7 +6,7 @@ export const SEO = {
   description: siteMetadata.description,
   openGraph: {
     type: 'website',
-    locale: siteMetadata.language,
+    locale: siteMetadata.locale,
     url: siteMetadata.siteUrl,
     title: siteMetadata.title,
     description: siteMetadata.description,
