@@ -24,6 +24,8 @@ I created a comfortable setup with the following:
 
 This was everything I needed to get going. I know that not everyone can set up a dedicated space. However, I felt it was essential for me if this was going to work.
 
+**Takeaway** - I'm glad I spent some time and money getting myself setup to be comfortable and effective work environment. My office lets me focus fully on my work. I've recently upgraded a few items to make it even better, more storage, a new webcam, microphone and better speakers. I'm now able to have video calls without the need of a headset, which is great.
+
 ## Effective Communication
 
 At work, we used several different communication channels. Sending emails was always the primary one and is used heavily. We also had Skype for Business for speaking to each other and screen sharing when required. 
@@ -34,7 +36,7 @@ At the beginning of the pandemic, the entire company moved to use Microsoft Team
 
 We've evolved along the way and now have an accepted meeting etiquette. Video calls are also used much more than before to try and add that personal element. 
 
-**Takeaways** - This has been a difficult one. We all need to stay in touch and it's went from few meetings to lots of meetings due to the pandemic. It's now starting to calm down which is great. A good suggestion is to look at how you can do async communication more. Always think, do you need that extra meeting? Could I just have a group chat instead?
+**Takeaway** - This has been a difficult one. We all need to stay in touch and it's went from few meetings to lots of meetings due to the pandemic. It's now starting to calm down which is great. A good suggestion is to look at how you can do async communication more. Always think, do you need that extra meeting? Could I just have a group chat instead?
 
 ## Focus
 
