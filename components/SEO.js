@@ -1,53 +1,72 @@
-import { NextSeo, ArticleJsonLd } from 'next-seo'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 import siteMetadata from '@/config/siteMetadata'
 
-export const SEO = {
-  title: siteMetadata.title,
-  description: siteMetadata.description,
-  openGraph: {
-    type: 'website',
-    locale: siteMetadata.locale,
-    url: siteMetadata.siteUrl,
-    title: siteMetadata.title,
-    description: siteMetadata.description,
-    images: [
-      {
-        url: `${siteMetadata.siteUrl}${siteMetadata.socialBanner}`,
-        alt: siteMetadata.title,
-        width: 1200,
-        height: 600
-      }
-    ]
-  },
-  twitter: {
-    handle: siteMetadata.twitter,
-    site: siteMetadata.twitter,
-    cardType: 'summary_large_image'
-  },
-  additionalMetaTags: [
-    {
-      name: 'author',
-      content: siteMetadata.author
-    }
-  ]
+const CommonSEO = ({ title, description, ogType, ogImage, twImage }) => {
+  const router = useRouter()
+  return (
+    <Head>
+      <title>{title}</title>
+      <meta name='robots' content='follow, index' />
+      <meta name='description' content={description} />
+      <meta property='og:url' content={`${siteMetadata.siteUrl}${router.asPath}`} />
+      <meta property='og:type' content={ogType} />
+      <meta property='og:site_name' content={siteMetadata.title} />
+      <meta property='og:description' content={description} />
+      <meta property='og:title' content={title} />
+      {ogImage.constructor.name === 'Array'
+        ? (ogImage.map(({ url }) => <meta property='og:image' content={url} key={url} />))
+        : (<meta property='og:image' content={ogImage} key={ogImage} />)}
+      <meta name='twitter:card' content='summary_large_image' />
+      <meta name='twitter:site' content={siteMetadata.twitter} />
+      <meta name='twitter:title' content={title} />
+      <meta name='twitter:description' content={description} />
+      <meta name='twitter:image' content={twImage} />
+    </Head>
+  )
 }
 
-export const PageSeo = ({ title, description, url }) => {
+export const PageSEO = ({ title, description }) => {
+  const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
+  const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   return (
-    <NextSeo
-      title={`${title}`}
+    <CommonSEO
+      title={title}
       description={description}
-      canonical={url}
-      openGraph={{
-        url,
-        title,
-        description
-      }}
+      ogType='website'
+      ogImage={ogImageUrl}
+      twImage={twImageUrl}
     />
   )
 }
 
-export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [], canonicalUrl }) => {
+export const TagSEO = ({ title, description }) => {
+  const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
+  const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
+  const router = useRouter()
+  return (
+    <>
+      <CommonSEO
+        title={title}
+        description={description}
+        ogType='website'
+        ogImage={ogImageUrl}
+        twImage={twImageUrl}
+      />
+      <Head>
+        <link
+          rel='alternate'
+          type='application/rss+xml'
+          title={`${description} - RSS feed`}
+          href={`${siteMetadata.siteUrl}${router.asPath}/rss.xml`}
+        />
+      </Head>
+    </>
+  )
+}
+
+export const BlogSEO = ({ title, summary, date, lastmod, images = [], canonicalUrl }) => {
+  const router = useRouter()
   const publishedAt = new Date(date).toISOString()
   const modifiedAt = new Date(lastmod || date).toISOString()
   const imagesArr =
@@ -64,42 +83,31 @@ export const BlogSeo = ({ title, summary, date, lastmod, url, tags, images = [],
     }
   })
 
+  const postPath = `${siteMetadata.siteUrl}${router.asPath}`
+
   return (
     <>
-      <NextSeo
-        title={`${title} – ${siteMetadata.title}`}
-        description={summary}
-        canonical={canonicalUrl || url}
-        openGraph={{
-          type: 'article',
-          article: {
-            publishedTime: publishedAt,
-            modifiedTime: modifiedAt,
-            authors: [`${siteMetadata.siteUrl}/about`],
-            tags
-          },
-          url,
-          title,
-          description: summary,
-          images: featuredImages
-        }}
-        additionalMetaTags={[
-          {
-            name: 'twitter:image',
-            content: featuredImages[0].url
-          }
-        ]}
-      />
-      <ArticleJsonLd
-        authorName={siteMetadata.author}
-        dateModified={modifiedAt}
-        datePublished={publishedAt}
-        description={summary}
-        images={featuredImages}
-        publisherName={siteMetadata.author}
-        title={title}
-        url={url}
-      />
+      <Head>
+        <title>{title}</title>
+        <meta name='robots' content='follow, index' />
+        <meta name='description' content={summary} />
+        <meta property='og:url' content={postPath} />
+        <meta property='og:type' content='article' />
+        <meta property='og:site_name' content={siteMetadata.title} />
+        <meta property='og:description' content={summary} />
+        <meta property='og:title' content={title} />
+        {featuredImages.map((img) => (
+          <meta property='og:image' content={img.url} key={img.url} />
+        ))}
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:site' content={siteMetadata.twitter} />
+        <meta name='twitter:title' content={title} />
+        <meta name='twitter:description' content={summary} />
+        <meta name='twitter:image' content={featuredImages[0].url} />
+        {date && <meta property='article:published_time' content={publishedAt} />}
+        {lastmod && <meta property='article:modified_time' content={modifiedAt} />}
+        <link rel='canonical' href={canonicalUrl || postPath} />
+      </Head>
     </>
   )
 }

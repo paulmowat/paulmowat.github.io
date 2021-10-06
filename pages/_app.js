@@ -7,10 +7,8 @@ import * as ga from '@/lib/ga'
 
 import { MDXProvider } from '@mdx-js/react'
 import { ThemeProvider } from 'next-themes'
-import { DefaultSeo } from 'next-seo'
 import Head from 'next/head'
 
-import { SEO } from '@/components/SEO'
 import MDXComponents from '@/components/MDXComponents'
 
 export default function App ({ Component, pageProps }) {
@@ -37,7 +35,6 @@ export default function App ({ Component, pageProps }) {
         <Head>
           <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
         </Head>
-        <DefaultSeo {...SEO} />
         <Component {...pageProps} />
       </MDXProvider>
     </ThemeProvider>

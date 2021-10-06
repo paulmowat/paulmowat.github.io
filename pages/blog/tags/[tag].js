@@ -1,5 +1,5 @@
 import PageWrapper from '@/components/PageWrapper'
-import { PageSeo } from '@/components/SEO'
+import { TagSEO } from '@/components/SEO'
 import siteMetadata from '@/config/siteMetadata'
 import PostsTagsList from '@/layouts/PostsTagsList'
 import generateRss from '@/lib/generate-rss'
@@ -45,10 +45,9 @@ export default function Tag ({ posts, tag }) {
   return (
     <>
       <PageWrapper>
-        <PageSeo
+        <TagSEO
           title={`${tag} - ${siteMetadata.title}`}
           description={`${tag} tags - ${siteMetadata.title}`}
-          url={`${siteMetadata.siteUrl}/blog/tags/${tag}`}
         />
         <PostsTagsList posts={posts} title={title} />
       </PageWrapper>

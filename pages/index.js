@@ -1,5 +1,5 @@
 import HomeWrapper from '@/components/HomeWrapper'
-import { PageSeo } from '@/components/SEO'
+import { PageSEO } from '@/components/SEO'
 
 import siteMetadata from '@/config/siteMetadata'
 
@@ -20,10 +20,9 @@ export default function Home ({ posts }) {
   return (
     <>
       <HomeWrapper>
-        <PageSeo
+        <PageSEO
           title={siteMetadata.title}
           description={siteMetadata.description}
-          url={siteMetadata.siteUrl}
         />
         <main id='home'>
           <section className='h-screen flex flex-col justify-center items-start min-h-screen p-0 max-w-screen-md -mt-20'>

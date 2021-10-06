@@ -1,5 +1,5 @@
 import PageWrapper from '@/components/PageWrapper'
-import { PageSeo } from '@/components/SEO'
+import { PageSEO } from '@/components/SEO'
 
 import siteMetadata from '@/config/siteMetadata'
 import Link from '@/components/Link'
@@ -8,10 +8,9 @@ export default function Uses () {
   return (
     <>
       <PageWrapper>
-        <PageSeo
+        <PageSEO
           title={`Uses - ${siteMetadata.author}`}
-          description={`Uses - ${siteMetadata.author}`}
-          url={`${siteMetadata.siteUrl}/uses`}
+          description='Find out what software and hardware I use on a daily basis for work and development.'
         />
         <main id='uses' className='divide-y'>
           <h1 className='pageTitle'>
@@ -98,6 +97,7 @@ export default function Uses () {
               </h2>
               <div>
                 <ul>
+                  <li><Link href='https://github.com/timlrx/tailwind-nextjs-starter-blog'>Tailwind NextJS Starter Blog</Link> was an awesome starting point to build upon.</li>
                   <li><Link href='https://nextjs.org'>Next.js</Link> is the framework that powers the site.</li>
                   <li><Link href='https://tailwindcss.com'>TailwindCSS</Link> is used for making it look good.</li>
                   <li><Link href='https://github.com/'>Github</Link> for Source Code Management and Continuous Integration.</li>

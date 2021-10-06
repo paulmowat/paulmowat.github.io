@@ -1,6 +1,6 @@
 import PageTitle from '@/components/PageTitle'
 import PageWrapper from '@/components/PageWrapper'
-import { BlogSeo } from '@/components/SEO'
+import { BlogSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/config/siteMetadata'
 
@@ -9,13 +9,13 @@ import ViewCounter from 'components/ViewCounter'
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
-export default function Post ({ children, frontMatter, next, prev }) {
+export default function Post ({ children, frontMatter }) {
   const { slug, date, title, tags } = frontMatter
 
   const pageUrl = `${siteMetadata.siteUrl}/blog/${slug}`
   return (
     <PageWrapper>
-      <BlogSeo url={pageUrl} {...frontMatter} />
+      <BlogSEO url={pageUrl} {...frontMatter} />
       <article>
         <div className='divide-y'>
           <header className='pt-6 pb-6'>

@@ -1,5 +1,5 @@
 import PageWrapper from '@/components/PageWrapper'
-import { PageSeo } from '@/components/SEO'
+import { PageSEO } from '@/components/SEO'
 
 import siteMetadata from '@/config/siteMetadata'
 import Link from '@/components/Link'
@@ -8,10 +8,9 @@ export default function About () {
   return (
     <>
       <PageWrapper>
-        <PageSeo
+        <PageSEO
           title={`About - ${siteMetadata.author}`}
-          description={`About - ${siteMetadata.author}`}
-          url={`${siteMetadata.siteUrl}/about`}
+          description="Hey, I'm Paul Mowat. I'm a developer based near Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect."
         />
         <main id='about' className='divide-y'>
           <h1 className='pageTitle'>

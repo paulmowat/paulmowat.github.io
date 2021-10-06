@@ -1,5 +1,5 @@
 import PageWrapper from '@/components/PageWrapper'
-import { PageSeo } from '@/components/SEO'
+import { PageSEO } from '@/components/SEO'
 import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/config/siteMetadata'
@@ -17,10 +17,9 @@ export default function Tags ({ tags }) {
   return (
     <>
       <PageWrapper>
-        <PageSeo
+        <PageSEO
           title={`Blog Tags - ${siteMetadata.author}`}
           description='Things I blog about'
-          url={`${siteMetadata.siteUrl}/blog/tags`}
         />
         <div className='divide-y'>
           <div className='pt-6 pb-8 space-y-2 md:space-y-5'>

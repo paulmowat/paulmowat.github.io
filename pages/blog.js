@@ -1,5 +1,5 @@
 import PageWrapper from '@/components/PageWrapper'
-import { PageSeo } from '@/components/SEO'
+import { PageSEO } from '@/components/SEO'
 
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/config/siteMetadata'
@@ -15,10 +15,9 @@ export default function Blog ({ posts }) {
   return (
     <>
       <PageWrapper>
-        <PageSeo
+        <PageSEO
           title={`Blog - ${siteMetadata.author}`}
-          description={siteMetadata.description}
-          url={`${siteMetadata.siteUrl}/blog`}
+          description='View my blog posts. Topics include Software, DevOps, Javascript, Node.js and AWS.'
         />
         <BlogList root='blog' posts={posts} title='Blog' />
       </PageWrapper>
