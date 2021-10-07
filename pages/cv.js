@@ -63,7 +63,7 @@ export default function CV () {
         <PageWrapper>
           <PageSEO
             title={`CV - ${siteMetadata.author}`}
-            description='Find out more about my career and education.'
+            description="Find out more about Paul Mowat's career and education."
           />
           <main id='cv' className='divide-y'>
             <h1 className='pageTitle'>

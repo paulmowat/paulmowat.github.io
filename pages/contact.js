@@ -79,7 +79,7 @@ export default class Contact extends React.Component {
         <PageWrapper>
           <PageSEO
             title={`Contact - ${siteMetadata.author}`}
-            description='You can use the form to contact me with any queries you have or reach out on social media.'
+            description='You can use the form to contact Paul Mowat with any queries you have or reach out on social media.'
           />
           <main className='divide-y'>
             <h1 className='pageTitle'>

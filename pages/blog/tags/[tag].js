@@ -46,8 +46,8 @@ export default function Tag ({ posts, tag }) {
     <>
       <PageWrapper>
         <TagSEO
-          title={`${tag} - ${siteMetadata.title}`}
-          description={`${tag} tags - ${siteMetadata.title}`}
+          title={`Blog Tag ${tag} - ${siteMetadata.title}`}
+          description={`A list of blog posts for the topic ${tag} blogged by Paul Mowat.`}
         />
         <PostsTagsList posts={posts} title={title} />
       </PageWrapper>

@@ -17,7 +17,7 @@ export default function Blog ({ posts }) {
       <PageWrapper>
         <PageSEO
           title={`Blog - ${siteMetadata.author}`}
-          description='View my blog posts. Topics include Software, DevOps, Javascript, Node.js and AWS.'
+          description="View Paul Mowat's blog posts. Topics include Software, DevOps, Javascript, Node.js and AWS."
         />
         <BlogList root='blog' posts={posts} title='Blog' />
       </PageWrapper>

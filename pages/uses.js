@@ -10,7 +10,7 @@ export default function Uses () {
       <PageWrapper>
         <PageSEO
           title={`Uses - ${siteMetadata.author}`}
-          description='Find out what software and hardware I use on a daily basis for work and development.'
+          description='Find out what software and hardware Paul Mowat uses on a daily basis for work and development.'
         />
         <main id='uses' className='divide-y'>
           <h1 className='pageTitle'>
