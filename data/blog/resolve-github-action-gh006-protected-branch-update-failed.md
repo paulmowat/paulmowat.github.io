@@ -1,7 +1,7 @@
 ---
 title: 'How to resolve GH006 Protected Branch Update Failed'
 date: '2021-10-14'
-tags: ['github', '']
+tags: ['github', 'rush-js']
 draft: false
 summary: 'How to resolve the GH006 Protected Branch Update Failed error using a personal access token.'
 ---
@@ -20,11 +20,11 @@ We typically setup the following:
 
 These rules help us maintain quality by ensuring all branches meet the required criteria.
 
-A while back we started to use [RushJS.io](https://rushjs.io/) as our mono-repo management tool. It's a fantastic tool and helps us in a multitude of ways to make our development process easier. 
+A while back we started to use [Rush](https://rushjs.io/) as our monorepo management tool. It's a fantastic tool and helps us in a multitude of ways to make our development process easier. 
 
-As part of it's usage we use the `rush change` functionality. This allows our developers to create change files for their PRs that are then identified by the build pipelines to automatically increment package versions.
+As part of it's usage we use the [rush change](https://rushjs.io/pages/commands/rush_change/) functionality. This allows our developers to create [change logs](https://rushjs.io/pages/best_practices/change_logs/) for their PRs that are then identified by the build pipelines to automatically increment package versions.
 
-In order to do this `rush` creates a version bump branch and merges it back in as part of the build pipeline. This works absolutely fine when branch protection is turned off.
+In order to do this [Rush](https://rushjs.io/) creates a version bump branch and merges it back in as part of the build pipeline. This works absolutely fine when branch protection is turned off.
 
 ## The Problem
 
@@ -35,33 +35,33 @@ error: GH006: Protected branch update failed for refs/heads/main
 error: Required status check "Build" is expected. At least 1 approving review is required by reviewers with write access
 ```
 
-This is a problem! We definitely want to use protected branches and definitely want to be able to use `rush change` to control versions. So how can we fix?
+This is a problem! We definitely want to use protected branches and definitely want to be able to use [rush change](https://rushjs.io/pages/commands/rush_change/) to control versions. So how can we fix?
 
 I assumed this would be a easy fix and just a case of giving the Github action extra permissions to push to the protected branch. Wrong!
 
-After spending a bit of time Googling I came across a Github community post @ <https://github.community/t/allowing-github-actions-bot-to-push-to-protected-branch/16536>. The TLDR is that Github can't make the change to fix it for security reasons.
+After spending a bit of time Googling I came across a Github community post @ <https://github.community/t/allowing-github-actions-bot-to-push-to-protected-branch/16536>. The TLDR is that Github can't make the change to fix it the way people want for security reasons.
 
-At that point in time were we busy with deadlines and had to make a decision on how to progress.  The decision was to temporarily disable branch protection, although it felt wrong. The issue was put in the backlog to be looked at later.
+At that point in time were we busy with deadlines and had to make a decision on how to progress.  That decision was to temporarily disable branch protection even though it felt wrong. The issue was put in the backlog to be looked at later.
 
 ## Solution
 
-Fast forward to this past week. I finally got a bit of time to investigate further and managed to track down a workaround.
+Fast forward to this past week and I finally got a bit of time to investigate further. There is unfortunately no movement from GitHub's side, but I managed to track down a workaround.
 
 The workaround is as follows:
 
 1. Create a new a Github user specifically for building.
 
-2. Create a new personal access token for that user with access to 
+2. Create a new personal access token for that user with access to `repo`.
 
 ![github personal access token](/static/images/resolve-github-action-gh006-protected-branch-update-failed/github_pat.png)
 
 3. Add the personal access token as a Github secret e.g. BUILD_SVC_PAT.
 
-![github personal access token](/static/images/resolve-github-action-gh006-protected-branch-update-failed/github_secret.png)
+![github secret](/static/images/resolve-github-action-gh006-protected-branch-update-failed/github_secret.png)
 
-4. Update your branch protection and add the user to 'Restrict who can push to matching branches'
+4. Update your branch protection and add your new build user to 'Restrict who can push to matching branches'.
 
-5. Update your Github action to checkout the code using the personal access token
+5. Update your Github action to checkout the code using the Github secret.
 
 ```yaml
 jobs:
@@ -74,6 +74,8 @@ jobs:
           token: ${{ secrets.BUILD_SVC_PAT }}
 ```
 
-Now this workaround isn't perfect. Your basically creating a admin user to do the build and allowing that user to push to the protected branch. 
+This will let you configure branch protection and let the [rush change](https://rushjs.io/pages/commands/rush_change/) version bump branch be committed.
 
-It means you can't set the 'Include Administrators' branch protection rule, therefore your admins can still push. It does however stop any other developers being able to push to the branch.
+Now this workaround isn't perfect. You are basically creating a admin user to do the build, and allowing that user to push to the protected branch.
+
+This means you can't set the `Include Administrators` branch protection rule, therefore your other admins can still push directly and bypass branch protection. It does however stop any other non-admin developers being able to push directly to the branch. For our needs it was a suitable solution.
