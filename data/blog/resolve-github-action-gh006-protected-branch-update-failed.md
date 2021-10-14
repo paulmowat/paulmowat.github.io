@@ -2,7 +2,7 @@
 title: 'How to resolve GH006 Protected Branch Update Failed'
 date: '2021-10-14'
 tags: ['github', '']
-draft: true
+draft: false
 summary: 'How to resolve the GH006 Protected Branch Update Failed error using a personal access token.'
 ---
 
