@@ -104,6 +104,8 @@ Again, hit `Ctrl + Shift + P` to open the command palette. Then enter `SonarLint
 
 You should now be all connected and configured.
 
+## Verifying
+
 You can test this out by opening up a file that has some problems.
 
 These will now highlighted within your code 
