@@ -9,17 +9,17 @@ images: ['/static/images/cloudwatch-rum-cognito-sam-cloudformation/title.png']
 
 ## Overview
 
-Recently I was tasked with looking into Amazon CloudWatch RUM and how to implement it for some of our applications at [Advanced](https://www.oneadvanced.com). 
+I was asked to look into Amazon CloudWatch RUM and how to implement it for some of our applications at [Advanced](https://www.oneadvanced.com). 
 
-CloudWatch RUM is a fairly addition that was released at AWS reInvent 2021. It allows you to configure your web application to perform real-user monitoring. It can also be configured to collect additional data such as performance, errors and http requests. It also works with AWS Xray to allow it to track client to server traces. Overall sounds like a very useful tool for analysis and debugging.
+CloudWatch RUM is a service that was released at AWS reInvent 2021. It allows you to configure your web application to perform real-user monitoring. It can also be configured to collect additional data, such as performance, errors and HTTP requests. It also works with AWS XRay, which allows it to track client to server traces. Overall it looks like a helpful tool that will aid analysis and debugging.
 
-The cost is $1 for every 100k of events that are collected. Each data item collected by the RUM web client is considered an event e.g. page view, JavaScript or HTTP errors. See [AWS CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) for detailed information.
+The cost is $1 for every 100k of events that are collected. Every data item collected by the RUM web client is considered an event e.g. page view, JavaScript or HTTP errors. See [AWS CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/) for detailed information.
 
 The guide will take you through getting CloudWatch RUM deployed and hooked into your application.
 
 ## Requirements
 
-To follow along you will need.
+To follow along, you will need.
 
 * AWS Account
 * AWS SAM CLI
@@ -27,9 +27,9 @@ To follow along you will need.
 
 ## CloudWatch RUM & Cognito Deployment
 
-The SAM/Cloudformation template will deploy the CloudWatch RUM application monitor along with a Cognito Identity Pool that is configured to allow unauthorized access to the web client. This is required in order for the web client to send the events back to the CloudWatch RUM service.
+The SAM/Cloudformation template will deploy the CloudWatch RUM application monitor along with a Cognito Identity Pool. The Identity Pool is configured to allow unauthorized access to the CloudWatch RUM web client. This is required for the CloudWatch RUM web client to send the events back to the CloudWatch RUM service.
 
-To deploy follow the below steps.
+To deploy, follow the below steps.
 
 1. Copy the below template into a file called `template.yml`
 
@@ -125,9 +125,9 @@ sam deploy --guided
 * Enter the desired AWS Region
 * Enter the Application Name
 * Enter the Application Domain
-* Allow SAM CLI to create IAM roles with the required permissions.
+* Allow SAM CLI to create IAM roles with the required permissions
 
-Once the deployment has completed you will now have a CloudWatch RUM application monitor.
+Once the deployment has finished, you will have a CloudWatch RUM application monitor.
 
 ## Application Configuration
 
@@ -135,7 +135,7 @@ The next step is to configure your application to connect to the CloudWatch RUM 
 
 ### Get JavaScript Snippet from AWS Console
 
-The JavaScript snippet is specific to the CloudWatch RUM application monitor and is used by your application to inject the CloudWatch RUM web client in order for it to sent events back to the service.
+The JavaScript snippet is specific to the CloudWatch RUM application monitor and is used by your application to inject in the CloudWatch RUM web client. This is what captures and sends back events to the service.
 
 1. Login to the AWS Console
 2. Navigate to CloudWatch RUM
@@ -146,15 +146,15 @@ The JavaScript snippet is specific to the CloudWatch RUM application monitor and
 
 ![cloudwatch rum javascript snippet](/static/images/cloudwatch-rum-cognito-sam-cloudformation/aws_2.png)
 
-4. Click `Copy to clipboard` to copy the Javascript snippet.
+4. Click `Copy to clipboard` to copy the Javascript snippet
 
 ### Modify Snippet Configuration
 
-If required you can modify the code snippet to configure the CloudWatch RUM web client with additional options. 
+If required, you can modify the code snippet to configure the CloudWatch RUM web client with additional options. 
 
 See the [CloudWatch RUM Modify Snippet](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-RUM-modify-snippet.html) documentation for further information on the additional options.
 
-From those options I've decided to configure CloudWatch RUM as follows.
+From those options, I've decided to configure CloudWatch RUM as follows.
 * Enables cookies to track user and session details
 * Enables XRay traces
 * Sample all sessions
@@ -204,16 +204,16 @@ The snippet below shows the above configuration in action as an example.
 
 ### Insert &amp; Deploy Snippet
 
-Now we have our snippet configured we can insert it into the web application code. It needs to be added within the `<head>` element, above any other `<script>`tags.
+Now that we have the snippet configured, we can insert it into the web application code. It needs to be inserted within the `<head>` element, above any other `<script>` tags.
 
-The below example shows how to add it to a html page
+The below example shows where to add it to an HTML page.
 
 ```html
 <!doctype html>
 <html lang="en">
 <head>
   <script>
-    (function(n,i,v,r,s,c,u,x,z){x=window.AwsRumClient={q:[],n:n,i:i,v:v,r:r,c:c,u:u};window[n]=function(c,p){x.q.push({c:c,p:p});};z=document.createElement('script');z.async=true;z.src=s;document.head.insertBefore(z,document.getElementsByTagName('script')[0]);})('cwr','00000000-0000-0000-0000-000000000000','1.0.0','us-west-2','https://client.rum.us-east-1.amazonaws.com/1.0.2/cwr.js',{sessionSampleRate:1,guestRoleArn:'arn:aws:iam::000000000000:role/RUM-Monitor-us-west-2-000000000000-0000000000000-Unauth',identityPoolId:'us-west-2:00000000-0000-0000-0000-000000000000',endpoint:'https://dataplane.rum.us-west-2.amazonaws.com',telemetries:['errors','http','performance'],allowCookies:true});
+    // snippet goes here
   </script>
   ...
 </head>
@@ -227,23 +227,25 @@ See the below page on the CloudWatch RUM web client documentation for specific f
 * [Angular](https://github.com/aws-observability/aws-rum-web/blob/main/docs/cdn_angular.md)
 * [React](https://github.com/aws-observability/aws-rum-web/blob/main/docs/cdn_react.md)
 
-Now that we've got the CloudWatch RUM web client inserted, lets get the application redeployed.
+Now that we've got the CloudWatch RUM web client inserted. Let's get the application redeployed.
 
-## Verifying
+## Verifying it works
 
 Everything should now be configured and deployed. Let's verify it's all working as expected.
 
 1. Navigate to your application
 2. Interact with your application to generate events e.g. change pages
-3. Look at the AWS CloudWatch RUM console for the application monitor and you should be able to see the last updated time and also start to see data appear as below.
+3. Look at the AWS CloudWatch RUM console for the application monitor. You should be able to see the last updated time and also see data appear as below
 
 ![cloudwatch rum javascript snippet](/static/images/cloudwatch-rum-cognito-sam-cloudformation/aws_3.png)
 
 ## Wrap-up
 
-You should now have CloudWatch RUM deployed and your application configured and been able to verify the data coming through.
+You should have CloudWatch RUM deployed, your web application configured and now be able to see the data on the AWS console.
 
-You can find the the code from this blog at the following locations.
+CloudWatch RUM looks like a good addition to the CloudWatch ecosystem and is very easy to get up and running with minimal changes to your application required.
+
+You can find the code from this blog at the following locations.
 
 * <https://github.com/paulmowat/aws-cloudwatch-rum-cognito-cloudformation>
 * <https://serverlessland.com/patterns/cognito-cloudwatch>
