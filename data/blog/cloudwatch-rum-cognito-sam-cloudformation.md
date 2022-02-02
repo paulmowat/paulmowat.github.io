@@ -247,7 +247,7 @@ CloudWatch RUM looks like a good addition to the CloudWatch ecosystem and is ver
 
 You can find the code from this blog at the following locations.
 
-* <https://github.com/paulmowat/aws-cloudwatch-rum-cognito-cloudformation>
+* <https://github.com/paulmowat/aws-cloudwatch-rum-cognito-sam-cloudformation>
 * <https://serverlessland.com/patterns/cognito-cloudwatch>
 
 ## Additional Resources
