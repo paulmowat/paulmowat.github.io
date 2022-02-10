@@ -3,6 +3,7 @@ import PageWrapper from '@/components/PageWrapper'
 import { BlogSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/config/siteMetadata'
+import Comments from '@/components/comments'
 
 import ShareButton from '@/components/ShareButton'
 import ViewCounter from 'components/ViewCounter'
@@ -13,7 +14,7 @@ export default function Post ({ children, frontMatter }) {
   const { slug, date, title, tags } = frontMatter
 
   const pageUrl = `${siteMetadata.siteUrl}/blog/${slug}`
-  const pageTitle = `${title} - ${siteMetadata.author}`
+  const pageTitle = `${title}`
   return (
     <PageWrapper>
       <BlogSEO {...frontMatter} url={pageUrl} title={pageTitle} />
@@ -58,7 +59,7 @@ export default function Post ({ children, frontMatter }) {
           >
             <div className='divide-y xl:pb-0'>
               <div className='pt-6 pb-8 prose max-w-none'>{children}</div>
-              <div className='pb-4 prose max-w-none'>
+              <div className='pb-8 prose max-w-none'>
                 <div className='flex flex-col items-center justify-center pt-6 space-x-4 space-y-4 xl:flex-row xl:items-baseline'>
                   <p className='m-0'>Useful article? Please share it with your friends.</p>
                   <ShareButton kind='twitter' label='Share on Twitter' title={title} href={pageUrl} />
@@ -68,6 +69,10 @@ export default function Post ({ children, frontMatter }) {
                 {/* <div className='flex justify-center'>
                   <p>Get the latest articles. Sign up to the <a href='/newsletter'>newsletter</a>.</p>
                 </div> */}
+
+              </div>
+              <div className='pt-6'>
+                <Comments frontMatter={frontMatter} />
               </div>
             </div>
             {/* <footer>

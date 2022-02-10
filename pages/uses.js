@@ -1,7 +1,6 @@
 import PageWrapper from '@/components/PageWrapper'
 import { PageSEO } from '@/components/SEO'
 
-import siteMetadata from '@/config/siteMetadata'
 import Link from '@/components/Link'
 
 export default function Uses () {
@@ -9,7 +8,7 @@ export default function Uses () {
     <>
       <PageWrapper>
         <PageSEO
-          title={`Uses - ${siteMetadata.author}`}
+          title='Uses'
           description='Find out what software and hardware Paul Mowat uses on a daily basis for work and development.'
         />
         <main id='uses' className='divide-y'>

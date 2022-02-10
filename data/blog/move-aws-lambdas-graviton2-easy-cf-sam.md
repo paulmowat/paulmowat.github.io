@@ -1,5 +1,5 @@
 ---
-title: 'Move your AWS Lambdas to Graviton2 easily with Cloudformation/SAM'
+title: 'Move AWS Lambdas to Graviton2 with Cloudformation/SAM'
 date: '2021-10-01'
 tags: ['aws', 'lambda', 'aws sam', 'cloudformation', 'graviton']
 draft: false
