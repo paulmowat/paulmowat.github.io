@@ -45,7 +45,7 @@ const Giscus = ({ mapping }) => {
     <div className='pt-3 prose pb-6 max-w-none'>
       <div className='pb-3'>
         <h2>Comments</h2>
-        <p>Do you want to share feedback, or discuss further ideas? Feel free to leave a comment here! This comment thread directly maps to a <a href={discussionUrl}>discussion on GitHub</a>, so you can also comment there directly if you prefer.</p>
+        <p>Do you want to share feedback, or discuss further ideas? Feel free to leave a comment here! This comment thread maps to a <a href={discussionUrl}>discussion on GitHub</a>, so you can also comment there directly if you prefer.</p>
       </div>
       <div className='giscus' id={COMMENTS_ID} />
     </div>
