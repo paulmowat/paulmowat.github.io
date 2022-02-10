@@ -7,6 +7,9 @@ const Giscus = ({ mapping }) => {
   const { theme, resolvedTheme } = useTheme()
   const COMMENTS_ID = 'comments-container'
 
+  const searchEncoded = encodeURIComponent(mapping)
+  const discussionUrl = `https://github.com/${siteMetadata.comment.giscusConfig.repo}/discussions/categories/post-comments?discussions_q=${searchEncoded}`
+
   useEffect(() => {
     const commentsTheme =
       siteMetadata.comment.giscusConfig.themeURL === ''
@@ -39,17 +42,12 @@ const Giscus = ({ mapping }) => {
   }, [theme, resolvedTheme])
 
   return (
-    <div className='pt-6 pb-6 text-center'>
-      <div>
-        <h3>Comments</h3>
-        <p>Do you have a problem, want to share feedback, or discuss further ideas? Feel free to leave a comment here! This comment thread directly maps to a discussion on GitHub, so you can also comment there if you prefer.</p>
+    <div className='pt-3 prose pb-6 max-w-none'>
+      <div className='pb-3'>
+        <h2>Comments</h2>
+        <p>Do you want to share feedback, or discuss further ideas? Feel free to leave a comment here! This comment thread directly maps to a <a href={discussionUrl}>discussion on GitHub</a>, so you can also comment there directly if you prefer.</p>
       </div>
       <div className='giscus' id={COMMENTS_ID} />
-      <div>
-        <p class='comment-directly-on-github'>
-          Instead of authenticating the <a href='https://giscus.app'>giscus</a> application, you can also comment directly <a href='{{ discussion_url | safe }}'><em>on GitHub</em></a>.
-        </p>
-      </div>
     </div>
   )
 }

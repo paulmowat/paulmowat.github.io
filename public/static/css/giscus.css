@@ -88,42 +88,42 @@ main .pagination-loader-container {
   background-image: url("https://github.com/images/modules/pulls/progressive-disclosure-line.svg");
 }
 
-main > div > div.gsc-reactions > h4,
-main > div > div.gsc-comments > div.gsc-header > div > h4 {
+.gsc-reactions > h4,
+.gsc-comments > div.gsc-header > div > h4 {
   color: #fff
 }
 
-main > div > div.gsc-reactions > h4 > a,
-main > div > div.gsc-comments > div.gsc-header > div.gsc-left-header > h4 > a,
-main > div > div.gsc-comments > div.gsc-header > div.gsc-left-header > em > a {
+.gsc-reactions > h4 > a,
+.gsc-comments > div.gsc-header > div.gsc-left-header > h4 > a,
+.gsc-comments > div.gsc-header > div.gsc-left-header > em > a {
   color: #0ea5e9;
 }
 
 
-main > div > div.gsc-reactions > h4 > a:hover,
-main > div > div.gsc-comments > div.gsc-header > div.gsc-left-header > h4 > a:hover,
-main > div > div.gsc-comments > div.gsc-header > div.gsc-left-header > em > a:hover {
+.gsc-reactions > h4 > a:hover,
+.gsc-comments > div.gsc-header > div.gsc-left-header > h4 > a:hover,
+.gsc-comments > div.gsc-header > div.gsc-left-header > em > a:hover {
   color: #38bdf8;
 }
 
-main > div > div.gsc-reactions > div > div.gsc-reactions-menu > button,
-main > div > div.gsc-comments > div.gsc-header > div.gsc-right-header.BtnGroup > button,
-main > div > div.gsc-comments > form > div.gsc-comment-box-bottom > div > button,
-main > div > div.gsc-reactions > div > div.gsc-direct-reaction-buttons > button {
+.gsc-reactions > div > div.gsc-reactions-menu > button,
+.gsc-comments > div.gsc-header > div.gsc-right-header.BtnGroup > button,
+.gsc-comments > form > div.gsc-comment-box-bottom > div > button,
+.gsc-reactions > div > div.gsc-direct-reaction-buttons > button {
   color: #fff;
   font-weight: 500;
   border-color: #0ea5e9;
   background-color: #0ea5e9;
 }
 
-main > div > div.gsc-reactions > div > div.gsc-reactions-menu > button:hover,
-main > div > div.gsc-comments > div.gsc-header > div.gsc-right-header.BtnGroup > button:hover,
-main > div > div.gsc-comments > form > div.gsc-comment-box-bottom > div > button:hover,
-main > div > div.gsc-reactions > div > div.gsc-direct-reaction-buttons > button:hover {
+.gsc-reactions > div > div.gsc-reactions-menu > button:hover,
+.gsc-comments > div.gsc-header > div.gsc-right-header.BtnGroup > button:hover,
+.gsc-comments > form > div.gsc-comment-box-bottom > div > button:hover,
+.gsc-reactions > div > div.gsc-direct-reaction-buttons > button:hover {
   background-color: #38bdf8;
 }
 
-main > div > div.gsc-comments > div.gsc-header > div.gsc-right-header.BtnGroup > button:hover {
+.gsc-comments > div.gsc-header > div.gsc-right-header.BtnGroup > button:hover {
   background-color: #38bdf8;
 }
 
@@ -131,6 +131,10 @@ main > div > div.gsc-comments > div.gsc-header > div.gsc-right-header.BtnGroup >
   background-color: #38bdf8 !important; 
 }
 
-main > div > div.gsc-comments > div.gsc-header > div.gsc-left-header > em {
+.gsc-comments > div.gsc-header > div.gsc-left-header > em {
   color: #fff;
+}
+
+.color-bg-tertiary {
+  background-color: #fff;
 }
