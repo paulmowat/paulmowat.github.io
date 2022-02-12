@@ -22,6 +22,7 @@ export default function Home ({ posts }) {
       <HomeWrapper>
         <PageSEO
           title={siteMetadata.title}
+          hideAuthor
           description={siteMetadata.description}
         />
         <main id='home'>

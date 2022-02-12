@@ -14,10 +14,9 @@ export default function Post ({ children, frontMatter }) {
   const { slug, date, title, tags } = frontMatter
 
   const pageUrl = `${siteMetadata.siteUrl}/blog/${slug}`
-  const pageTitle = `${title}`
   return (
     <PageWrapper>
-      <BlogSEO {...frontMatter} url={pageUrl} title={pageTitle} />
+      <BlogSEO {...frontMatter} url={pageUrl} title={title} />
       <article>
         <div className='divide-y'>
           <header className='pt-6 pb-6'>

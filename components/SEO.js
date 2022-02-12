@@ -2,11 +2,12 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import siteMetadata from '@/config/siteMetadata'
 
-const CommonSEO = ({ title, description, ogType, ogImage, twImage }) => {
+const CommonSEO = ({ title, description, ogType, ogImage, twImage, hideAuthor = false }) => {
   const router = useRouter()
+
   return (
     <Head>
-      <title>{title}</title>
+      <title>{title}{(hideAuthor === false) ? ' - ' + siteMetadata.author : ''}</title>
       <meta name='robots' content='follow, index' />
       <meta name='description' content={description} />
       <meta property='og:url' content={`${siteMetadata.siteUrl}${router.asPath}`} />
@@ -26,12 +27,13 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage }) => {
   )
 }
 
-export const PageSEO = ({ title, description }) => {
+export const PageSEO = ({ title, description, hideAuthor = false }) => {
   const ogImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   const twImageUrl = siteMetadata.siteUrl + siteMetadata.socialBanner
   return (
     <CommonSEO
       title={title}
+      hideAuthor={hideAuthor}
       description={description}
       ogType='website'
       ogImage={ogImageUrl}
@@ -88,7 +90,7 @@ export const BlogSEO = ({ title, summary, date, lastmod, images = [], canonicalU
   return (
     <>
       <Head>
-        <title>{title}</title>
+        <title>{title} - {siteMetadata.author}</title>
         <meta name='robots' content='follow, index' />
         <meta name='description' content={summary} />
         <meta property='og:url' content={postPath} />
