@@ -3,7 +3,7 @@ title: 'Move AWS Lambdas to Graviton2 with Cloudformation/SAM'
 date: '2021-10-01'
 tags: ['aws', 'lambda', 'aws sam', 'cloudformation', 'graviton']
 draft: false
-summary: 'How to move your existing AWS Lambda functions to Graviton2 easily with Cloudformation/SAM.'
+summary: 'Learn how to move your existing AWS Lambda functions to Graviton2 easily with Cloudformation/SAM and achieve better performance at a lower cost.'
 ---
 
 Yesterday, Amazon Web Services (AWS) shared [AWS Lambda Functions Powered By Graviton2 Processor](https://aws.amazon.com/blogs/aws/aws-lambda-functions-powered-by-aws-graviton2-processor-run-your-functions-on-arm-and-get-up-to-34-better-price-performance/).

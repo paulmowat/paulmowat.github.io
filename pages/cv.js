@@ -1,6 +1,7 @@
 import PageWrapper from '@/components/PageWrapper'
 import { PageSEO } from '@/components/SEO'
 
+import siteMetadata from '@/config/siteMetadata'
 import experience from '@/config/experience'
 
 import SvgIcon from '@/components/svgs'
@@ -61,8 +62,8 @@ export default function CV () {
       <>
         <PageWrapper>
           <PageSEO
-            title='CV'
-            description="Find out more about Paul Mowat's career and education."
+            title={`CV - ${siteMetadata.author}`}
+            description="Find out a full background around Paul Mowat's career and education to date. Including the key courses and job roles."
           />
           <main id='cv' className='divide-y'>
             <h1 className='pageTitle'>

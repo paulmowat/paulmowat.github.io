@@ -3,7 +3,7 @@ title: 'My thoughts on working from home'
 date: '2021-09-29'
 tags: ['work from home', 'productivity']
 draft: false
-summary: 'My thoughts on working from home for the past four years.'
+summary: 'Four years ago, I got the opportunity to work from home full time. I had never worked from home more than the odd day here or there before.'
 ---
 
 Four years ago, I got the opportunity to work from home full time. I had never worked from home more than the odd day here or there before and wasn't sure what to expect. This was before the world had to do it during the Coronavirus pandemic, and information on how to be effective was a bit more scarce. I decided to go for it and jump in, below are the key takeaways.

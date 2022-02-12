@@ -9,7 +9,7 @@ export default function About () {
     <>
       <PageWrapper>
         <PageSEO
-          title='About'
+          title={`About - ${siteMetadata.author}`}
           description="Hey, I'm Paul Mowat. I'm a developer based near Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect."
         />
         <main id='about' className='divide-y'>

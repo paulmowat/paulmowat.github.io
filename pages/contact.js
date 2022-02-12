@@ -4,6 +4,8 @@ import { PageSEO } from '@/components/SEO'
 
 import SvgIcon from '@/components/svgs'
 
+import siteMetadata from '@/config/siteMetadata'
+
 export default class Contact extends React.Component {
   constructor (props) {
     super(props)
@@ -76,8 +78,8 @@ export default class Contact extends React.Component {
       <>
         <PageWrapper>
           <PageSEO
-            title='Contact'
-            description='You can use the form to contact Paul Mowat with any queries you have or reach out on social media.'
+            title={`Contact - ${siteMetadata.author}`}
+            description='You can use this form to contact Paul Mowat with any queries you have. Alternatively you can reach out via social media.'
           />
           <main className='divide-y'>
             <h1 className='pageTitle'>

@@ -1,9 +1,9 @@
 ---
-title: 'How to configure SonarLint to connect to SonarQube for VS Code'
+title: 'How to configure SonarLint to connect to SonarQube for VSCode'
 date: '2022-01-23'
-tags: ['sonarlint', 'sonarqube', 'vs-code']
+tags: ['sonarlint', 'sonarqube', 'vscode']
 draft: false
-summary: 'How to configure SonarLint to connect to SonarQube for VS Code.'
+summary: 'Learn how to configure SonarLint to connect to SonarQube for VSCode. Enabling real-time code analysis as you build.'
 images: ['/static/images/sonarlint-connected-sonarqube-vscode/title.png']
 ---
 

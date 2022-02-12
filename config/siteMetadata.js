@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Paul Mowat - Developer | Principal DevOps Architect',
+  title: 'Developer | Principal DevOps Architect - Paul Mowat',
   author: 'Paul Mowat',
   headerTitle: 'Paul Mowat',
   email: 'paul@paulmowat.co.uk',

@@ -3,7 +3,7 @@ title: 'How to resolve GH006 Protected Branch Update Failed'
 date: '2021-10-14'
 tags: ['github', 'rush-js']
 draft: false
-summary: 'How to resolve the GH006 Protected Branch Update Failed error using a personal access token.'
+summary: 'Learn how to resolve the Github GH006 Protected Branch Update Failed error by using a personal access token to provide access.'
 images: ['/static/images/resolve-github-action-gh006-protected-branch-update-failed/title.png']
 ---
 

@@ -19,7 +19,7 @@ export default function Tags ({ tags }) {
       <PageWrapper>
         <PageSEO
           title={`Blog Tags - ${siteMetadata.author}`}
-          description='A list of topics that Paul Mowat blogs about.'
+          description='A list of topics that Paul Mowat blogs about. They typically contain guides and information on topics such as Software, DevOps, Javascript, Node.js and AWS.'
         />
         <div className='divide-y'>
           <div className='pt-6 pb-8 space-y-2 md:space-y-5'>
