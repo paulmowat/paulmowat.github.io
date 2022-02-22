@@ -10,7 +10,7 @@ export default function About () {
       <PageWrapper>
         <PageSEO
           title='About'
-          description="Hey, I'm Paul Mowat. I'm a developer based near Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect."
+          description="Hey, I'm Paul Mowat. I'm a developer based near Aberdeen Scotland who currently works for Advanced as an Principal Devops Architect."
         />
         <main id='about' className='divide-y'>
           <h1 className='pageTitle'>
@@ -22,10 +22,10 @@ export default function About () {
             </div>
             <div className='content'>
               <p>
-                Based near Aberdeen, Scotland, I currently work for <Link href='https://www.oneadvanced.com'>Advanced</Link> as a Principal DevOps Architect.
+                Based near Aberdeen Scotland, I currently work for <Link href='https://www.oneadvanced.com'>Advanced</Link> as an Principal DevOps Architect.
               </p>
               <p>
-                I'm a hardworking, organized and motivated software architect with 15+ years
+                I'm a hardworking, organized and motivated software architect with 16+ years
                 experience designing and supporting large scale enterprise applications on a variety
                 of platforms and technologies including AWS, Node.js, Progress OpenEdge, C#,
                 SQL Server and Java.
