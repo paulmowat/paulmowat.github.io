@@ -22,7 +22,7 @@ export default function About () {
             </div>
             <div className='content'>
               <p>
-                Based in near Aberdeen, Scotland, I currently work for <Link href='https://www.oneadvanced.com'>Advanced</Link> as a Principal DevOps Architect.
+                Based near Aberdeen, Scotland, I currently work for <Link href='https://www.oneadvanced.com'>Advanced</Link> as a Principal DevOps Architect.
               </p>
               <p>
                 I'm a hardworking, organized and motivated software architect with 15+ years
