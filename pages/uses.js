@@ -25,8 +25,8 @@ export default function Uses () {
               </h2>
               <div>
                 <ul>
-                  <li><Link href='https://code.visualstudio.com/'>Visual Studio Code</Link> is my primary editor of choice.</li>
-                  <li><Link href='https://marketplace.visualstudio.com/items?itemName=freeCodeCamp.freecodecamp-dark-vscode-theme'>Free Code Camp Dark Theme.</Link></li>
+                  <li><Link href='https://code.visualstudio.com/'>Visual Studio Code</Link> is my primary editor of choice</li>
+                  <li><Link href='https://marketplace.visualstudio.com/items?itemName=freeCodeCamp.freecodecamp-dark-vscode-theme'>Free Code Camp Dark Theme</Link></li>
                   <li>A number of extensions
                     <ul>
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tag'>Auto Close Tag</Link></li>
@@ -53,12 +53,12 @@ export default function Uses () {
               </h2>
               <div>
                 <ul>
-                  <li><Link href='https://www.google.com/intl/en_uk/chrome/'>Chrome</Link> for browsing.</li>
-                  <li><Link href='https://www.scootersoftware.com/'>Beyond Compare</Link> for file/directory comparisons.</li>
-                  <li><Link href='https://dbeaver.io/'>DBeaver</Link> for working with databases.</li>
-                  <li><Link href='https://tortoisegit.org/'>TortoiseGit</Link> for working with Github.</li>
-                  <li><Link href='https://www.postman.com/'>Postman</Link> for API testing.</li>
-                  <li><Link href='https://www.docker.com/'>Docker</Link> for containerization.</li>
+                  <li><Link href='https://www.google.com/intl/en_uk/chrome/'>Chrome</Link> for browsing</li>
+                  <li><Link href='https://www.scootersoftware.com/'>Beyond Compare</Link> for file/directory comparisons</li>
+                  <li><Link href='https://dbeaver.io/'>DBeaver</Link> for working with databases</li>
+                  <li><Link href='https://tortoisegit.org/'>TortoiseGit</Link> for working with Github</li>
+                  <li><Link href='https://www.postman.com/'>Postman</Link> for API testing</li>
+                  <li><Link href='https://www.docker.com/'>Docker</Link> for containerization</li>
                 </ul>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function Uses () {
                   <li><Link href='https://www.logitech.com/en-gb/products/webcams/c922-pro-stream-webcam.html'>Logitech C922 Webcam</Link></li>
                   <li><Link href='https://www.tonormic.com/products/tonor-q9-usb-microphone-kit'>Tonor Q9 USB Microphone Kit</Link></li>
                   <li>Dell Docking Station to connect everything up</li>
-                  <li><Link href='https://store.google.com/gb/product/google_nest_mini?hl=en-GB'>Google Nest Mini</Link> speaker for listening to Spotify.</li>
+                  <li><Link href='https://store.google.com/gb/product/google_nest_mini?hl=en-GB'>Google Nest Mini</Link> speaker for listening to Spotify</li>
                   <li>HP Color LaserJet Pro MFP M177fw Printer/Scanner</li>
                 </ul>
               </div>
@@ -84,9 +84,9 @@ export default function Uses () {
               </h2>
               <div>
                 <ul>
-                  <li>Primary Node.js/Javascript, But experience in OpenEdge, Java, C# and many others.</li>
-                  <li>Amazon Web Services. Mostly via AWS CLI, AWS SAM CLI and CloudFormation.</li>
-                  <li>Docker for running things locally like Lambdas/Redis/Databases.</li>
+                  <li>Primary Node.js/Javascript, But experience in OpenEdge, Java, C# and many others</li>
+                  <li>Amazon Web Services. Mostly via AWS CLI, AWS SAM CLI and CloudFormation</li>
+                  <li>Docker for running things locally like Lambdas/Redis/Databases</li>
                 </ul>
               </div>
             </div>
@@ -96,11 +96,11 @@ export default function Uses () {
               </h2>
               <div>
                 <ul>
-                  <li><Link href='https://github.com/timlrx/tailwind-nextjs-starter-blog'>Tailwind NextJS Starter Blog</Link> was an awesome starting point to build upon.</li>
-                  <li><Link href='https://nextjs.org'>Next.js</Link> is the framework that powers the site.</li>
-                  <li><Link href='https://tailwindcss.com'>TailwindCSS</Link> is used for making it look good.</li>
-                  <li><Link href='https://github.com/'>Github</Link> for Source Code Management and Continuous Integration.</li>
-                  <li><Link href='https://vercel.com/'>Vercel</Link> for hosting and Continuous Delivery.</li>
+                  <li><Link href='https://github.com/timlrx/tailwind-nextjs-starter-blog'>Tailwind NextJS Starter Blog</Link> was an awesome starting point to build upon</li>
+                  <li><Link href='https://nextjs.org'>Next.js</Link> is the framework that powers the site</li>
+                  <li><Link href='https://tailwindcss.com'>TailwindCSS</Link> is used for making it look good</li>
+                  <li><Link href='https://github.com/'>Github</Link> for Source Code Management and Continuous Integration</li>
+                  <li><Link href='https://vercel.com/'>Vercel</Link> for hosting and Continuous Delivery</li>
                 </ul>
               </div>
             </div>
