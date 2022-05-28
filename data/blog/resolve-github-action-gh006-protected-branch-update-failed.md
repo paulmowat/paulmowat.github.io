@@ -40,7 +40,7 @@ This is a problem! We want to use protected branches and want to be able to use 
 
 I assumed this would be an easy fix and just a case of giving the Github action extra permissions to push to the protected branch. Wrong!
 
-After spending a bit of time Googling, I came across a Github community post @ <https://github.community/t/allowing-github-actions-bot-to-push-to-protected-branch/16536>. The TLDR is that Github can't make the change to fix it for security reasons.
+After spending a bit of time Googling, I came across a Github community post @ [https://github.community/t/allowing-github-actions-bot-to-push-to-protected-branch/16536](https://github.community/t/allowing-github-actions-bot-to-push-to-protected-branch/16536). The TLDR is that Github can't make the change to fix it for security reasons.
 
 At that point in time, we were busy with deadlines and had to decide quickly on how to progress.  That decision was to temporarily disable branch protection and look at it later, even though it felt wrong. The issue was put in the backlog to be looked at later.
 

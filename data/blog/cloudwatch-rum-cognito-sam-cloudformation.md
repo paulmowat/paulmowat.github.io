@@ -1,6 +1,6 @@
 ---
 title: 'CloudWatch RUM with Cognito Identity Pool for SAM/Cloudformation'
-date: '2022-01-23'
+date: '2022-02-01'
 tags: ['aws', 'cloudwatch', 'rum', 'cognito', 'aws-sam', 'cloudformation']
 draft: false
 summary: 'Learn how to configure CloudWatch RUM using a unauthenticated Cognito Identity Pool via SAM/Cloudformation to provide real-user monitoring.'
@@ -247,8 +247,8 @@ CloudWatch RUM looks like a good addition to the CloudWatch ecosystem and is ver
 
 You can find the code from this blog at the following locations.
 
-* <https://github.com/paulmowat/aws-cloudwatch-rum-cognito-sam-cloudformation>
-* <https://serverlessland.com/patterns/cognito-cloudwatch>
+* [https://github.com/paulmowat/aws-cloudwatch-rum-cognito-sam-cloudformation](https://github.com/paulmowat/aws-cloudwatch-rum-cognito-sam-cloudformation)
+* [https://serverlessland.com/patterns/cognito-cloudwatch](https://serverlessland.com/patterns/cognito-cloudwatch)
 
 ## Additional Resources
 

@@ -29,24 +29,43 @@ body {
 }
 
 .main {
-  @apply items-start space-y-2 pt-8 xl:grid xl:gap-x-8 xl:space-y-0 max-w-none prose
+  @apply items-start space-y-2 pt-8 xl:grid xl:gap-x-8 xl:space-y-0 max-w-none prose;
+
+  p {
+    margin-top: 0px;
+  }
+  
+  h2 {
+    margin-top: 0px;
+  }
+  
+  h3 {
+    margin-top: 0px;
+  }
+  
+  h4 {
+    margin-top: 0px;
+  }
 }
 
-.main p {
-  @apply mt-0
+.prose {
+  p {
+    margin-top: 0px;
+  }
+  
+  h2 {
+    margin-top: 0px;
+  }
+  
+  h3 {
+    margin-top: 0px;
+  }
+  
+  h4 {
+    margin-top: 0px;
+  }
 }
 
-.main h2, .prose h2 {
-  @apply mt-0
-}
-
-.main h3, .prose h3 {
-  @apply mt-0
-}
-
-.main h4, .prose h4 {
-  @apply mt-0
-}
 
 .full-span {
   @apply xl:col-span-3
