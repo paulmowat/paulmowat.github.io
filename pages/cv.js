@@ -12,6 +12,7 @@ const buildTimeLineElements = (data) => {
   return data.map(function (item, i) {
     const technologies = item.technologies || []
     const details = item.details || []
+    const certifications = item.certifications || []
 
     const tech = technologies.map((technology, i) => {
       return (
@@ -24,6 +25,12 @@ const buildTimeLineElements = (data) => {
     const det = details.map((detail, i) => {
       return (
         <li key={i}>{detail}</li>
+      )
+    })
+
+    const certs = certifications.map((cert, i) => {
+      return (
+        <a key={i} href={cert.url}><img src={cert.img} /></a>
       )
     })
 
@@ -45,6 +52,16 @@ const buildTimeLineElements = (data) => {
         <ul className='text-gray-700'>
           {det}
         </ul>
+
+        {certs.length > 0 &&
+          <div>
+            <h4 className='text-gray-700'>
+              Certifications
+            </h4>
+            <div className='text-gray-700'>
+              {certs}
+            </div>
+          </div>}
 
         {tech.length > 0 && <div>{tech}</div>}
       </VerticalTimelineElement>

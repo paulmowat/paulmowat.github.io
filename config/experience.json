@@ -10,6 +10,12 @@
         "Designing and building SaaS solutions using AWS",
         "Creating tooling and best practice to help accelerate development teams"
       ],
+      "certifications": [
+        {
+          "img": "static/images/certifications/aws-certified-cloud-practitioner.png",
+          "url": "https://www.credly.com/badges/20782845-2a4c-4b9d-9f9c-7cd71100c1cb/public_url"
+        }
+      ],
       "technologies": [
         "AWS",
         "Javascript",
