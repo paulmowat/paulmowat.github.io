@@ -59,6 +59,6 @@ There is really no reason not to try out the changes. They perform better, cost 
 
 ## Further reading
 
-* https://docs.aws.amazon.com/lambda/latest/dg/foundation-arch.html
-* https://docs.aws.amazon.com/lambda/latest/dg/configuration-versions.html
-* https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html
+* [https://docs.aws.amazon.com/lambda/latest/dg/foundation-arch.html](https://docs.aws.amazon.com/lambda/latest/dg/foundation-arch.html)
+* [https://docs.aws.amazon.com/lambda/latest/dg/configuration-versions.html](https://docs.aws.amazon.com/lambda/latest/dg/configuration-versions.html)
+* [https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html](https://docs.aws.amazon.com/lambda/latest/dg/configuration-aliases.html)
