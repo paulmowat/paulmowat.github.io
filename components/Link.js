@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 const CustomLink = ({ href, ...rest }) => {
-  const isInternalLink = href && href.startsWith('/')
+  const isInternalLink = href && (href.startsWith('/') || href.startsWith('./'))
   const isAnchorLink = href && href.startsWith('#')
 
   if (isInternalLink) {
