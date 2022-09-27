@@ -71,9 +71,9 @@ To facilitate the process, we set about creating a preparation checklist that wa
 However, before we begin looking at these, we need to cover tagging. Artifactory has a useful feature called Property Sets. We decided early (decision log - check) in the process to make wide use of custom properties through Property Sets. Our requirements were principally:
 
 1. Artefact hygiene - remove unused or unsupported packages, waste
-2. Container images’ underlying OS type - differentiate between Linux and Windows containers***
+2. Container images underlying OS type - differentiate between Linux and Windows containers
 
-**  note that whilst possible to read a manifest for each image and determine the existence of foreign layers, we were focused on stability and repeatability as well as speed. We wanted to utilise the native tooling as much as possible and felt that determining supported schema/configuration around custom tooling would negatively impact complexity.*
+**Note:** That whilst possible to read a manifest for each image and determine the existence of foreign layers, we were focused on stability and repeatability as well as speed. We wanted to utilise the native tooling as much as possible and felt that determining supported schema/configuration around custom tooling would negatively impact complexity.
 
 ### Failure recovery
 
@@ -85,7 +85,7 @@ Key features such as dry-run mode, debug levels, and the ability to replay/resum
 
 Large Network bandwidth and scalable compute resources were top of our platform requirements. The choices taken would drip down into the tooling we created.
 
-As an organisation, we place a strong emphasis on Infrastructure as Code so creating processes and workflows around AWS Systems Manager using the AWS CDK is expected. We created stacks that enabled us to build the platform and scale our migration efforts on demand which included:
+As an organisation, we place a strong emphasis on Infrastructure as Code so creating processes and workflows around [AWS Systems Manager](https://aws.amazon.com/systems-manager/) using the AWS CDK is expected. We created stacks that enabled us to build the platform and scale our migration efforts on demand which included:
 
 - Migration stack
 - EC2 Spot Fleet [worker node](#migration-workers) stacks

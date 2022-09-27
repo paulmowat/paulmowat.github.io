@@ -40,7 +40,7 @@ From this analysis, we were acutely (and financially) aware that we were also wa
 
 Having gathered an understanding of what needed support and delivery, we had to identify where we were going to migrate to.
 
-AWS is our preferred Cloud Provider and platform as well as a key technical partner. It was a natural choice to look at their services for our solution. From investigation, we found that [AWS CodeArtifact](https://aws.amazon.com/codeartifact/) was a decent fit for supporting npm, NuGet, Maven and Python (if required in the future), however, it was not a complete match for all our requirements. Favourably, S3 is an excellent fit for generic artefacts, and Elastic Container Registry (ECS) is perfectly appropriate for Docker images (even leading us to correct misunderstandings between images and repositories internally!).
+AWS is our preferred Cloud Provider and platform as well as a key technical partner. It was a natural choice to look at their services for our solution. From investigation, we found that [AWS CodeArtifact](https://aws.amazon.com/codeartifact/) was a decent fit for supporting npm, NuGet, Maven and Python (if required in the future), however, it was not a complete match for all our requirements. Favourably, [S3](https://aws.amazon.com/s3/) is an excellent fit for generic artefacts, and [Elastic Container Registry (ECR)](https://aws.amazon.com/ecr/) is perfectly appropriate for Docker images (even leading us to correct misunderstandings between images and repositories internally!).
 
 We now had the artefact types we needed to support at a high level and where they were going to migrate to.
 
@@ -63,13 +63,13 @@ We will get into the detail around these in future posts.
 
 ## Support channels
 
-As mentioned previously Advanced has over 700 engineers from across the globe working on many projects and we needed to identify a strategy for how we could support them in the best way possible.
+As mentioned previously Advanced has over seven hundred engineers from across the globe working on many projects and we needed to identify a strategy for how we could support them in the best way possible.
 
 We came up with the following three-pronged approach.
 
 ### Documentation
 
-We decided early that we needed to document all parts of the project to allow our engineering teams to self-serve where possible. Without good documentation, there is no way a team of 4 can support over 700 developers.
+We decided early that we needed to document all parts of the project to allow our engineering teams to self-serve where possible. Without good documentation, there is no way a team of four can support over seven hundred developers.
 
 We focused on providing some getting-started documentation that walked teams through the process in an end-to-end fashion. Then proving the appropriate reference documentation for each step.
 

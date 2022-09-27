@@ -45,9 +45,9 @@ This helps with our goals of enforcing convention and consistency, which in turn
 
 We needed to start building out our infrastructure to support the service.
 
-As we were utilising several AWS services, using AWS CDK was the obvious choice. It allowed us to build the service quickly and was also easy to change when required.
+As we were utilising several AWS services, using [AWS CDK](https://aws.amazon.com/cdk/) was the obvious choice. It allowed us to build the service quickly and was also easy to change when required.
 
-Going back to enforcing convention and consistency we leveraged AWS Service Catalog with several custom templates to help us create new repositories.
+Going back to enforcing convention and consistency we leveraged [AWS Service Catalog](https://aws.amazon.com/servicecatalog/) with several custom templates to help us create new repositories.
 
 ## Delivery
 
@@ -64,7 +64,7 @@ The following key areas were identified:
 - Continuous Delivery (CD)
   - Harness
 
-We also were aware of some products using other technologies such as Azure DevOps and TeamCity that we would not directly support, but still had to take into consideration how they could access and use the service.
+We also were aware of some products using other technologies such as [Azure DevOps](https://azure.microsoft.com/en-us/products/devops/) and [TeamCity](https://www.jetbrains.com/teamcity/) that we would not directly support, but still had to take into consideration how they could access and use the service.
 
 ## Tooling
 
@@ -107,9 +107,9 @@ Generic Artefacts proved the most labour intensive, only due to having to implem
 
 With the CLI now in place we used it to power any other tooling that would help accelerate our development teams
 
-Our core Continuous Integration (CI) platform is GitHub Actions. We decided it was worth the effort to create a custom action that automatically downloaded the latest CLI, installed it and performed the required authorisation. This meant that teams could drop that action straight into their workflows and it would just work. Minimal change, maximum satisfaction.
+Our core Continuous Integration (CI) platform is [GitHub Actions](https://github.com/features/actions). We decided it was worth the effort to create a custom action that automatically downloaded the latest CLI, installed it and performed the required authorisation. This meant that teams could drop that action straight into their workflows and it would just work. Minimal change, maximum satisfaction.
 
-Next, we looked at Jenkins. Although were moving away from it, we still have some products that are still using it, therefore we spent a bit of time putting together some example pipelines on how the CLI could be used and included that in our documentation for teams to follow.
+Next, we looked at [Jenkins](https://www.jenkins.io/). Although were moving away from it, we still have some products that are still using it, therefore we spent a bit of time putting together some example pipelines on how the CLI could be used and included that in our documentation for teams to follow.
 
 Now we have covered our Continuous Integration (CI) tools, we needed to look at our Continuous Delivery (CD) ones.
 

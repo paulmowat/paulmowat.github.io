@@ -8,7 +8,7 @@ summary: 'A 5-part blog post by Alex Harrington and Paul Mowat covering the migr
 
 ## Preface
 
-This blog series was written to cover a large project I helped lead at work for [Advanced](https://www.oneadvanced.com) with my colleague Alex Harrington. The project was to migrate away from JFrog Artifactory within very tight timelines. but also very interesting and rewarding.
+This blog series was written to cover a large project I helped lead at work for [Advanced](https://www.oneadvanced.com) with my colleague Alex Harrington. The project was to migrate away from [JFrog Artifactory](https://jfrog.com/artifactory/) within very tight timelines. but also very interesting and rewarding.
 
 ## Introduction
 
@@ -32,13 +32,13 @@ The possibility of migrating away from Artifactory was first aired at the beginn
 
 Artifactory comes under a category of services that could be described as quite "sticky". A SaaS solution where the impact of migrating away would reach far and wide within many an organisation.
 
-Advanced has over 150 products active product suites delivering care to 40 million people throughout the UK, sending 10 million sporting fans through turnstiles and supporting 1.2 billion passengers to arrive at their destinations on time. Our solutions are engineered by hundreds of colleagues from across the globe, built using multiple technologies, living in more than 2600 GitHub repositories and powered by thousands of CI/CD pipelines. All deploying to numerous cloud/hybrid-cloud platforms. Notwithstanding backup, disaster recovery, [escrow](https://www.ses-escrow.co.uk/case-studies/nhs-case-study) and many other internal and market-driven requirements.
+Advanced has over 150 products active product suites covering many market areas. Some examples are delivering care to 40 million people throughout the UK, sending 10 million sporting fans through turnstiles and supporting 1.2 billion passengers to arrive at their destinations on time. Our solutions are engineered by hundreds of colleagues from across the globe, built using multiple technologies, living in more than 2600 GitHub repositories and powered by thousands of CI/CD pipelines. All deploying to numerous cloud/hybrid-cloud platforms. Notwithstanding backup, disaster recovery, [escrow](https://www.ses-escrow.co.uk/case-studies/nhs-case-study) and many other internal and market-driven requirements.
 
 We needed to plan, but plan in a way that would allow us to scale.
 
 ## Team
 
-We formed a small dedicated artefacts team with 4 members that needed to support more than 700 engineers through the process. The artefacts team initially needed to design and implement the migration *machine*, followed by educating and guiding our engineering teams through the project. This had to be as efficient as possible, in order for it to scale.
+We formed a small dedicated artefacts team with four members that needed to support more than seven hundred engineers through the process. The artefacts team initially needed to design and implement the migration *machine*, followed by educating and guiding our engineering teams through the project. This had to be as efficient as possible, in order for it to scale.
 
 The artefacts team structure was as follows:
 
