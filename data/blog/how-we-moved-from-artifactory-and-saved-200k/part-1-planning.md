@@ -8,7 +8,7 @@ summary: 'A 5-part blog post by Alex Harrington and Paul Mowat covering the migr
 
 ## Preface
 
-This blog series was written to cover a large project I helped lead at work for [Advanced](https://www.oneadvanced.com) with my colleague Alex Harrington. It was a challenging project with very tight timeline, but also very interesting and rewarding.
+This blog series was written to cover a large project I helped lead at work for [Advanced](https://www.oneadvanced.com) with my colleague Alex Harrington. The project was to migrate away from JFrog Artifactory within very tight timelines. but also very interesting and rewarding.
 
 ## Introduction
 
