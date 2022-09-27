@@ -20,9 +20,9 @@ If you are just joining we recommend jumping back to the beginning and starting 
 
 The following steps were performed in readiness:
 
-- Publish a **[checklist](How%20we%20moved%20from%20Artifactory%20and%20saved%20$200k%20p%20a%20%2024505b889fe9428b951bbf87c245a89f.md)** of steps that teams could follow which would help identify product assets that need migrating
+- Publish a **[checklist](#checklist)** of steps that teams could follow which would help identify product assets that need migrating
 - Research how we could append custom metadata to existing artefacts
-  - **[tagging](How%20we%20moved%20from%20Artifactory%20and%20saved%20$200k%20p%20a%20%2024505b889fe9428b951bbf87c245a89f.md)**
+  - **[tagging](#tagging)**
 - Study the Artifactory REST API and AQL documentation
 - Research metrics that could be queried for comparison and verification purposes:
   - storage summary
@@ -43,7 +43,7 @@ The following steps were performed in readiness:
   - flag empty repository
   - flag large numbers of artefacts in the repository
   - flag unsupported/problematic repository package types
-- Consider failure scenarios and [recovery option](How%20we%20moved%20from%20Artifactory%20and%20saved%20$200k%20p%20a%20%2024505b889fe9428b951bbf87c245a89f.md) features:
+- Consider failure scenarios and [recovery option](#failure-recovery) features:
   - dry-run
   - ability to replay
   - debug levels
@@ -88,7 +88,7 @@ Large Network bandwidth and scalable compute resources were top of our platform 
 As an organisation, we place a strong emphasis on Infrastructure as Code so creating processes and workflows around AWS Systems Manager using the AWS CDK is expected. We created stacks that enabled us to build the platform and scale our migration efforts on demand which included:
 
 - Migration stack
-- EC2 Spot Fleet [worker node](How%20we%20moved%20from%20Artifactory%20and%20saved%20$200k%20p%20a%20%2024505b889fe9428b951bbf87c245a89f.md) stacks
+- EC2 Spot Fleet [worker node](#migration-workers) stacks
   - Windows
   - Linux
 - SSM Documents library stacks
