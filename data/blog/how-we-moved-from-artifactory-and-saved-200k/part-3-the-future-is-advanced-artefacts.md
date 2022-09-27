@@ -1,12 +1,12 @@
 ---
 title: 'How we moved from Artifactory and saved $200k p.a. Part 3 of 5 - The future is Advanced Artefacts'
-date: '2022-09-28'
+date: '2022-09-26 10:02'
 tags: ['artifactory', 'aws', 'codeartifact', 's3', 'ecr']
 draft: false
 summary: 'A 5-part blog post by Alex Harrington and Paul Mowat covering the migration of 25 TB of artefacts from JFrog Artifactory to a custom solution we created for Advanced, achieving significant cost efficiency. This part covers our new Advanced Artefacts service.'
 ---
 
-## introduction
+## Introduction
 
 Welcome back to Part 3 of our 5-part series on ‘How we moved from Artifactory and saved $500k p.a.’.
 
@@ -15,19 +15,19 @@ If you are just joining we recommend jumping back to the beginning and starting 
 - [Part 1 of 5 - Planning](/blog/how-we-moved-from-artifactory-and-saved-200k/part-1-planning)
 - [Part 2 of 5 - Design](/blog/how-we-moved-from-artifactory-and-saved-200k/part-2-design)
 
-## approach
+## Approach
 
 Having identified that we wanted to create a structured service we had to determine the best way to approach it.
 
 Our earlier analysis helped us identify the artefact types that we needed to support. Yet a remaining challenge was to identify how to support these and empower our development teams across the technologies and tools we use on a daily basis.
 
-### architecture
+### Architecture
 
 The following architecture gives a high-level overview of the overall service components.
 
 ![aa-architecture.png](/static/images/how-we-moved-from-artifactory-and-saved-200k/part-3/aa-architecture.png)
 
-### repository convention
+### Repository convention
 
 Something that became apparent was that our Artifactory configuration was a disordered muddle which has since provided us with a harsh lesson about paying particular attention to the rollout of such platform tooling. It had never been implemented in a controlled or consistent way.
 
@@ -41,7 +41,7 @@ A benefit of this approach was ensuring a clear separation between development a
 
 This helps with our goals of enforcing convention and consistency, which in turn makes it easier to automate and roll out changes in the future.
 
-### infrastructure
+### Infrastructure
 
 We needed to start building out our infrastructure to support the service.
 
@@ -49,7 +49,7 @@ As we were utilising several AWS services, using AWS CDK was the obvious choice.
 
 Going back to enforcing convention and consistency we leveraged AWS Service Catalog with several custom templates to help us create new repositories.
 
-## delivery
+## Delivery
 
 Providing a service that worked successfully meant that we had to look at how we delivered our software and consider what an exemplary software lifecycle looks like, as well as the platforms we needed to support.
 
@@ -66,11 +66,11 @@ The following key areas were identified:
 
 We also were aware of some products using other technologies such as Azure DevOps and TeamCity that we would not directly support, but still had to take into consideration how they could access and use the service.
 
-## tooling
+## Tooling
 
 As developers, we are used to using tools to help make our day-to-day easier. If you look at any good service you will see that they typically have a range of tools to make interacting with them easy.
 
-### cli
+### Command Line Interface (CLI)
 
 We determined that creating a CLI would provide us with a centralised entry point for all of our delivery mechanisms and be flexible enough to allow it to work for any that we didn’t support.
 
@@ -103,7 +103,7 @@ With our authorisation mechanism now in place, working and flexible enough to ha
 
 Generic Artefacts proved the most labour intensive, only due to having to implement an entire set of commands to allow complete artefact management.
 
-### other
+### Other
 
 With the CLI now in place we used it to power any other tooling that would help accelerate our development teams
 
@@ -115,7 +115,7 @@ Now we have covered our Continuous Integration (CI) tools, we needed to look at 
 
 [Harness](https://harness.io/) is our Continuous Delivery (CD) tool of choice. It provides a flexible templating engine, that we were able to utilise to create templates that could be reused across our teams.
 
-## next up
+## Next up
 
 With out new service in place we were ready to get on with the actual migration from Artifactory into Advanced Artefacts.
 
