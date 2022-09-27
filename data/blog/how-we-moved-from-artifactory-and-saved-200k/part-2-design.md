@@ -77,7 +77,7 @@ This covered items such as the support channels available, each team's responsib
 
 A great deal of time was spent pouring over this, it was however crucial to the success of the project.
 
-### **clinics**
+### Clinics
 
 A technique that has worked fairly well for our organisation is the idea of online clinics. We held clinics twice a week for the duration of the project.
 

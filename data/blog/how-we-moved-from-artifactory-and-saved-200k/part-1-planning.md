@@ -6,9 +6,13 @@ draft: false
 summary: 'A 5-part blog post by Alex Harrington and Paul Mowat covering the migration of 25 TB of artefacts from JFrog Artifactory to a custom solution we created for Advanced, achieving significant cost efficiency. This part covers our approach to planning.'
 ---
 
+## Preface
+
+This blog series was written to cover a large project I helped lead at work for [Advanced](https://www.oneadvanced.com) with my colleague Alex Harrington. It was a challenging project with very tight timeline, but also very interesting and rewarding.
+
 ## Introduction
 
-A 5-part blog post by Alex Harrington and myself covering the migration of 25 TB of artefacts from JFrog Artifactory to a custom solution we created for [Advanced](https://www.oneadvanced.com), achieving significant cost efficiency.
+A 5-part blog post by Alex Harrington and Paul Mowat covering the migration of 25 TB of artefacts from JFrog Artifactory to a custom solution we created for [Advanced](https://www.oneadvanced.com), achieving significant cost efficiency.
 
 ## A journey
 
