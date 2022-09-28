@@ -8,7 +8,7 @@ summary: 'A 5-part blog post by Alex Harrington and Paul Mowat covering the migr
 
 ## Introduction
 
-Welcome back to Part 2 of our 5-part series on ‘How we moved from Artifactory and saved $500k p.a.’.
+Welcome back to Part 2 of our 5-part series on 'How we moved from Artifactory and saved $200k p.a'.
 
 If you are just joining we recommend jumping back to the beginning and starting from there.
 
