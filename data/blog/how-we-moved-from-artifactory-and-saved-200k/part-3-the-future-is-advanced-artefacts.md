@@ -23,7 +23,7 @@ Our earlier analysis helped us identify the artefact types that we needed to sup
 
 ### Architecture
 
-The following architecture gives a high-level overview of the overall service components.
+The following architecture gives a high-level overview of the service components.
 
 ![aa-architecture.png](/static/images/how-we-moved-from-artifactory-and-saved-200k/part-3/aa-architecture.png)
 
@@ -33,7 +33,7 @@ Something that became apparent was that our Artifactory configuration was a diso
 
 Determined to avoid this at all costs we decided to build naming conventions for each of our artefact types into our service. This would be implicit, removing disambiguation and preference from any decisions.
 
-Our products commonly have both **development** and **production** environments so it was decided that the platform should mirror this and have just two conforming types of repository.
+Our products commonly have both **development** and **production** environments so it was decided that the service should mirror this and have just two conforming types of repository.
 
 **Development** repositories would be where teams push build artefacts continually via Continuous Integration (CI). Then, when the appropriate levels of testing had been passed, the artefacts could be promoted into the corresponding **release** repository.
 
@@ -78,16 +78,16 @@ The CLI had to support multiple operating systems (Windows, Linux & macOS) and b
 
 ![advanced artefacts cli](/static/images/how-we-moved-from-artifactory-and-saved-200k/part-3/aa-cli.png)
 
-We started analysing what functionality the CLI would require and quickly identified potential overlaps between package manager commands and docker commands. There is little point in us trying to write, maintain and support any tooling that mirrored these. Everyone knows how they work, they are industry standard tools.
+We started analysing what functionality the CLI would require and quickly identified potential overlaps between native package manager and docker commands. There is little point in us trying to write, maintain and support any tooling that mirrored these. Everyone knows how they work, they are industry standard tools.
 
 It was decided that our CLI would work complementary to these. It would bridge the gaps and provide the functionality we needed for our service to work.
 
 We determined our key functional requirements were:
 
-- authorisation
-- packages - get and promote
-- generic artefacts - get, list, publish and promote
-- container images - promote
+- Authorisation
+- Packages - get and promote
+- Generic Artefacts - get, list, publish and promote
+- Container Images - promote
 
 The most important feature of the CLI was authorisation into the service. Every developer and delivery mechanism must authorise into the service before they can use it.
 
@@ -97,7 +97,7 @@ We looked at other open-source CLIs for inspiration and took the time to underst
 
 In the end, we went with a multi-pronged approach and created mechanisms that allowed authorisation in several ways i.e. user, role and service level.
 
-Our security is of the utmost importance and having authorisation tokens written to files was an absolute no-go. Everything by default was going to be applied to the running shell process in order for it to be used and thrown away when finished. That was implemented across several different shells such as bash, Powershell and windows command prompt.
+Our security is of the utmost importance and having authorisation tokens written to files was an absolute no-go. Everything by default was going to be applied to the running shell process in order for it to be used and thrown away when finished. That was implemented across several different shells such as bash, Powershell and Windows command prompt.
 
 With our authorisation mechanism now in place, working and flexible enough to handle different operating systems and shells, the other features were much more straightforward.
 
@@ -105,20 +105,20 @@ Generic Artefacts proved the most labour intensive, only due to having to implem
 
 ### Other
 
-With the CLI now in place we used it to power any other tooling that would help accelerate our development teams
+With the CLI now in place we used it to power any other tooling that would help accelerate our development teams.
 
 Our core Continuous Integration (CI) platform is [GitHub Actions](https://github.com/features/actions). We decided it was worth the effort to create a custom action that automatically downloaded the latest CLI, installed it and performed the required authorisation. This meant that teams could drop that action straight into their workflows and it would just work. Minimal change, maximum satisfaction.
 
-Next, we looked at [Jenkins](https://www.jenkins.io/). Although were moving away from it, we still have some products that are still using it, therefore we spent a bit of time putting together some example pipelines on how the CLI could be used and included that in our documentation for teams to follow.
+Next, we looked at [Jenkins](https://www.jenkins.io/). Although we are moving away from it, we still have some products still using it, therefore we spent a bit of time putting together some example pipelines on how the CLI could be used and included that in our documentation for teams to follow.
 
 Now we have covered our Continuous Integration (CI) tools, we needed to look at our Continuous Delivery (CD) ones.
 
-[Harness](https://harness.io/) is our Continuous Delivery (CD) tool of choice. It provides a flexible templating engine, that we were able to utilise to create templates that could be reused across our teams.
+[Harness](https://harness.io/) is our Continuous Delivery (CD) tool of choice. It provides a flexible template engine, that we were able to utilise to create templates that could be reused across our teams.
 
 ## Next up
 
-With out new service in place we were ready to get on with the actual migration from Artifactory into Advanced Artefacts.
+With our new Advanced Artefacts service in place, we were ready to get on with the actual migration from Artifactory.
 
-Next, we’ll walk through how we built our migration tooling, defined our process and then performed the migration.
+Next up, we’ll walk through how we built our migration tooling, defined our process and performed the migration.
 
 - [Part 4 of 5 - Migration](/blog/how-we-moved-from-artifactory-and-saved-200k/part-4-migration)

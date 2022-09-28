@@ -71,9 +71,9 @@ To facilitate the process, we set about creating a preparation checklist that wa
 However, before we begin looking at these, we need to cover tagging. Artifactory has a useful feature called Property Sets. We decided early (decision log - check) in the process to make wide use of custom properties through Property Sets. Our requirements were principally:
 
 1. Artefact hygiene - remove unused or unsupported packages, waste
-2. Container images underlying OS type - differentiate between Linux and Windows containers
+2. Docker images underlying OS type - differentiate between Linux and Windows containers
 
-**Note:** That whilst possible to read a manifest for each image and determine the existence of foreign layers, we were focused on stability and repeatability as well as speed. We wanted to utilise the native tooling as much as possible and felt that determining supported schema/configuration around custom tooling would negatively impact complexity.
+**Note:** That whilst possible to read a manifest for each Docker image and determine the existence of foreign layers, we were focused on stability and repeatability as well as speed. We wanted to utilise the native tooling as much as possible and felt that determining supported schema/configuration around custom tooling would negatively impact complexity.
 
 ### Failure recovery
 
@@ -85,7 +85,7 @@ Key features such as dry-run mode, debug levels, and the ability to replay/resum
 
 Large Network bandwidth and scalable compute resources were top of our platform requirements. The choices taken would drip down into the tooling we created.
 
-As an organisation, we place a strong emphasis on Infrastructure as Code so creating processes and workflows around [AWS Systems Manager](https://aws.amazon.com/systems-manager/) using the AWS CDK is expected. We created stacks that enabled us to build the platform and scale our migration efforts on demand which included:
+As an organisation, we place a strong emphasis on Infrastructure as Code (IaC) so creating processes and workflows around [AWS Systems Manager](https://aws.amazon.com/systems-manager/) using the AWS CDK is expected. We created stacks that enabled us to scale our migration efforts on demand which included:
 
 - Migration stack
 - EC2 Spot Fleet [worker node](#migration-workers) stacks
@@ -99,7 +99,7 @@ As an organisation, we place a strong emphasis on Infrastructure as Code so crea
 
 ![migrator cli](/static/images/how-we-moved-from-artifactory-and-saved-200k/part-4/migrator.png)
 
-Concurrency was an interesting feature. The default was to plan for concurrency, if we run tasks concurrently across our cloud resources then this would accelerate the process, surely? Frustratingly, this was not the case. In the details of AWS CodeArtifact were areas where the order that packages are uploaded is important, particularly npm and Maven. Furthermore, tools have different ways to determine the latest, but support for this in AWS CodeArtifact was not universal during our project. We also discovered that there were places where Artifactory supported deprecated features which we happily used, yet AWS CodeArtefact did not. This resulted in us essentially serially migrating packages but utilising the cursor-like features of offset and limits to optimise our efforts.
+Concurrency was an interesting feature. The default was to plan for concurrency, if we run tasks concurrently across our cloud resources then this would accelerate the process, surely? Frustratingly, this was not the case. In the details of AWS CodeArtifact were areas where the order that packages were uploaded is important, particularly npm and Maven. Furthermore, package managers have different ways to determine the latest version, but support for this in AWS CodeArtifact was not universal during our project. We also discovered that there were places where Artifactory supported deprecated features which we happily used, yet AWS CodeArtefact did not. This resulted in us essentially serially migrating packages but utilising the cursor-like features of offset and limits to optimise our efforts.
 
 ### Migration workers
 
@@ -111,7 +111,7 @@ In (often long-running) batches, workers would *pull* packages using the native 
 
 ### Command line interfaces (CLIs)
 
-A handful of CLI tools were authored in Go. These tools provided the brunt of the work where validation and custom logic were applied to transfer the different artefact types under the conditions of the project. AWS SSM documents were used in orchestrating the tools to transition the artefacts to the correct destination repositories via the appropriate worker node fleet. Much credit needs to go to the excellent [spf13/cobra](https://github.com/spf13/cobra) commander Go module that was used in these CLIs.
+A handful of CLI tools were authored in [Go](https://go.dev/). These tools provided the brunt of the work where validation and custom logic were applied to transfer the different artefact types under the conditions of the project. AWS SSM documents were used in orchestrating the tools to transition the artefacts to the correct destination repositories via the appropriate worker node fleet. Much credit needs to go to the excellent [spf13/cobra](https://github.com/spf13/cobra) commander Go module that was used in these CLIs.
 
 ## Migrating 1.5 million artefacts
 
@@ -131,10 +131,12 @@ Resolving all migration tickets in the backlog would culminate in disabling writ
 
 This was tricky. Reporting on the AWS CodeArtifact side is currently poor (09/2022). CloudWatch metrics are entirely missing but ultimately it was not at all straightforward to aggregate key metrics and statistics in the same way you can with Artifactory.
 
-We had to get creative and had to combine metrics queried from the Artifactory REST API with internal counters residing within our tooling to cross-reference our progress. Through deploying webhooks and using DynamoDB to record the dates when batches of work were undertaken we could replay activities using the DateTime offset to determine any deltas where pipelines were not fully updated and artefacts were still being deployed to Artifactory after the migration activity for the solution artefacts had begun. This worked out well and coupled with a reduction of write access permissions, enabled us to verify the process had worked to a point in time whilst giving us another window to replay the same batches but for a much smaller delta of packages. Significantly, as we advanced through the project, confidence grew as we were replaying actions over and over with consistent results. Testing our tooling was tricky so having the ability to utilise dry-run mode was so valuable.
+We had to get creative and had to combine metrics queried from the Artifactory REST API with internal counters residing within our tooling to cross-reference our progress. Through deploying webhooks and using DynamoDB to record the dates when batches of work were undertaken we could replay activities using the DateTime offset to determine any deltas where pipelines were not fully updated and artefacts were still being deployed to Artifactory after the migration activity for the solution artefacts had begun. This worked out well and coupled with a reduction of write access permissions, enabled us to verify the process had worked to a point in time whilst giving us another window to replay the same batches but for a much smaller delta of packages. Significantly, as we advanced through the project, confidence grew as we were replaying actions over and over with consistent results. Testing our tooling was tricky so having the ability to utilise dry-run mode was invaluable.
 
 ## Next up
 
-The migration has now been completed. Next, we’ll take a look at how we’ve reached our goal.
+The migration has now been completed.
+
+Next up, we’ll take a look at whether we’ve reached our goal.
 
 - [Part 5 of 5 - Reaching our goal](/blog/how-we-moved-from-artifactory-and-saved-200k/part-5-reaching-our-goal)

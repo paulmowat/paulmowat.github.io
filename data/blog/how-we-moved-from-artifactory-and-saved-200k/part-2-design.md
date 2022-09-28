@@ -18,7 +18,7 @@ If you are just joining we recommend jumping back to the beginning and starting 
 
 The nature of larger projects such as these requires plenty of discussion and decision-making around temporary and permanent processes. We had lots of data to migrate and we needed to be efficient in our decision-making process. We decided upon using [Architecture Decision Records](https://adr.github.io/) to log the key implementation decisions which significantly helped us deliver consistency throughout our support and guidance.
 
-As it turned out, undertaking this method of logging was not onerous and we ended up with records for around a dozen key strategic choices that we made; an example of one being the choice to utilise a spot fleet of EC2 workers to perform the migration versus something like AWS Batch or ECS. At first glance, we expected to go with a solution based on AWS Batch or AWS but we had requirements to move resources such as Windows container images and it was so helpful to be able to easily recover the decision steps when we moved to create tooling to support this.
+As it turned out, undertaking this method of logging was not onerous and we ended up with records for around a dozen key strategic choices that we made; an example of one being the choice to utilise a spot fleet of EC2 workers to perform the migration versus something like AWS Batch or ECS. At first glance, we expected to go with a solution based on AWS Batch or AWS ECS but we had requirements to move resources such as Windows container images and it was so helpful to be able to easily recover the decision steps when we moved to create tooling to support this.
 
 ## Workshopping
 
@@ -40,7 +40,7 @@ From this analysis, we were acutely (and financially) aware that we were also wa
 
 Having gathered an understanding of what needed support and delivery, we had to identify where we were going to migrate to.
 
-AWS is our preferred Cloud Provider and platform as well as a key technical partner. It was a natural choice to look at their services for our solution. From investigation, we found that [AWS CodeArtifact](https://aws.amazon.com/codeartifact/) was a decent fit for supporting npm, NuGet, Maven and Python (if required in the future), however, it was not a complete match for all our requirements. Favourably, [S3](https://aws.amazon.com/s3/) is an excellent fit for generic artefacts, and [Elastic Container Registry (ECR)](https://aws.amazon.com/ecr/) is perfectly appropriate for Docker images (even leading us to correct misunderstandings between images and repositories internally!).
+AWS is our preferred Cloud Provider and platform, as well as a key technical partner. It was a natural choice to look at their services for our solution. From investigation, we found that [AWS CodeArtifact](https://aws.amazon.com/codeartifact/) was a decent fit for supporting npm, NuGet, Maven and Python (if required in the future), however, it was not a complete match for all our requirements. Favourably, [S3](https://aws.amazon.com/s3/) is an excellent fit for generic artefacts, and [Elastic Container Registry (ECR)](https://aws.amazon.com/ecr/) is perfectly appropriate for Docker images (even leading us to correct misunderstandings between images and repositories internally!).
 
 We now had the artefact types we needed to support at a high level and where they were going to migrate to.
 
@@ -48,7 +48,7 @@ We now had the artefact types we needed to support at a high level and where the
 
 Now we firmly knew our direction, we needed to decide how we get there.
 
-Initially, we considered publishing guidance around best practices for various AWS services to satisfy our artefact requirements but ultimately was quickly deemed unmaintainable.
+Initially, we considered publishing guidance around best practices for various AWS services to satisfy our artefact requirements but ultimately that was deemed unmaintainable.
 
 We wanted to finish the project with our artefact management strategy in a much better position than it started. Significant to us was ensuring we had the ability to define convention, consistency, clear guidance and expectations. We aimed to provide a maintainable solution that continues to build upon the best practices as it matures.
 
@@ -93,6 +93,8 @@ They could also ask us questions or get further clarification as required outsid
 
 ## Next up
 
-Now we have our design in place we need to start implementing it. Next up is how we implement and undertake the migration.
+Now we have our design in place we need to start implementing it.
+
+Next up, we will cover the creation of the Advanced Artefacts service.
 
 - [Part 3 of 5 - The future is Advanced Artefacts](/blog/how-we-moved-from-artifactory-and-saved-200k/part-3-the-future-is-advanced-artefacts)
