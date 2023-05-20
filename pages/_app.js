@@ -16,7 +16,7 @@ export default function App ({ Component, pageProps }) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      ga.pageView(url)
+      ga.pageView(`${window.location.protocol}//${window.location.host}${url}`)
     }
     // When the component is mounted, subscribe to router changes
     // and log those page views
