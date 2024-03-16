@@ -11,17 +11,18 @@
     "analyze": "cross-env ANALYZE=true next build",
     "prepare": "husky install",
     "lint": "standard --fix",
-    "db": "pscale connect paulmowat main --port 3309"
+    "prisma": "prisma",
+    "deploy-db": "prisma generate && prisma migrate deploy"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.6.0",
     "@mdx-js/loader": "^2.1.1",
     "@mdx-js/react": "^2.1.1",
     "@next/mdx": "12.1.6",
-    "@prisma/client": "^3.14.0",
     "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/nesting": "0.0.0-insiders.565cd3e",
     "@tailwindcss/typography": "^0.5.2",
+    "@vercel/postgres": "^0.7.2",
     "autoprefixer": "^10.4.7",
     "gray-matter": "^4.0.2",
     "image-size": "1.0.0",
@@ -46,6 +47,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^12.1.6",
+    "@prisma/client": "^5.11.0",
     "@svgr/webpack": "^6.2.1",
     "cross-env": "^7.0.3",
     "file-loader": "^6.0.0",
@@ -55,7 +57,7 @@
     "next-compose-plugins": "^2.2.1",
     "next-remote-watch": "^1.0.0",
     "postcss-import": "^14.1.0",
-    "prisma": "3.0.2",
+    "prisma": "^5.11.0",
     "rehype": "11.0.0",
     "remark-frontmatter": "3.0.0",
     "remark-parse": "10.0.1",
