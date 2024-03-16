@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'Paul Mowat',
   headerTitle: 'Paul Mowat',
   email: 'paul@paulmowat.co.uk',
-  description: 'Paul Mowat is an developer based near Aberdeen Scotland who currently works for Advanced as a Principal Devops Architect.',
+  description: 'Paul Mowat is an developer based near Aberdeen Scotland who currently works for OneAdvanced as a Principal Devops Architect.',
   language: 'en-gb',
   siteUrl: 'https://www.paulmowat.co.uk',
   image: '/static/images/me.jpg',
