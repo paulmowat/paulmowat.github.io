@@ -25,6 +25,16 @@
           "alt": "Harness Certified Continuous Delivery & GitOps Developer",
           "img": "static/images/certifications/harness_cd_gitops_developer.png",
           "url": "https://www.credly.com/badges/0fc87d2b-b6bd-4ea2-b618-9452e42b1de2/public_url"
+        },
+         {
+          "alt": "Harness Certified Feature Flag Developer",
+          "img": "static/images/certifications/harness_feature_flag_developer.png",
+          "url": "https://www.credly.com/badges/8a1adf80-852b-48c0-b7d2-9566fcee6dc9/public_url"
+        },
+        {
+          "alt": "Harness Certified Security Testing Orchestration Developer",
+          "img": "static/images/certifications/harness_sto_developer.png",
+          "url": "https://www.credly.com/badges/ff9b9814-4bec-49e1-9573-87b32abb800e/public_url"
         }
       ],
       "technologies": [
