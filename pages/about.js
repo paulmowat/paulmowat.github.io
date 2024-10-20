@@ -25,28 +25,28 @@ export default function About () {
                 Based near Aberdeen Scotland, I currently work for <Link href='https://www.oneadvanced.com'>OneAdvanced</Link> as an Principal DevOps Architect.
               </p>
               <p>
-                I'm a hardworking, organized and motivated software architect with 16+ years
-                experience designing and supporting large scale enterprise applications on a variety
-                of platforms and technologies including AWS, Node.js, Progress OpenEdge, C#,
-                SQL Server and Java.
+                I have 18+ years experience designing, implementing, and supporting large-scale applications across multiple platforms and technologies.
               </p>
               <p>
-                I have strong problem solving skills and am an advocate of best practices and coding
-                standards. I believe if your going to do something, then do it to the best of your
-                abilities.
+                I specialise in DevOps, CI/CD, and Cloud Migration architecture, with a focus on standardisation and accelerating delivery on platforms like AWS, Azure, and Harness.
               </p>
               <p>
-                I enjoy working within a team and have experience leading teams of developers using
-                traditional and agile methodologies to meet tight deadlines.
+                I engage with stakeholders at all levels and external partners to ensure projects are designed and delivered according to best practices, whilst remaining aligned to business goals.
               </p>
               <p>
-                During my spare time, I also seek to continually improve my skills and knowledge and
-                as such I enjoy learning about new emerging technologies. I'm always playing around
-                with something looking to see what benefits it could bring.
+                I have experience in all areas of the SDLC, from design, and development, to infrastructure as code (IaC) and operation. My experience also extends to development using Node.js, Progress OpenEdge, C#, SQL Server, Java, HTML, CSS and Javascript.
               </p>
               <p>
-                My other interests include gaming on the PS5, watching movies and spending as much time as possible with my wife
-                and two sons.
+                I am a strong advocate for best practices, security and cost optimization in cloud environments.
+              </p>
+              <p>
+                I enjoy working within a team and have experience leading teams of developers using traditional and agile methodologies to meet tight deadlines.
+              </p>
+              <p>
+                During my spare time, I also seek to continually improve my skills and knowledge and as such I enjoy learning about new emerging technologies.
+              </p>
+              <p>
+                My other interests include photography, watching movies and spending time with my wife and son.
               </p>
             </div>
           </section>

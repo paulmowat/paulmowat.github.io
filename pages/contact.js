@@ -66,7 +66,7 @@ export default class Contact extends React.Component {
         this.setState({
           submitting: false,
           submitted: false,
-          error: error
+          error
         })
       })
   }

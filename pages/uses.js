@@ -34,7 +34,6 @@ export default function Uses () {
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner'>Code Runner</Link></li>
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker'>Code Spell Checker</Link></li>
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker'>Docker</Link></li>
-                      <li><Link href='https://marketplace.visualstudio.com/items?itemName=kiteco.kite'>Kite</Link></li>
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer'>Live Server</Link></li>
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script'>NPM</Link></li>
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense'>NPM Intellisense</Link></li>
@@ -42,6 +41,8 @@ export default function Uses () {
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl'>Remote WSL</Link></li>
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=standard.vscode-standard'>StandardJS</Link></li>
                       <li><Link href='https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode'>Visual Studio IntelliCode</Link></li>
+                      <li><Link href='https://marketplace.visualstudio.com/items?itemName=GitHub.copilotvs'>GitHub Copilot</Link></li>
+                      <li><Link href='https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.VSGitHubCopilot'>GitHub Copilot Chat</Link></li>
                     </ul>
                   </li>
                 </ul>
@@ -59,6 +60,7 @@ export default function Uses () {
                   <li><Link href='https://tortoisegit.org/'>TortoiseGit</Link> for working with Github</li>
                   <li><Link href='https://www.postman.com/'>Postman</Link> for API testing</li>
                   <li><Link href='https://www.docker.com/'>Docker</Link> for containerization</li>
+                  <li><Link href='https://kubernetes.io/'>Kubernetes</Link> for container orchestration</li>
                 </ul>
               </div>
             </div>
@@ -85,7 +87,7 @@ export default function Uses () {
               <div>
                 <ul>
                   <li>Primary Node.js/Javascript, But experience in OpenEdge, Java, C# and many others</li>
-                  <li>Amazon Web Services. Mostly via AWS CLI, AWS SAM CLI and CloudFormation</li>
+                  <li>Amazon Web Services. Mostly via AWS CLI, AWS SAM CLI and AWS CDK</li>
                   <li>Docker for running things locally like Lambdas/Redis/Databases</li>
                 </ul>
               </div>

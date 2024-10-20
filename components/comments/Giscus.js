@@ -14,8 +14,8 @@ const Giscus = ({ mapping }) => {
     const commentsTheme =
       siteMetadata.comment.giscusConfig.themeURL === ''
         ? theme === 'dark' || resolvedTheme === 'dark'
-            ? siteMetadata.comment.giscusConfig.darkTheme
-            : siteMetadata.comment.giscusConfig.theme
+          ? siteMetadata.comment.giscusConfig.darkTheme
+          : siteMetadata.comment.giscusConfig.theme
         : siteMetadata.comment.giscusConfig.themeURL
 
     // setEnabledLoadComments(false)

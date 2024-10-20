@@ -6,9 +6,12 @@
       "years": "June 2021 - Present",
       "icon": "work",
       "details": [
-        "Core involvement in defining the company go forward Cloud migration strategy",
-        "Designing and building SaaS solutions using AWS",
-        "Creating tooling and best practice to help accelerate development teams"
+        "Led a core DevOps team of seven, architecting and implementing CI/CD pipelines, defining standards and best practices, and integrating DevSecOps practices (SonarQube, FOSSA) to enhance delivery speed and security compliance",
+        "Designed and implemented the go-forward strategy around Platform Engineering powered by Harness, including infrastructure, 50+ templates and utilising modules such as CI, CD, STO, Feature Flags and IDP",
+        "Collaborated with internal stakeholders from C-Level down to understand business goals, and translate them into scalable DevOps solutions whilst collaborating with partners including AWS, Microsoft, Harness, and GitHub to deliver according to best practice",
+        "Spearheaded cloud migration strategies from on-premise to AWS and Azure, using AWS CDK and Terraform for IaC, significantly improving scalability and reducing downtime",
+        "Designed solutions addressing critical business problems, including automating onboarding/offboarding, saving thousands of manual hours annually",
+        "Led the successful migration away from JFrog Artifactory resulting in the design and delivery of a new internal service called Advanced Artefacts that utilises AWS services and custom tooling, saving the company $200k annually"
       ],
       "certifications": [
         {
@@ -38,9 +41,13 @@
         }
       ],
       "technologies": [
+        "Node.js",
+        "Docker",
+        "Kubernetes",
         "AWS",
-        "Javascript",
-        "Node.js"
+        "Azure",
+        "Harness",
+        "GitHub"
       ]
     },
     {
