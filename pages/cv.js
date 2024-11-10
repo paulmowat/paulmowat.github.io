@@ -30,7 +30,7 @@ const buildTimeLineElements = (data) => {
 
     const certs = certifications.map((cert, i) => {
       return (
-        <span key={i} className='cert'><a key={i} href={cert.url} title={cert.alt}><img alt={cert.alt} src={cert.img} /></a></span>
+        <span key={i} className='cert'><a target='_blank' rel='noopener noreferrer' key={i} href={cert.url} title={cert.alt}><img alt={cert.alt} src={cert.img} /></a></span>
       )
     })
 
