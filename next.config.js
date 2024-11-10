@@ -1,6 +1,9 @@
 const withPlugins = require('next-compose-plugins')
 
-const withPWA = require('next-pwa')
+const withPWA = require('next-pwa')({
+  disable: process.env.NODE_ENV === 'development',
+  dest: 'public'
+})
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true'
@@ -12,11 +15,6 @@ module.exports = withPlugins([
 ], {
   reactStrictMode: true,
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
-  // webpack5: true,
-  // pwa: {
-  //   disable: process.env.NODE_ENV === 'development',
-  //   dest: 'public'
-  // },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
