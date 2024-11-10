@@ -38,6 +38,11 @@
           "alt": "Harness Certified Security Testing Orchestration Developer",
           "img": "static/images/certifications/harness_sto_developer.png",
           "url": "https://www.credly.com/badges/ff9b9814-4bec-49e1-9573-87b32abb800e/public_url"
+        },
+        {
+          "alt": "Harness Certified Internal Developer Portal Developer",
+          "img": "static/images/certifications/harness_idp.png",
+          "url": "https://www.credly.com/badges/3916860b-909c-4e15-a303-fa894bd4f67c/public_url"
         }
       ],
       "technologies": [
