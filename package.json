@@ -6,7 +6,7 @@
     "start": "cross-env TAILWIND_MODE=watch next-remote-watch ./data",
     "dev": "cross-env TAILWIND_MODE=watch NODE_OPTIONS='--inspect' next dev -H ::",
     "build": "prisma generate && prisma migrate deploy && next build",
-    "postbuild": "node ./scripts/generate-sitemap.js",
+    "postbuild": "node ./scripts/generate-sitemap.mjs",
     "serve": "next start",
     "analyze": "cross-env ANALYZE=true next build",
     "prepare": "husky",
