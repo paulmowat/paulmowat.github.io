@@ -1,8 +1,8 @@
-const fs = require('fs')
-const globby = require('globby')
-const siteMetadata = require('../config/siteMetadata')
+import fs from 'fs'
+import { globby } from 'globby'
+import siteMetadata from '../config/siteMetadata.js'
 
-;(async () => {
+(async () => {
   const pages = await globby([
     'pages/*.js',
     'data/**/*.mdx',
